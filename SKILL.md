@@ -1,7 +1,8 @@
 ---
 name: value-realization
-version: 1.0.0
-description: This skill should be used when the user discusses product ideas, evaluates features, plans marketing strategies, analyzes user adoption problems, or expresses thoughts about product-market fit. Users often propose ideas without certainty about whether they're right or wrong - this skill helps evaluate those ideas by analyzing whether end users will discover clear value. Apply this skill to help discover what value end users can realize through the product - whether that's identity, financial gain, short-term benefits, long-term benefits, or other forms of value. Use this when the user mentions "is this idea good?", "will users want this?", "why aren't users staying?", "how should we position this?", "I'm not sure if this will work", or when discussing product design, feature planning, go-to-market strategy, user motivation, or retention challenges. The goal is to help evaluate uncertain product ideas by analyzing whether end users will clearly understand what value they'll achieve.
+version: 1.1.0
+description: Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing user adoption problems, or when the user expresses uncertainty about product direction (e.g., "is this idea good?", "what do you think of this?", "will users want this?", "why aren't users staying?", "how should we position this?").
+allowed-tools: Read, WebFetch, WebSearch, Grep, Glob
 ---
 
 # Value Realization Philosophy
@@ -276,6 +277,83 @@ For complete case studies with metrics and data sources, see `references/real-ca
 **The trap**: "Our algorithm is 10x better"
 **The reality**: If end users can't see/feel the improvement, it doesn't matter
 **The approach**: Make value tangible and visible to end users
+
+## Research Methodology
+
+### When to Research New Concepts
+
+When the user mentions specific products, projects, technologies, or domain-specific concepts, research them before applying this framework.
+
+**Research these elements**:
+- Product names or projects mentioned by the user
+- Industry-specific terminology or market segments
+- Competitor products or similar solutions
+- Recent developments or version changes in mentioned technologies
+
+**Method**:
+WebFetch or WebSearch to gather current information:
+- Official product documentation or websites
+- Recent news, launch announcements, or updates
+- User reviews, adoption metrics, or market reception
+- Technical specifications or feature sets
+
+### Evaluating Case Study Applicability
+
+The cases in `references/real-cases.md` (Dropbox, Instagram, Duolingo, WeChat, Google Wave, Quibi) illustrate patterns, not universal rules.
+
+**Assess applicability**:
+- **Product type match**: B2C consumer apps vs B2B developer tools vs enterprise software
+- **Market context match**: Competitive markets vs niche markets vs monopoly situations
+- **User behavior match**: Daily use vs episodic use vs one-time transactions
+- **Value delivery match**: Immediate utility vs long-term transformation vs hybrid approaches
+
+**When cases don't apply**:
+If the user's product differs significantly from reference cases (e.g., B2B infrastructure tool vs C2C social app), search for comparable products in the same domain. Analyze those domain-specific examples instead of forcing consumer app patterns onto different contexts.
+
+**Example**:
+- User discusses: Developer infrastructure tool (like Temporal, Kubernetes)
+- Reference cases: Consumer apps (Dropbox, Instagram)
+- Action: Search for similar developer tools, analyze their value propositions, adoption patterns
+- Avoid: Applying Instagram's identity transformation pattern to infrastructure software
+
+### Balancing Exploration and Evidence
+
+**Exploratory thinking** (appropriate when):
+- Identifying potential value types end users might seek
+- Brainstorming ways to make value visible or tangible
+- Considering multiple positioning approaches
+- Exploring "what if" scenarios for product direction
+
+**Evidence-based analysis** (required when):
+- Claiming specific adoption patterns or metrics
+- Comparing to real products or market examples
+- Stating what "works" or "doesn't work" in practice
+- Making recommendations based on industry precedents
+
+**Process**:
+1. Explore possibilities through discussion and brainstorming
+2. When specific claims or comparisons arise, verify with research
+3. Base final recommendations on verified patterns, not assumptions
+4. Acknowledge when evidence is limited or context differs from known cases
+
+### Research Sources
+
+**Primary sources** (preferred):
+- Official product websites and documentation
+- Company blog posts or announcements
+- Published metrics, user counts, or growth data
+- Academic research or industry reports
+
+**Secondary sources** (use with caution):
+- Tech news articles or analysis pieces
+- User reviews or community discussions
+- Third-party market research or estimates
+
+**Avoid**:
+- Relying solely on memory or general knowledge
+- Assuming patterns from one domain apply universally
+- Making claims without verifiable sources
+- Treating reference cases as prescriptive templates
 
 ## How to Use This Skill
 
