@@ -1,7 +1,7 @@
 ---
 name: value-realization
-version: 1.1.0
-description: Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing user adoption problems, or when the user expresses uncertainty about product direction (e.g., "is this idea good?", "what do you think of this?", "will users want this?", "why aren't users staying?", "how should we position this?").
+version: 1.1.1
+description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing user adoption problems, or when the user expresses uncertainty about product direction (e.g., 'is this idea good?', 'what do you think of this?', 'will users want this?', 'why aren't users staying?', 'how should we position this?')."
 allowed-tools: Read, WebFetch, WebSearch, Grep, Glob
 ---
 

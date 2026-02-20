@@ -1,6 +1,6 @@
 ---
 name: value-realization-zh
-version: 1.1.0
+version: 1.1.1
 description: 分析最终用户是否能在产品想法中发现清晰的价值。适用于：讨论产品概念、评估功能、规划营销策略、分析用户采用问题，或当用户表达对产品方向的不确定性时（例如："这个想法好吗？"、"你觉得这个产品怎么样？"、"我这个想法如何？"、"用户会想要这个吗？"、"为什么用户不留下来？"、"我们应该如何定位？"）。
 allowed-tools: Read, WebFetch, WebSearch, Grep, Glob
 ---
