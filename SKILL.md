@@ -7,6 +7,10 @@ allowed-tools: Read, WebFetch, WebSearch, Grep, Glob
 
 # Value Realization Philosophy
 
+**Status**: Production Ready ✅
+**Last Updated**: 2026-02-20
+**Type**: Analytical Framework
+
 ## Overview
 
 This skill provides a philosophical framework and analytical methods for evaluating whether end users will "know" what value they can achieve through a product. Guides analysis through the lens of value discovery, not by providing checklists.
@@ -15,7 +19,7 @@ This skill provides a philosophical framework and analytical methods for evaluat
 - Framework to evaluate product ideas when certainty is lacking
 - Analysis methods for assessing end user value discovery
 - Patterns from real product successes and failures
-- Actionable insights for product design and positioning
+- Analysis methods for product design and positioning
 
 **Core question**: Can end users clearly understand what value they'll realize through the product - even if that value takes time to achieve?
 
@@ -24,12 +28,19 @@ This skill provides a philosophical framework and analytical methods for evaluat
 - **End user**: The person who will use the product being discussed
 - **Value**: What end users achieve through the product (identity, money, benefits, etc.)
 
-## The Central Insight
+## Central Observation
 
-End users adopt products when they **know** what value they'll get. This "knowing" is critical:
+End users are more likely to adopt products when they can articulate what value they'll achieve. This "knowing" means:
 
-- If end users know they'll achieve something valuable (even long-term), they'll use it
-- If end users don't know what they'll achieve, they won't use it - no matter how good the product is
+**What "knowing" means**:
+- End users can explain to themselves or others why they're using the product
+- End users can describe what they'll achieve (not just what features exist)
+- End users understand the outcome, even if it takes time to materialize
+
+**Observed patterns**:
+- When end users can articulate clear value → higher adoption rates
+- When end users cannot articulate value → adoption challenges, even with innovative features
+- Some end users adopt without full clarity, then discover value through use (progressive discovery)
 
 **Value types end users seek** (but aren't limited to):
 - Identity and belonging
@@ -43,9 +54,30 @@ End users adopt products when they **know** what value they'll get. This "knowin
 
 ## The Challenge
 
-Most product creators face a hidden problem: **end users often don't know what they actually want, and their stated methods may be wrong**.
+Product creators often face a hidden problem: **in consumer products and new product categories, end users often don't know what they actually want, and their stated methods may be wrong**.
+
+This is particularly common when:
+- End users haven't experienced similar products before
+- The value is transformational (identity, behavior change) rather than transactional
+- The product creates a new category or usage pattern
 
 The job isn't just to build what end users ask for - it's to help end users discover what value they're actually seeking.
+
+**Note**: This challenge is less applicable to:
+- Established product categories where end users have clear expectations
+- Developer tools and infrastructure where users are technical experts
+- Enterprise software where decision makers have specific requirements
+
+## How to Engage with This Skill
+
+This skill operates through conversational analysis. When the user presents a product idea:
+
+1. **Identify the end users** - Determine who will use the product
+2. **Examine value discovery** - Analyze whether end users will understand what they'll achieve
+3. **Evaluate through four dimensions** - Value clarity, timeline, perception, discovery
+4. **Consider context** - Each product, market, and end user group differs
+
+This framework guides thinking. It does not prescribe solutions.
 
 ## Analysis Framework
 
@@ -59,19 +91,19 @@ When the user discusses a product idea, analyze these four dimensions to evaluat
 - Do end users understand the outcome, not just the features?
 
 **Why this matters**:
-End users won't adopt a product if they can't explain to themselves (or others) why they're using it.
+End users are less likely to adopt a product if they can't explain to themselves (or others) why they're using it.
 
 **Real example - Dropbox** (see `references/real-cases.md` for detailed data):
-- Clear value to end users: "I can access my files from any device"
+- Clear value to end users: "I accessed my files from any device"
 - End users immediately understood what they'd achieve
 - Not about "cloud storage" (technical) but about "access anywhere" (value)
-- Insight: Translate technical features into user-facing value
+- Dropbox translates technical features into user-facing value descriptions
 
 **Real example - Google Wave** (see `references/real-cases.md` for detailed analysis):
 - Vague value to end users: "Unified communication"
 - End users couldn't explain what they'd achieve
 - Failed despite innovative features
-- Lesson: Features without clear value = no adoption
+- Observation: Products with innovative features but unclear value face adoption challenges
 
 **Analysis method**:
 Ask: What would an end user say when asked "Why are you using this?" If the answer is unclear or feature-focused ("because it has X"), dig deeper into the actual value proposition.
@@ -79,33 +111,36 @@ Ask: What would an end user say when asked "Why are you using this?" If the answ
 ### 2. Value Timeline
 
 **Examine**:
-- Is the value immediate or delayed for end users?
-- If delayed, do end users know it's coming?
-- What keeps end users engaged during the journey?
+- When do end users perceive they have achieved something?
+- Is this perception immediate or does it require sustained use?
+- What do end users achieve at different time points?
 
 **Why this matters**:
-Both short-term and long-term value are valid approaches. The choice depends on the product's nature, specific scenarios, and end user context. Neither is inherently superior.
+Understanding when end users perceive value helps assess whether they will recognize what they achieve through the product.
 
-**Short-term value products** (end users see results in minutes/hours):
-- Dropbox: Upload → see file on other device (< 5 minutes)
-- Zoom: Click link → join meeting (< 30 seconds)
-- Stripe: Run test payment → see it work (< 1 minute)
-- Consideration: Immediate value is the complete offering
+**Immediate value perception** (end users perceive achievement during or right after use):
+- Search engines: End users obtain answers to their questions
+- Calculators: End users get calculation results
+- Dropbox: End users access files on another device after upload
+- Duolingo: End users complete a lesson and see progress indicators
+- Code analysis tools: End users receive evaluation reports for their code
+- Characteristic: End users perceive they achieved something in a single use session
 
-**Long-term value products** (end users see results in weeks/months):
-- Duolingo: Language fluency (6-12 months)
-- Fitness apps: Body transformation (3-6 months)
-- Investment apps: Wealth building (years)
-- Consideration: End users commit to the journey
+**Delayed value perception** (end users perceive achievement after sustained use over time):
+- Duolingo: End users develop language fluency through months of practice
+- Fitness apps: End users observe body transformation after consistent training
+- Investment products: End users see wealth accumulation over years
+- GitHub: End users build code history and reputation over time
+- Characteristic: End users perceive they achieved something through accumulated use
 
-**Design approaches available**:
-- Pure short-term: Deliver immediate value, that's the complete product
-- Pure long-term: End users are committed to the journey, no short-term touchpoints needed
-- Hybrid: Long-term goal with optional short-term touchpoints (XP, streaks, milestones)
-- All three approaches are valid - choose based on product nature and end user context
+**Observations from existing products**:
+- Some products provide primarily immediate value perception (e.g., calculators)
+- Some products provide primarily delayed value perception (e.g., certain long-term investment vehicles)
+- Some products provide both (e.g., Duolingo provides immediate progress feedback and long-term skill development)
+- Products can succeed with any of these structures
 
 **Analysis method**:
-Identify the primary value timeline. Assess whether the approach matches the product's nature and target end users' expectations. Don't force short-term mechanisms if end users are already committed to long-term goals.
+Examine when end users will perceive they have achieved something. If the timing of value perception is unclear, explore with the user what end users will achieve and when they will notice it. If end users cannot perceive clear achievement at any point, this indicates a potential adoption challenge.
 
 ### 3. Value Perception
 
@@ -115,20 +150,26 @@ Identify the primary value timeline. Assess whether the approach matches the pro
 - Can end users show others what they've accomplished?
 
 **Why this matters**:
-Invisible value feels like no value to end users. Progress must be perceivable.
+Invisible value tends to feel like no value to end users. Progress is more effective when perceivable.
+
+**Note**: "Perceivable" takes different forms across product types:
+- Consumer products: Immediate visual feedback in UI (file appears, photo enhanced)
+- Enterprise software: Reports, dashboards, metrics, analytics
+- Developer tools: Build outputs, test results, performance metrics
+- The key is that end users can point to something concrete that shows value was delivered
 
 **Visible outcomes for end users**:
 - Dropbox: File appears on other device (tangible)
 - Instagram: Beautiful photo with likes (tangible)
 - GitHub: Contribution graph (tangible)
 - Duolingo: Streak counter (tangible)
-- Insight: Make achievements visible and shareable
+- Observation: Achievements that are visible and shareable
 
 **Invisible outcomes** (problematic for end users):
 - "Your data is synced" (abstract, can't see it)
 - "Security improved" (no visible change)
 - "Algorithm optimized" (nothing looks different)
-- Lesson: Technical improvements need visible manifestations
+- Observation: Technical improvements need visible manifestations
 
 **Analysis method**:
 Identify what end users can point to and say "I achieved this". If the value is invisible, explore ways to make it tangible through UI, notifications, or progress indicators.
@@ -141,19 +182,19 @@ Identify what end users can point to and say "I achieved this". If the value is 
 - How to help end users discover value they don't yet recognize?
 
 **Why this matters**:
-Sometimes end users don't know what they want until they experience it. The product must help them discover it quickly.
+Sometimes end users don't know what they want until they experience it. Products that help them discover value quickly tend to succeed.
 
 **Discovery pattern - Instagram** (see `references/real-cases.md` for growth data):
 - End users thought they wanted: "Share photos"
 - End users discovered they valued: "Become a photographer" (identity)
-- Approach: Instagram helped discovery through filters, likes, and social validation
-- Insight: Design for identity transformation, not just utility
+- Instagram helped discovery through filters, likes, and social validation
+- Observation: Instagram's success came from enabling identity transformation, not just photo sharing utility
 
 **Discovery pattern - Notion**:
 - End users thought they wanted: "Take notes"
 - End users discovered they valued: "Become organized" (identity)
-- Approach: Notion helped discovery through flexible databases and templates
-- Insight: Enable end users to discover their own organizational style
+- Notion helped discovery through flexible databases and templates
+- Observation: Enable end users to discover their own organizational style
 
 **Analysis method**:
 Determine whether end users already know what they want, or need to discover it. If discovery is needed, identify the fastest path to the "aha" moment through onboarding, tutorials, or progressive feature revelation.
@@ -164,46 +205,54 @@ These aren't rules to follow - they're patterns to consider when analyzing speci
 
 For detailed case studies with real data, see `references/real-cases.md` (English) or `references/real-cases-zh.md` (中文).
 
-### Pattern: Short-term vs Long-term Value
+### Pattern: Value Perception Timing
 
-**Both short-term and long-term value are valid** - the choice depends on the product's nature, specific scenario, and end user context. Neither is superior; each serves different product goals.
+End users perceive value at different time points depending on the product.
 
-**Short-term value products** (Dropbox, Zoom, Stripe):
-- End user experience: Value is immediate and tangible
-- Strength: Clear "aha moment", fast adoption
-- Valid for: Products where immediate utility is the core value
-- Marketing approach: Show end users the immediate result
+**Immediate perception examples**:
+- Search engines: End users obtain answers to their questions
+- Calculators: End users get calculation results
+- Dropbox: End users access files on another device after upload
+- Duolingo: End users complete lessons and see progress indicators
+- Code analysis tools: End users receive evaluation reports
+- Pattern: End users perceive achievement during or right after use
 
-**Long-term value products** (Duolingo, Peloton, investment apps):
-- End user experience: Value accumulates over time
-- Strength: Deep end user commitment once adopted
-- Valid for: Products where accumulated results are the core value
-- Marketing approach: Show end users aspiration and the journey
+**Delayed perception examples**:
+- Duolingo: End users develop language fluency over months
+- Fitness apps: End users observe body transformation after consistent training
+- Investment products: End users see wealth accumulation over years
+- GitHub: End users build code history and reputation over time
+- Pattern: End users perceive achievement after sustained use
 
-**Optional design elements** (for products that choose to use them):
-- Immediate feedback: Confirm to end users that action worked
-- Short-term milestones: Show end users progress
-- Social validation: Provide end users community support
-- Identity formation: Tell end users "You're a runner" from day one
+**Products with both perception types**:
+- Duolingo: Immediate progress feedback + long-term skill development
+- Dropbox: Instant file access + long-term reliability
+- Fitness apps: Workout completion + body transformation over time
+- Pattern: End users perceive different achievements at different time points
 
-**Important**: These design elements are optional tools, not requirements. Base decisions on:
-- The product's specific scenario and conditions
-- The product's natural style and positioning
-- Whether target end users need encouragement or are already committed
+**Products with primarily one perception type**:
+- Calculators: Primarily immediate (instant results)
+- Search engines: Primarily immediate (instant answers)
+- Certain investment vehicles: Primarily delayed (returns after years)
+- Pattern: Perception timing matches product purpose
 
-Some products succeed with pure short-term value for end users. Some succeed with pure long-term value. Some combine both. All approaches are valid.
+**Observations**:
+- Neither perception timing is inherently superior
+- Products can succeed with either timing or both
+- Perception structure depends on what end users aim to achieve
 
 ### Pattern: Value Communication
 
-**What works for end users**:
-- Concrete outcomes: "Access files from any device"
-- Identity transformation: "Become a photographer"
-- Problem resolution: "Never lose work again"
+**Products using concrete outcome descriptions**:
+- Dropbox: "Access files from any device"
+- Instagram: "Become a photographer" (identity transformation)
+- Observation: These products use concrete, achievable outcome descriptions
 
-**What doesn't work for end users**:
-- Feature lists: "Cloud storage with 2GB free"
-- Technical jargon: "Distributed file synchronization"
-- Vague benefits: "Better productivity"
+**Products using technical or feature descriptions**:
+- Google Wave: "Unified communication" (technical concept)
+- Some products: "Cloud storage with 2GB free" (feature list)
+- Some products: "Distributed file synchronization" (technical jargon)
+- Observation: These descriptions make it harder for end users to understand what they'll achieve
 
 ## Real Examples
 
@@ -213,35 +262,35 @@ For complete case studies with metrics and data sources, see `references/real-ca
 - **Value to end users**: Access files from any device
 - **Timeline**: Immediate (< 5 minutes)
 - **End user perception**: File visibly appears on other device
-- **Why it worked**: Clear, immediate, visible value for end users
-- **Data**: 3900% growth in 15 months (see references)
+- **Observation**: Clear, immediate, visible value for end users
+- **Data**: 100K to 4M users in 18 months (see references)
 
 ### Success: Duolingo
 - **Value to end users**: Learn a language (long-term)
 - **Timeline**: 6-12 months for fluency
 - **End user perception**: XP, streaks, levels (immediate feedback)
-- **Why it works**: Long-term goal with optional short-term touchpoints
+- **Observation**: Long-term goal with immediate feedback mechanisms
 - **Data**: 500M+ users, 3x retention improvement (see references)
 
 ### Success: WeChat
 - **Value to end users**: Efficient problem-solving (not time-wasting)
 - **Philosophy**: "Use and go" - respect end user time
-- **Why it worked**: Trust through non-addictive design
+- **Observation**: Trust through non-addictive design
 - **Data**: 1.3B monthly active users (see references)
 
 ### Failure: Google Wave
 - **Problem**: End users couldn't explain what they'd achieve
-- **Lesson**: Features ≠ Value. End users need to know what they'll accomplish.
+- **Observation**: Products where end users cannot articulate value face adoption challenges
 - **Data**: Shut down 14 months after launch (see references)
 
 ### Failure: Quibi
 - **Problem**: "10-minute videos on mobile" wasn't a value end users recognized
-- **Lesson**: End users already had YouTube/TikTok. No clear additional value.
+- **Observation**: End users already had YouTube/TikTok. No clear additional value.
 - **Data**: $1.75B funding, shut down in 6 months (see references)
 
 ## When This Framework Applies
 
-**Best for**:
+**Most applicable for**:
 - Consumer products (B2C)
 - Competitive markets (end users have alternatives)
 - Products requiring adoption and retention
@@ -252,31 +301,31 @@ For complete case studies with metrics and data sources, see `references/real-ca
 - Monopoly products (end users have no choice)
 - Products where value IS delayed by nature (investing, insurance)
 
-## Common Pitfalls
+## Observed Patterns
 
-### Pitfall 1: Assuming End Users Know What They Want
+### Pattern 1: Assuming End Users Know What They Want
 
-**The trap**: Building exactly what end users ask for
-**The reality**: End users often don't know what they actually need
-**The approach**: Help end users discover the real value through conversation and exploration
+**Observation**: Building exactly what end users ask for
+**Reality**: End users often don't know what they actually need
+**Observed in practice**: Products that help end users discover the real value through conversation and exploration
 
-### Pitfall 2: Focusing on Features Instead of Value
+### Pattern 2: Focusing on Features Instead of Value
 
-**The trap**: "Our product has X, Y, Z features"
-**The reality**: End users don't care about features, they care about what they'll achieve
-**The approach**: Always translate features into value: "Feature X helps end users achieve Y"
+**Observation**: "Our product has X, Y, Z features"
+**Reality**: End users don't care about features, they care about what they'll achieve
+**Observed in practice**: Translating features into value: "Feature X helps end users achieve Y"
 
-### Pitfall 3: Copying Patterns Without Context
+### Pattern 3: Copying Patterns Without Context
 
-**The trap**: "Duolingo uses streaks, so we should too"
-**The reality**: Streaks work for daily habits, not for episodic use
-**The approach**: Understand why a pattern works for end users, then adapt to specific context
+**Observation**: "Duolingo uses streaks, so we should too"
+**Reality**: Streaks work for daily habits, not for episodic use
+**Observed in practice**: Understanding why a pattern works for end users, then adapting to specific context
 
-### Pitfall 4: Invisible Value
+### Pattern 4: Invisible Value
 
-**The trap**: "Our algorithm is 10x better"
-**The reality**: If end users can't see/feel the improvement, it doesn't matter
-**The approach**: Make value tangible and visible to end users
+**Observation**: "Our algorithm is 10x better"
+**Reality**: If end users can't see/feel the improvement, it doesn't matter
+**Observed in practice**: Making value tangible and visible to end users
 
 ## Research Methodology
 
@@ -328,12 +377,12 @@ If the user's product differs significantly from reference cases (e.g., B2B infr
 - Claiming specific adoption patterns or metrics
 - Comparing to real products or market examples
 - Stating what "works" or "doesn't work" in practice
-- Making recommendations based on industry precedents
+- Conducting analysis based on industry precedents
 
 **Process**:
 1. Explore possibilities through discussion and brainstorming
 2. When specific claims or comparisons arise, verify with research
-3. Base final recommendations on verified patterns, not assumptions
+3. Conduct analysis based on verified patterns, not assumptions
 4. Acknowledge when evidence is limited or context differs from known cases
 
 ### Research Sources
@@ -355,6 +404,42 @@ If the user's product differs significantly from reference cases (e.g., B2B infr
 - Making claims without verifiable sources
 - Treating reference cases as prescriptive templates
 
+## Guiding Principles
+
+### Core Distinctions
+
+**User vs End user**:
+- User: The person using this skill (product creator, PM, designer, entrepreneur, etc.)
+- End user: The person who will use the product being discussed
+- These are distinct roles with different perspectives
+
+**Features vs Value**:
+- Features: What the product does (technical capabilities)
+- Value: What end users achieve through the product (outcomes, benefits)
+- End users adopt products based on value, not features
+
+**Value perception timing**:
+- Immediate perception: End users perceive they achieved something during or right after use
+- Delayed perception: End users perceive they achieved something after sustained use over time
+- These are not mutually exclusive; products can provide both
+- Neither is inherently superior; each addresses different end user needs
+
+### Research Approach
+
+**When encountering unfamiliar concepts**:
+- Research mentioned products, technologies, or domain-specific terms
+- Use WebFetch or WebSearch to gather current information
+- Seek official documentation, published metrics, and verified sources
+
+**Balancing exploration and evidence**:
+- Exploratory thinking: Appropriate when identifying potential value types or brainstorming approaches
+- Evidence-based analysis: Required when claiming specific patterns, comparing to real products, or stating what works in practice
+
+**Evaluating case applicability**:
+- Reference cases illustrate patterns, not universal rules
+- Assess whether product type, market context, user behavior, and value delivery match
+- When cases do not apply, research comparable products in the relevant domain
+
 ## How to Use This Skill
 
 This skill works best in conversation. When the user discusses a product idea:
@@ -366,12 +451,14 @@ This skill works best in conversation. When the user discusses a product idea:
 
 **This isn't a checklist** - it's a way of thinking. Each product is different. Each market is different. The goal is to think clearly about whether end users will "know" what value they'll get.
 
+**Research during analysis**: When the user mentions specific products, technologies, or concepts, this skill may research them via WebFetch or WebSearch to provide context-appropriate analysis based on current information rather than assumptions.
+
 ## Key Principles
 
-1. **End users must "know" what value they'll achieve** - even if it takes time
+1. **End users are more likely to adopt when they can articulate what value they'll achieve** - even if it takes time
 2. **Value types are diverse** - identity, money, benefits, status, capability, and more
-3. **End users often don't know what they want** - help them discover it
-4. **Perception matters to end users** - invisible value feels like no value
+3. **In consumer products, end users often don't know what they want** - help them discover it
+4. **Perception matters to end users** - invisible value tends to feel like no value (though "perceivable" varies by product type)
 5. **Context is everything** - patterns from one product may not apply to others
 6. **Test with real end users, don't assume** - validate in specific scenarios
 7. **Both short-term and long-term are valid** - neither is superior, choose based on product nature

@@ -54,10 +54,15 @@ Triggers when you:
 Includes quantitative analysis of real products:
 
 **✅ Success**
-- **Dropbox**: 3900% growth in 15 months — clear value proposition
+- **Dropbox**: Clear value proposition — file access from any device
 - **Instagram**: Identity transformation from photo sharing to photographer status
 - **Duolingo**: 500M+ users — long-term value with optional short-term touchpoints
 - **WeChat**: 1.3B users — "use and go" philosophy building trust
+- **GitHub**: 100M+ developers — code backup and collaboration
+- **Notion**: 30M+ users — flexible knowledge management
+- **Netflix**: 230M+ subscribers — entertainment with personalized recommendations
+- **Slack**: 18M+ daily active users — team communication and searchable history
+- **MyFitnessPal**: 200M+ users — calorie tracking for weight loss
 
 **❌ Failure**
 - **Google Wave**: Shut down 14 months after launch — abstract value proposition
@@ -78,11 +83,12 @@ Both versions include complete documentation and case studies.
 
 ## Philosophy
 
-End users adopt products when they **know** what value they'll achieve.
+End users are more likely to adopt products when they can articulate what value they'll achieve.
 
-**Core insight:**
-- If end users know they'll achieve something valuable (even long-term), they'll use it
-- If end users don't know what they'll achieve, they won't use it — no matter how good the product is
+**Central observation:**
+- When end users can articulate clear value → higher adoption rates
+- When end users cannot articulate value → adoption challenges
+- Some end users adopt without full clarity, then discover value through use
 
 **Value types:** Identity, financial gain, short/long-term benefits, status, capability, time savings, problem resolution.
 
