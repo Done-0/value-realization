@@ -1,14 +1,14 @@
 ---
 name: value-realization
-version: 1.1.3
 description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing user adoption problems, or when the user expresses uncertainty about product direction (e.g., 'is this idea good?', 'what do you think of this?', 'will users want this?', 'why aren't users staying?', 'how should we position this?')."
-allowed-tools: Read, WebFetch, WebSearch, Grep, Glob
+allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 ---
 
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Last Updated**: 2026-02-20
+**Version**: 1.1.4
+**Last Updated**: 2026-02-21
 **Type**: Analytical Framework
 
 ## Overview
@@ -301,22 +301,13 @@ For complete case studies with metrics and data sources, see `references/real-ca
 
 ## Research Methodology
 
-### When to Research New Concepts
+### Verify Information Accuracy
 
-When the user mentions specific products, projects, technologies, or domain-specific concepts, research them before applying this framework.
+When citing real product cases, base on verifiable information and explain relevance to current product.
 
-**Research these elements**:
-- Product names or projects mentioned by the user
-- Industry-specific terminology or market segments
-- Competitor products or similar solutions
-- Recent developments or version changes in mentioned technologies
-
-**Method**:
-WebFetch or WebSearch to gather current information:
-- Official product documentation or websites
-- Recent news, launch announcements, or updates
-- User reviews, adoption metrics, or market reception
-- Technical specifications or feature sets
+**Tool Availability**:
+- WebFetch and WebSearch available for verifying information
+- When research fails, proceed with analysis based on framework and clearly indicate which information needs verification
 
 ### Evaluating Case Study Applicability
 
