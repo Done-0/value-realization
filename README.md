@@ -1,6 +1,6 @@
 # Value Realization
 
-Evaluate product ideas by analyzing whether end users will discover clear value.
+Evaluate product ideas by analyzing whether end users will "know" what value they can achieve.
 
 Guides analysis of value clarity, timeline, perception, and discovery patterns.
 
@@ -27,7 +27,7 @@ If you don't have Node.js installed:
 
 ## What It Does
 
-Analyzes product ideas through four dimensions:
+Analyzes product ideas through four dimensions with status indicators (🔴🟡🟢):
 
 | Dimension | Question |
 |-----------|----------|
@@ -35,6 +35,8 @@ Analyzes product ideas through four dimensions:
 | **Value Timeline** | When do end users see results? |
 | **Value Perception** | Can end users see/feel their progress? |
 | **Value Discovery** | How do end users come to understand the value? |
+
+Each dimension receives a status assessment with analytical reasoning and sharp questions that challenge product necessity.
 
 ---
 
@@ -83,14 +85,18 @@ Both versions include complete documentation and case studies.
 
 ## Philosophy
 
-End users are more likely to adopt products when they can articulate what value they'll achieve.
+End users adopt products when they can articulate what value they'll achieve.
+
+**Key distinction:**
+- **User**: The person using this skill (product creator, PM, designer, entrepreneur)
+- **End user**: The person who will use the product being discussed
 
 **Central observation:**
 - When end users can articulate clear value → higher adoption rates
 - When end users cannot articulate value → adoption challenges
 - Some end users adopt without full clarity, then discover value through use
 
-**Value types:** Identity, financial gain, short/long-term benefits, status, capability, time savings, problem resolution.
+**Value types:** Identity and belonging, financial gain, short/long-term benefits, status and recognition, capability enhancement, time savings, problem resolution.
 
 ---
 
