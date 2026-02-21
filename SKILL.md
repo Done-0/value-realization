@@ -1,6 +1,6 @@
 ---
 name: value-realization
-version: 1.1.2
+version: 1.1.3
 description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing user adoption problems, or when the user expresses uncertainty about product direction (e.g., 'is this idea good?', 'what do you think of this?', 'will users want this?', 'why aren't users staying?', 'how should we position this?')."
 allowed-tools: Read, WebFetch, WebSearch, Grep, Glob
 ---
@@ -26,7 +26,13 @@ This skill provides a philosophical framework and analytical methods for evaluat
 **Key terminology**:
 - **User**: The person using this skill (product creator, PM, designer, entrepreneur, etc.)
 - **End user**: The person who will use the product being discussed
-- **Value**: What end users achieve through the product (identity, money, benefits, etc.)
+- **Value**: What end users achieve through the product (outcomes such as identity, financial gain, capability enhancement, time savings, etc.)
+- **Features**: What the product does (technical capabilities)
+
+**Core distinction**:
+- Features are not value
+- Features are what the product can do, value is what end users achieve
+- Analysis examines whether features translate into end user outcomes
 
 ## The Central Insight
 
@@ -70,7 +76,19 @@ This skill operates through conversational analysis. When the user presents a pr
 3. **Evaluate through four dimensions** - Value clarity, timeline, perception, discovery
 4. **Consider context** - Each product, market, and end user group differs
 
-This framework guides thinking. It does not prescribe solutions.
+**This framework guides thinking. It does not prescribe solutions.**
+
+**Analysis approach:**
+- Must complete analysis of all four dimensions, each dimension as independent section
+- For each dimension:
+  1. Provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not generic)
+  2. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
+  3. Systematically apply the dimension's analytical methods to the product idea (cannot skip analysis and jump to questions)
+  4. When citing real product cases, base on verifiable information and explain relevance to current product
+  5. Pose sharp questions that directly challenge product necessity or require comparison with existing solutions
+- After completing all four dimensions, provide summary
+- Avoid logical gaps, show complete reasoning chain
+- Guide users to make decisions based on analysis
 
 ## Analysis Framework
 
