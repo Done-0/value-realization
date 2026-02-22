@@ -91,7 +91,7 @@ End users adopt products when they can articulate what value they'll achieve.
 - **User**: The person using this skill (product creator, PM, designer, entrepreneur)
 - **End user**: The person who will use the product being discussed
 
-**Central observation:**
+**Observed patterns:**
 - When end users can articulate clear value → higher adoption rates
 - When end users cannot articulate value → adoption challenges
 - Some end users adopt without full clarity, then discover value through use

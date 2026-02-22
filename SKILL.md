@@ -1,6 +1,6 @@
 ---
 name: value-realization
-description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing user adoption problems, or when the user expresses uncertainty about product direction (e.g., 'is this idea good?', 'what do you think of this?', 'will users want this?', 'why aren't users staying?', 'how should we position this?')."
+description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing user adoption problems, or when the user expresses uncertainty about product direction (e.g., 'is this idea good?', 'what do you think of this product?', 'how about my idea?', 'will users want this?', 'why aren't users staying?', 'how should we position this?')."
 allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 ---
 
@@ -13,7 +13,7 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 
 ## Overview
 
-This skill provides a philosophical framework and analytical methods for evaluating whether end users will "know" what value they can achieve through a product. Guides analysis through the lens of value discovery, not by providing checklists.
+This skill provides a philosophical framework and analytical methods for evaluating whether end users will "know" what value they can achieve through a product. It guides analysis through the lens of value discovery, rather than providing checklists.
 
 **What this skill provides**:
 - Framework to evaluate product ideas when certainty is lacking
@@ -21,20 +21,20 @@ This skill provides a philosophical framework and analytical methods for evaluat
 - Patterns from real product successes and failures
 - Analysis methods for product design and positioning
 
-**Core question**: Can end users clearly understand what value they'll realize through the product - even if that value takes time to achieve?
+**Core question**: Can end users clearly understand what value they'll achieve through the product - even if that value takes time to achieve?
 
 **Key terminology**:
 - **User**: The person using this skill (product creator, PM, designer, entrepreneur, etc.)
 - **End user**: The person who will use the product being discussed
 - **Value**: What end users achieve through the product (outcomes such as identity, financial gain, capability enhancement, time savings, etc.)
-- **Features**: What the product does (technical capabilities)
+- **Features**: The product's technical capabilities
 
 **Core distinction**:
 - Features are not value
 - Features are what the product can do, value is what end users achieve
-- Analysis examines whether features translate into end user outcomes
+- Analysis must translate features into specific end user outcomes
 
-## The Central Insight
+## Core Insight
 
 End users adopt products when they **know** what value they'll get. This "knowing" is critical:
 
@@ -44,7 +44,7 @@ End users adopt products when they **know** what value they'll get. This "knowin
 **What "knowing" means**:
 - End users can explain to themselves or others why they're using the product
 - End users can describe what they'll achieve (not just what features exist)
-- End users understand the outcome, even if it takes time to materialize
+- End users understand the outcome, even if it takes time to achieve
 
 **Observed patterns**:
 - When end users can articulate clear value → higher adoption rates
@@ -63,7 +63,7 @@ End users adopt products when they **know** what value they'll get. This "knowin
 
 ## The Challenge
 
-Most product creators face a hidden problem: **end users often don't know what they actually want, and their stated methods may be wrong**.
+Most product creators face a hidden problem: **end users often don't know what they actually want, and how they articulate it may be wrong**.
 
 The job isn't just to build what end users ask for - it's to help end users discover what value they're actually seeking.
 
@@ -80,7 +80,7 @@ This skill operates through conversational analysis. When the user presents a pr
 
 **Analysis approach:**
 - Must complete analysis of all four dimensions, each dimension as independent section
-- For each dimension:
+- Analysis process for each dimension:
   1. Provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not generic)
   2. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
   3. Systematically apply the dimension's analytical methods to the product idea (cannot skip analysis and jump to questions)
@@ -113,7 +113,7 @@ End users won't adopt a product if they can't explain to themselves (or others) 
 **Real example - Google Wave** (see `references/real-cases.md` for detailed analysis):
 - Vague value to end users: "Unified communication"
 - End users couldn't explain what they'd achieve
-- Failed despite innovative features
+- Shut down 14 months after launch despite innovative features
 - Lesson: Features without clear value = no adoption
 
 **Analysis method**:
@@ -133,13 +133,13 @@ Both short-term and long-term value are valid approaches. The choice depends on 
 - Dropbox: Upload → see file on other device (< 5 minutes)
 - Zoom: Click link → join meeting (< 30 seconds)
 - Stripe: Run test payment → see it work (< 1 minute)
-- Consideration: Immediate value is the complete offering
+- Key consideration: Immediate value is the complete product
 
 **Long-term value products** (end users see results in weeks/months):
 - Duolingo: Language fluency (6-12 months)
 - Fitness apps: Body transformation (3-6 months)
 - Investment apps: Wealth building (years)
-- Consideration: End users commit to the journey
+- Key consideration: End users commit to the journey
 
 **Design approaches available**:
 - Pure short-term: Deliver immediate value, that's the complete product
@@ -155,7 +155,7 @@ Identify the primary value timeline. Assess whether the approach matches the pro
 **Examine**:
 - Can end users see/feel what they achieved?
 - Is progress tangible or abstract to end users?
-- Can end users show others what they've accomplished?
+- Can end users show others what they've achieved?
 
 **Why this matters**:
 Invisible value feels like no value to end users. Progress must be perceivable.
@@ -171,13 +171,13 @@ Invisible value feels like no value to end users. Progress must be perceivable.
 - Instagram: Beautiful photo with likes (tangible)
 - GitHub: Contribution graph (tangible)
 - Duolingo: Streak counter (tangible)
-- Observation: Achievements that are visible and shareable
+- Observation: These products make achievements visible and shareable
 
 **Invisible outcomes** (problematic for end users):
 - "Your data is synced" (abstract, can't see it)
 - "Security improved" (no visible change)
 - "Algorithm optimized" (nothing looks different)
-- Observation: Technical improvements need visible manifestations
+- Observation: Technical improvements are difficult for end users to perceive without visible manifestations
 
 **Analysis method**:
 Identify what end users can point to and say "I achieved this". If the value is invisible, explore ways to make it tangible through UI, notifications, or progress indicators.
@@ -196,13 +196,12 @@ Sometimes end users don't know what they want until they experience it. The prod
 - End users thought they wanted: "Share photos"
 - End users discovered they valued: "Become a photographer" (identity)
 - Instagram helped discovery through filters, likes, and social validation
-- Observation: Instagram's success came from enabling identity transformation, not just photo sharing utility
+- Insight: Instagram's success came from enabling identity transformation, not just photo sharing utility
 
 **Discovery pattern - Notion**:
 - End users thought they wanted: "Take notes"
 - End users discovered they valued: "Become organized" (identity)
 - Notion helped discovery through flexible databases and templates
-- Observation: Enable end users to discover their own organizational style
 
 **Analysis method**:
 Determine whether end users already know what they want, or need to discover it. If discovery is needed, identify the fastest path to the "aha" moment through onboarding, tutorials, or progressive feature revelation.
@@ -252,7 +251,7 @@ For complete case studies with metrics and data sources, see `references/real-ca
 
 ### Failure: Google Wave
 - **Problem**: End users couldn't explain what they'd achieve
-- **Lesson**: Features ≠ Value. End users need to know what they'll accomplish.
+- **Lesson**: Features ≠ Value. End users need to know what they'll achieve.
 - **Data**: Shut down 14 months after launch (see references)
 
 ### Failure: Quibi
