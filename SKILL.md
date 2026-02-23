@@ -7,13 +7,13 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.1.4
-**Last Updated**: 2026-02-21
+**Version**: 1.1.5
+**Last Updated**: 2026-02-23
 **Type**: Analytical Framework
 
 ## Overview
 
-This skill provides a philosophical framework and analytical methods for evaluating whether end users will "know" what value they can achieve through a product. It guides analysis through the lens of value discovery, rather than providing checklists.
+This skill provides a philosophical framework and analytical methods for evaluating whether end users can "know" what value they can achieve through a product. It guides analysis from a value discovery perspective, rather than providing checklists.
 
 **What this skill provides**:
 - Framework to evaluate product ideas when certainty is lacking
@@ -26,12 +26,12 @@ This skill provides a philosophical framework and analytical methods for evaluat
 **Key terminology**:
 - **User**: The person using this skill (product creator, PM, designer, entrepreneur, etc.)
 - **End user**: The person who will use the product being discussed
-- **Value**: What end users achieve through the product (outcomes such as identity, financial gain, capability enhancement, time savings, etc.)
+- **Value**: The outcomes end users achieve through the product (such as identity, financial gain, capability enhancement, time savings, etc.)
 - **Features**: The product's technical capabilities
 
 **Core distinction**:
 - Features are not value
-- Features are what the product can do, value is what end users achieve
+- Features are what the product can do, value is the outcomes end users gain
 - Analysis must translate features into specific end user outcomes
 
 ## Core Insight
@@ -81,9 +81,9 @@ This skill operates through conversational analysis. When the user presents a pr
 **Analysis approach:**
 - Must complete analysis of all four dimensions, each dimension as independent section
 - Analysis process for each dimension:
-  1. Provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not generic)
+  1. Provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not vague generalizations)
   2. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
-  3. Systematically apply the dimension's analytical methods to the product idea (cannot skip analysis and jump to questions)
+  3. Systematically apply the dimension's analytical methods to the product idea (cannot skip the analysis and jump directly to questions)
   4. When citing real product cases, base on verifiable information and explain relevance to current product
   5. Pose sharp questions that directly challenge product necessity or require comparison with existing solutions
 - After completing all four dimensions, provide summary
@@ -208,7 +208,7 @@ Determine whether end users already know what they want, or need to discover it.
 
 ## Patterns from Real Products
 
-These aren't rules to follow - they're patterns to consider when analyzing specific situations.
+These aren't rules to follow - they're observed patterns to consider when analyzing specific situations.
 
 For detailed case studies with real data, see `references/real-cases.md` (English) or `references/real-cases-zh.md` (中文).
 
@@ -270,7 +270,7 @@ For complete case studies with metrics and data sources, see `references/real-ca
 **Less applicable for**:
 - Enterprise software (decision makers ≠ end users, switching costs high)
 - Monopoly products (end users have no choice)
-- Products where value IS delayed by nature (investing, insurance)
+- Products where value is inherently delayed (investing, insurance)
 
 ## Common Pitfalls
 
@@ -310,7 +310,7 @@ When citing real product cases, base on verifiable information and explain relev
 
 ### Evaluating Case Study Applicability
 
-The cases in `references/real-cases.md` (Dropbox, Instagram, Duolingo, WeChat, Google Wave, Quibi) illustrate patterns, not universal rules.
+The cases in `references/real-cases.md` (Dropbox, Instagram, Duolingo, WeChat, Google Wave, Quibi) illustrate patterns, rather than universal rules.
 
 **Assess applicability**:
 - **Product type match**: B2C consumer apps vs B2B developer tools vs enterprise software
@@ -381,8 +381,8 @@ If the user's product differs significantly from reference cases (e.g., B2B infr
 - End users adopt products based on value, not features
 
 **Value perception timing**:
-- Immediate perception: End users perceive they achieved something during or right after use
-- Delayed perception: End users perceive they achieved something after sustained use over time
+- Immediate perception: End users perceive they gained something during or right after use
+- Delayed perception: End users perceive they gained something after sustained use over time
 - These are not mutually exclusive; products can provide both
 - Neither is inherently superior; each addresses different end user needs
 
