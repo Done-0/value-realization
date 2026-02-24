@@ -1,13 +1,13 @@
 ---
 name: value-realization
-description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing user adoption problems, or when the user expresses uncertainty about product direction (e.g., 'is this idea good?', 'what do you think of this product?', 'how about my idea?', 'will users want this?', 'why aren't users staying?', 'how should we position this?')."
+description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing user adoption problems, or when the user expresses uncertainty about product direction (e.g., 'evaluate this product idea', 'will users adopt this', 'why aren't users retaining', 'analyze the value proposition', 'product-market fit', 'user adoption analysis')."
 allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 ---
 
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.1.5
+**Version**: 1.1.6
 **Last Updated**: 2026-02-23
 **Type**: Analytical Framework
 
@@ -81,7 +81,7 @@ This skill operates through conversational analysis. When the user presents a pr
 **Analysis approach:**
 - Must complete analysis of all four dimensions, each dimension as independent section
 - Analysis process for each dimension:
-  1. Provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not vague generalizations)
+  1. Provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not vague generalizations). Reference criteria for status indicators: `references/scoring-rubric.md`
   2. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
   3. Systematically apply the dimension's analytical methods to the product idea (cannot skip the analysis and jump directly to questions)
   4. When citing real product cases, base on verifiable information and explain relevance to current product
@@ -228,36 +228,6 @@ For detailed case studies with real data, see `references/real-cases.md` (Englis
 ## Real Examples
 
 For complete case studies with metrics and data sources, see `references/real-cases.md`.
-
-### Success: Dropbox
-- **Value to end users**: Access files from any device
-- **Timeline**: Immediate (< 5 minutes)
-- **End user perception**: File visibly appears on other device
-- **Why it worked**: Clear, immediate, visible value for end users
-- **Data**: 3900% growth in 15 months (see references)
-
-### Success: Duolingo
-- **Value to end users**: Learn a language (long-term)
-- **Timeline**: 6-12 months for fluency
-- **End user perception**: XP, streaks, levels (immediate feedback)
-- **Why it works**: Long-term goal with optional short-term touchpoints
-- **Data**: 500M+ users, 3x retention improvement (see references)
-
-### Success: WeChat
-- **Value to end users**: Efficient problem-solving (not time-wasting)
-- **Philosophy**: "Use and go" - respect end user time
-- **Why it worked**: Trust through non-addictive design
-- **Data**: 1.3B monthly active users (see references)
-
-### Failure: Google Wave
-- **Problem**: End users couldn't explain what they'd achieve
-- **Lesson**: Features ≠ Value. End users need to know what they'll achieve.
-- **Data**: Shut down 14 months after launch (see references)
-
-### Failure: Quibi
-- **Problem**: "10-minute videos on mobile" wasn't a value end users recognized
-- **Lesson**: End users already had YouTube/TikTok. No clear additional value.
-- **Data**: $1.75B funding, shut down in 6 months (see references)
 
 ## When This Framework Applies
 
