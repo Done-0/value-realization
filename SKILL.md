@@ -7,8 +7,8 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.1.6
-**Last Updated**: 2026-02-23
+**Version**: 1.1.7
+**Last Updated**: 2026-02-24
 **Type**: Analytical Framework
 
 ## Overview
@@ -84,7 +84,7 @@ This skill operates through conversational analysis. When the user presents a pr
   1. Provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not vague generalizations). Reference criteria for status indicators: `references/scoring-rubric.md`
   2. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
   3. Systematically apply the dimension's analytical methods to the product idea (cannot skip the analysis and jump directly to questions)
-  4. When citing real product cases, base on verifiable information and explain relevance to current product
+  4. When citing product cases, base on verifiable information and explain relevance to current product (case applicability assessment in "Research Methodology" section)
   5. Pose sharp questions that directly challenge product necessity or require comparison with existing solutions
 - After completing all four dimensions, provide summary
 - Avoid logical gaps, show complete reasoning chain
@@ -399,9 +399,13 @@ This skill works best in conversation. When the user discusses a product idea:
 
 ### Reference Files
 
-For detailed case studies with real data and metrics:
-- **`references/real-cases.md`** - Complete analysis of Dropbox, Instagram, Duolingo, WeChat, Google Wave, and Quibi with real numbers and data sources
-- **`references/real-cases-zh.md`** - 中文版真实案例分析
+Case studies include quantitative data and data sources:
+- **`references/real-cases.md`** - Dropbox, Instagram, Duolingo, WeChat, Google Wave, Quibi case studies (English)
+- **`references/real-cases-zh.md`** - Dropbox、Instagram、Duolingo、微信、Google Wave、Quibi 的案例分析（中文）
+
+Status indicator reference criteria:
+- **`references/scoring-rubric.md`** - Reference criteria for status indicators (🔴🟡🟢) across four dimensions: value clarity, timeline, perception, discovery (English)
+- **`references/scoring-rubric-zh.md`** - 价值清晰度、价值时间线、价值感知、价值发现四个维度的状态指示符（🔴🟡🟢）参考标准（中文）
 
 ## Remember
 

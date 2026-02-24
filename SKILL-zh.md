@@ -7,8 +7,8 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 # 价值实现哲学
 
 **状态**: 生产就绪 ✅
-**版本**: 1.1.6
-**最后更新**: 2026-02-23
+**版本**: 1.1.7
+**最后更新**: 2026-02-24
 **类型**: 分析框架
 
 ## 概述
@@ -84,7 +84,7 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
   1. 给出状态判断，使用状态指示符（🔴🟡🟢）并具体描述当前状态（不是泛泛而谈）。状态指示符的参考标准见 `references/scoring-rubric-zh.md`
   2. 解释该维度的分析推理（为什么这个维度对该产品重要）
   3. 系统地将该维度的分析方法应用到产品想法上（不能跳过分析直接提问）
-  4. 引用真实产品案例时，基于可验证的信息并说明与当前产品的关联
+  4. 引用产品案例时，基于可验证的信息并说明与当前产品的相关性（案例适用性评估见"研究方法论"章节）
   5. 提出犀利的问题，直接质疑产品存在的必要性或要求与现有方案对比
 - 四个维度分析完成后，再进行总结
 - 避免逻辑跳跃，展示完整推理链条
@@ -399,9 +399,13 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 
 ### 参考文件
 
-详细案例研究、真实数据和指标：
-- **`references/real-cases-zh.md`** - Dropbox、Instagram、Duolingo、微信、Google Wave 和 Quibi 的完整分析，包含真实数字和数据来源
-- **`references/real-cases.md`** - English version of real case studies
+案例研究包含量化数据和数据来源：
+- **`references/real-cases-zh.md`** - Dropbox、Instagram、Duolingo、微信、Google Wave、Quibi 的案例分析（中文）
+- **`references/real-cases.md`** - Dropbox, Instagram, Duolingo, WeChat, Google Wave, Quibi case studies (English)
+
+状态指示符参考标准：
+- **`references/scoring-rubric-zh.md`** - 价值清晰度、价值时间线、价值感知、价值发现四个维度的状态指示符（🔴🟡🟢）参考标准（中文）
+- **`references/scoring-rubric.md`** - Reference criteria for status indicators (🔴🟡🟢) across four dimensions: value clarity, timeline, perception, discovery (English)
 
 ## 记住
 
