@@ -7,8 +7,8 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.1.7
-**Last Updated**: 2026-02-24
+**Version**: 1.1.8
+**Last Updated**: 2026-04-16
 **Type**: Analytical Framework
 
 ## Overview
@@ -83,7 +83,7 @@ This skill operates through conversational analysis. When the user presents a pr
 - Analysis process for each dimension:
   1. Provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not vague generalizations). Reference criteria for status indicators: `references/scoring-rubric.md`
   2. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
-  3. Systematically apply the dimension's analytical methods to the product idea (cannot skip the analysis and jump directly to questions)
+  3. Systematically apply the dimension's analytical methods to the product idea, stating the preconditions and applicability boundaries the judgment depends on (cannot skip the analysis and jump directly to questions)
   4. When citing product cases, base on verifiable information and explain relevance to current product (case applicability assessment in "Research Methodology" section)
   5. Pose sharp questions that directly challenge product necessity or require comparison with existing solutions
 - After completing all four dimensions, provide summary
@@ -268,6 +268,18 @@ For complete case studies with metrics and data sources, see `references/real-ca
 **The reality**: If end users can't see/feel the improvement, it doesn't matter
 **The approach**: Make value tangible and visible to end users
 
+### Pitfall 5: Cross-Context Misuse
+
+**The trap**: "Dropbox succeeded with clear value, so the same conclusion can be applied directly"
+**The reality**: Conclusions only hold under specific preconditions; when original and current contexts differ, the original conclusion may fail
+**The approach**: Restore the preconditions behind the conclusion and verify whether the current situation satisfies them
+
+### Pitfall 6: Cross-Level Misuse
+
+**The trap**: "A judgment holds at the feature level, so the whole product is already validated"
+**The reality**: Local, tactical, short-term conclusions do not equal whole-product, strategic, long-term conclusions
+**The approach**: Determine which level the conclusion belongs to, then judge whether it can be generalized upward
+
 ## Research Methodology
 
 ### Verify Information Accuracy
@@ -278,9 +290,41 @@ When citing real product cases, base on verifiable information and explain relev
 - WebFetch and WebSearch available for verifying information
 - When research fails, proceed with analysis based on framework and clearly indicate which information needs verification
 
+### Condition Archaeology
+
+**Why it matters**:
+Theories and cases are distilled from concrete experience by stripping away contextual factors for easier transmission. What gets stripped away is often not noise, but necessary constraints for the conclusion to hold.
+
+When you see "Dropbox succeeded with clear value," you receive the conclusion itself, but not the preconditions that made it work: competitive market, voluntary choice, individual users, immediate value delivery.
+
+**Common problem**:
+Users believe they've grasped the "law" and apply it directly to new contexts, but the new context may lack the necessary constraints. When it fails, they blame execution or luck rather than checking whether conditions match.
+
+**How to apply**:
+Before citing any theory, pattern, or case conclusion:
+1. Restore the necessary constraints the original conclusion depends on
+2. Verify whether those conditions hold in the current context
+3. Determine the range and boundaries where the conclusion applies
+
+**Key considerations**:
+- Conditions change. Judgments that hold at one stage may fail after conditions change
+- Don't seek to exhaust all conditions, but identify decisive conditions, main failure conditions, and mismatch risks
+- Theory holds under specific conditions and may fail beyond those conditions
+
+**Check during analysis**:
+- Which preconditions and constraints the original case or conclusion depended on
+- Whether those conditions hold in the current situation
+- The range within which the conclusion holds, and beyond which it stops holding
+- Whether the current discussion concerns a local judgment, a whole-product judgment, a short-term judgment, or a long-term judgment
+- Whether the conclusion still holds after conditions change
+
+**Common misuses**:
+- **Cross-context misuse**: Taking a conclusion that holds under one set of preconditions and transferring it directly into a situation with different preconditions
+- **Cross-level misuse**: Treating a local judgment, tactical judgment, or short-term judgment as if it were a whole-product judgment, strategic judgment, or long-term judgment
+
 ### Evaluating Case Study Applicability
 
-The cases in `references/real-cases.md` (Dropbox, Instagram, Duolingo, WeChat, Google Wave, Quibi) illustrate patterns, rather than universal rules.
+The cases in `references/real-cases.md` (Dropbox, Instagram, Duolingo, WeChat, Google Wave, Quibi) illustrate patterns, rather than universal rules. Before using them, restore the preconditions behind those cases and then judge whether they transfer.
 
 **Assess applicability**:
 - **Product type match**: B2C consumer apps vs B2B developer tools vs enterprise software
@@ -290,6 +334,8 @@ The cases in `references/real-cases.md` (Dropbox, Instagram, Duolingo, WeChat, G
 
 **When cases don't apply**:
 If the user's product differs significantly from reference cases (e.g., B2B infrastructure tool vs C2C social app), search for comparable products in the same domain. Analyze those domain-specific examples instead of forcing consumer app patterns onto different contexts.
+
+If you still need to borrow a cross-domain example, first restore the preconditions the original case depends on, then judge which of those conditions are shared and which are different in the current product, and distinguish whether the comparison concerns a local judgment, a whole-product judgment, a short-term judgment, or a long-term judgment.
 
 **Example**:
 - User discusses: Developer infrastructure tool (like Temporal, Kubernetes)
