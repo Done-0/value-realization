@@ -1,14 +1,14 @@
 ---
 name: value-realization
-description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing user adoption problems, or when the user expresses uncertainty about product direction (e.g., 'evaluate this product idea', 'will users adopt this', 'why aren't users retaining', 'analyze the value proposition', 'product-market fit', 'user adoption analysis')."
+description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing adoption or retention problems, assessing whether copy communicates value, mapping features to usage scenarios or use cases, or when the user is uncertain about product direction, positioning, or whether end-user demand exists (e.g., 'is this a good idea?', 'what do you think of this product?', 'will users want this?', 'what is this feature useful for?', 'how should I explain this feature's value?', 'what do you think of this copy?', 'help me write a few usage scenarios', 'why aren't users retaining?', 'how should we position this?')."
 allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 ---
 
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.1.8
-**Last Updated**: 2026-04-16
+**Version**: 1.1.9
+**Last Updated**: 2026-04-27
 **Type**: Analytical Framework
 
 ## Overview
@@ -19,7 +19,7 @@ This skill provides a philosophical framework and analytical methods for evaluat
 - Framework to evaluate product ideas when certainty is lacking
 - Analysis methods for assessing end user value discovery
 - Patterns from real product successes and failures
-- Analysis methods for product design and positioning
+- Analysis methods for product design, positioning, and value communication
 
 **Core question**: Can end users clearly understand what value they'll achieve through the product - even if that value takes time to achieve?
 
@@ -28,11 +28,16 @@ This skill provides a philosophical framework and analytical methods for evaluat
 - **End user**: The person who will use the product being discussed
 - **Value**: The outcomes end users achieve through the product (such as identity, financial gain, capability enhancement, time savings, etc.)
 - **Features**: The product's technical capabilities
+- **Value Scenario**: A concrete context in which end users use the product with a specific task or goal and obtain an outcome that can be understood, verified, and perceived
+- **Usage Scenario**: A concrete context in which the product may be used
+- **Use Case**: A specific task or workflow end users complete with the product in a given context
 
 **Core distinction**:
 - Features are not value
 - Features are what the product can do, value is the outcomes end users gain
 - Analysis must translate features into specific end user outcomes
+- Value analysis should place value in a concrete scenario
+- Usage scenarios explain where the product may be used, use cases explain how end users use it to complete tasks, and value scenarios explain what outcome end users get in that context
 
 ## Core Insight
 
@@ -61,6 +66,11 @@ End users adopt products when they **know** what value they'll get. This "knowin
 - Time savings
 - Problem resolution
 
+**Role of value scenarios**:
+Product attributes themselves are not end-user value. Analysis should use scenarios to connect product attributes to end-user outcomes, define the context where value occurs, and provide a basis for judging whether the value holds.
+
+Attributes still matter. Attributes provide evidence; scenarios help establish the relationship between attributes and end-user outcomes.
+
 ## The Challenge
 
 Most product creators face a hidden problem: **end users often don't know what they actually want, and how they articulate it may be wrong**.
@@ -69,21 +79,26 @@ The job isn't just to build what end users ask for - it's to help end users disc
 
 ## How to Engage with This Skill
 
-This skill operates through conversational analysis. When the user presents a product idea:
+This skill operates through conversational analysis. When the user presents a product idea, feature, copy, usage scenario, or use case:
 
 1. **Identify the end users** - Determine who will use the product
-2. **Examine value discovery** - Analyze whether end users will understand what they'll achieve
+2. **Identify the value scenario** - Determine the concrete context where value occurs
 3. **Evaluate through four dimensions** - Value clarity, timeline, perception, discovery
-4. **Consider context** - Each product, market, and end user group differs
+4. **Adjust output to the request** - Full analysis, copy, usage scenarios, use cases, or diagnostic assessment
+5. **Consider context** - Each product, market, and end user group differs
 
 **This framework guides thinking. It does not prescribe solutions.**
 
 **Analysis approach:**
-- Must complete analysis of all four dimensions, each dimension as independent section
+- Evaluate through four dimensions, identifying the current value scenario before judging
+- Adjust output format to the current request:
+  - When evaluating a product idea, fully analyze all four dimensions
+  - When writing copy, usage scenarios, or use cases, first judge whether value is clear, when value occurs, whether the outcome is perceivable, and whether end users need to discover value through use
+  - When diagnosing existing copy or a value proposition, use the four dimensions to assess effectiveness
 - Analysis process for each dimension:
   1. Provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not vague generalizations). Reference criteria for status indicators: `references/scoring-rubric.md`
   2. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
-  3. Systematically apply the dimension's analytical methods to the product idea, stating the preconditions and applicability boundaries the judgment depends on (cannot skip the analysis and jump directly to questions)
+  3. Systematically apply the dimension's analytical methods to the current product idea, feature, copy, usage scenario, or use case, stating the preconditions and applicability boundaries the judgment depends on (cannot skip the analysis and jump directly to questions)
   4. When citing product cases, base on verifiable information and explain relevance to current product (case applicability assessment in "Research Methodology" section)
   5. Pose sharp questions that directly challenge product necessity or require comparison with existing solutions
 - After completing all four dimensions, provide summary
@@ -92,7 +107,7 @@ This skill operates through conversational analysis. When the user presents a pr
 
 ## Analysis Framework
 
-When the user discusses a product idea, analyze these four dimensions to evaluate whether end users will discover value:
+Analyze these four dimensions around the current value scenario to evaluate whether end users will discover value:
 
 ### 1. Value Clarity
 
@@ -100,6 +115,7 @@ When the user discusses a product idea, analyze these four dimensions to evaluat
 - Can end users articulate what they'll achieve?
 - Is the value proposition clear or vague to end users?
 - Do end users understand the outcome, not just the features?
+- Can end users explain the relationship between the product and their task in a concrete scenario?
 
 **Why this matters**:
 End users won't adopt a product if they can't explain to themselves (or others) why they're using it.
@@ -117,7 +133,7 @@ End users won't adopt a product if they can't explain to themselves (or others) 
 - Lesson: Features without clear value = no adoption
 
 **Analysis method**:
-Ask: What would an end user say when asked "Why are you using this?" If the answer is unclear or feature-focused ("because it has X"), dig deeper into the actual value proposition.
+Ask: What would an end user say when asked "Why are you using this?" If the answer is unclear or feature-focused ("because it has X"), dig deeper into the actual value proposition. Then check whether the answer maps to a concrete scenario: under what conditions, to complete what task, and to obtain what result.
 
 ### 2. Value Timeline
 
@@ -125,6 +141,7 @@ Ask: What would an end user say when asked "Why are you using this?" If the answ
 - Is the value immediate or delayed for end users?
 - If delayed, do end users know it's coming?
 - What keeps end users engaged during the journey?
+- In the value scenario, does value occur immediately, later, or through sustained accumulation?
 
 **Why this matters**:
 Both short-term and long-term value are valid approaches. The choice depends on the product's nature, specific scenarios, and end user context. Neither is inherently superior.
@@ -148,7 +165,7 @@ Both short-term and long-term value are valid approaches. The choice depends on 
 - All three approaches are valid - choose based on product nature and end user context
 
 **Analysis method**:
-Identify the primary value timeline. Assess whether the approach matches the product's nature and target end users' expectations. Don't force short-term mechanisms if end users are already committed to long-term goals.
+Identify the primary value timeline. Assess whether the approach matches the product's nature, the current value scenario, and target end users' expectations. Don't force short-term mechanisms if end users are already committed to long-term goals.
 
 ### 3. Value Perception
 
@@ -156,6 +173,7 @@ Identify the primary value timeline. Assess whether the approach matches the pro
 - Can end users see/feel what they achieved?
 - Is progress tangible or abstract to end users?
 - Can end users show others what they've achieved?
+- In the value scenario, what concrete result can end users point to and say "I achieved this"?
 
 **Why this matters**:
 Invisible value feels like no value to end users. Progress must be perceivable.
@@ -180,7 +198,7 @@ Invisible value feels like no value to end users. Progress must be perceivable.
 - Observation: Technical improvements are difficult for end users to perceive without visible manifestations
 
 **Analysis method**:
-Identify what end users can point to and say "I achieved this". If the value is invisible, explore ways to make it tangible through UI, notifications, or progress indicators.
+Identify what end users can point to and say "I achieved this". If the value is invisible, explore ways to make it tangible through UI, notifications, progress indicators, result comparisons, or scenario feedback.
 
 ### 4. Value Discovery
 
@@ -188,6 +206,7 @@ Identify what end users can point to and say "I achieved this". If the value is 
 - Do end users already know they want this?
 - Or will end users discover the value after using it?
 - How to help end users discover value they don't yet recognize?
+- Do end users know the value before entering the scenario, or do they need to experience the scenario before recognizing it?
 
 **Why this matters**:
 Sometimes end users don't know what they want until they experience it. The product must help them discover it quickly.
@@ -204,7 +223,7 @@ Sometimes end users don't know what they want until they experience it. The prod
 - Notion helped discovery through flexible databases and templates
 
 **Analysis method**:
-Determine whether end users already know what they want, or need to discover it. If discovery is needed, identify the fastest path to the "aha" moment through onboarding, tutorials, or progressive feature revelation.
+Determine whether end users already know what they want, or need to discover it. If discovery is needed, identify the fastest path to the "aha" moment through onboarding, tutorials, example scenarios, or progressive feature revelation.
 
 ## Patterns from Real Products
 
@@ -236,6 +255,7 @@ For complete case studies with metrics and data sources, see `references/real-ca
 - Competitive markets (end users have alternatives)
 - Products requiring adoption and retention
 - New product categories (end users don't know what to expect)
+- Situations where value propositions, usage scenarios, or feature-to-value explanations need to be expressed clearly
 
 **Less applicable for**:
 - Enterprise software (decision makers ≠ end users, switching costs high)
@@ -280,6 +300,12 @@ For complete case studies with metrics and data sources, see `references/real-ca
 **The reality**: Local, tactical, short-term conclusions do not equal whole-product, strategic, long-term conclusions
 **The approach**: Determine which level the conclusion belongs to, then judge whether it can be generalized upward
 
+### Pitfall 7: Discussing Value Without Scenarios
+
+**The trap**: "This feature improves efficiency, reduces cost, and improves experience"
+**The reality**: If the scenario where value occurs is not specified, end users will have difficulty judging whether the value applies to them
+**The approach**: Map abstract value to a concrete scenario: who completes what task under what conditions, and what result they get through the product
+
 ## Research Methodology
 
 ### Verify Information Accuracy
@@ -289,6 +315,16 @@ When citing real product cases, base on verifiable information and explain relev
 **Tool Availability**:
 - WebFetch and WebSearch available for verifying information
 - When research fails, proceed with analysis based on framework and clearly indicate which information needs verification
+
+### Verify Value Scenarios
+
+Value scenarios can be proposed as analytical hypotheses, but they cannot be treated directly as facts.
+
+**Distinguish between**:
+- **Hypothetical value scenarios**: Possible use contexts inferred from the product, end users, and features
+- **Validated value scenarios**: Contexts supported by user interviews, behavior data, real cases, market materials, or product usage evidence
+
+When a value scenario is unvalidated, state clearly that it is an analytical hypothesis and identify what evidence would be needed to verify it.
 
 ### Condition Archaeology
 
@@ -349,7 +385,7 @@ If you still need to borrow a cross-domain example, first restore the preconditi
 - Identifying potential value types end users might seek
 - Brainstorming ways to make value visible or tangible
 - Considering multiple positioning approaches
-- Exploring "what if" scenarios for product direction
+- Exploring hypothetical value scenarios for product direction
 
 **Evidence-based analysis** (required when):
 - Claiming specific adoption patterns or metrics
@@ -420,14 +456,15 @@ If you still need to borrow a cross-domain example, first restore the preconditi
 
 ## How to Use This Skill
 
-This skill works best in conversation. When the user discusses a product idea:
+This skill works best in conversation. When the user discusses a product idea, feature, copy, usage scenario, or use case:
 
-1. **Explore value clarity**: Can end users articulate what they'll achieve?
-2. **Examine the timeline**: Is value immediate or delayed for end users? What's appropriate for this product?
-3. **Assess perception**: Can end users see/feel their progress?
-4. **Discover hidden value**: What value might end users not yet recognize?
+1. **Identify the value scenario**: In what context do end users use the product, and what result do they get?
+2. **Explore value clarity**: Can end users articulate what they'll achieve?
+3. **Examine the timeline**: Is value immediate or delayed for end users? What's appropriate for this product?
+4. **Assess perception**: Can end users see/feel their progress?
+5. **Discover hidden value**: What value might end users not yet recognize?
 
-**This isn't a checklist** - it's a way of thinking. Each product is different. Each market is different. The goal is to think clearly about whether end users will "know" what value they'll get.
+**This isn't a checklist** - it's a way of thinking. Each product is different. Each market is different. The goal is to think clearly about whether end users will know what value they'll achieve in a concrete scenario.
 
 **Research during analysis**: When the user mentions specific products, technologies, or concepts, this skill may research them via WebFetch or WebSearch to provide context-appropriate analysis based on current information rather than assumptions.
 
