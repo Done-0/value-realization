@@ -90,7 +90,7 @@ This skill operates through conversational analysis. When the user presents a pr
 **This framework guides thinking. It does not prescribe solutions.**
 
 **Analysis approach:**
-- Evaluate through four dimensions, identifying the current value scenario before judging
+- Evaluate through four dimensions around the current value scenario
 - Adjust output format to the current request:
   - When evaluating a product idea, fully analyze all four dimensions
   - When writing copy, usage scenarios, or use cases, first judge whether value is clear, when value occurs, whether the outcome is perceivable, and whether end users need to discover value through use
@@ -276,11 +276,11 @@ For complete case studies with metrics and data sources, see `references/real-ca
 **The reality**: End users don't care about features, they care about what they'll achieve
 **The approach**: Always translate features into value: "Feature X helps end users achieve Y"
 
-### Pitfall 3: Copying Patterns Without Context
+### Pitfall 3: Mechanically Copying Patterns
 
 **The trap**: "Duolingo uses streaks, so we should too"
-**The reality**: Streaks work for daily habits, not for episodic use
-**The approach**: Understand why a pattern works for end users, then adapt to specific context
+**The reality**: Treating other products' features or patterns as value itself, but not understanding under what conditions and through what mechanisms these features generate value for their end users
+**The approach**: Understand why these features or patterns generate value for their end users: in what scenarios, solving what problems, achieving what outcomes, then judge whether they apply to current end users
 
 ### Pitfall 4: Invisible Value
 
