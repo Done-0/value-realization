@@ -7,7 +7,7 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.1.9
+**Version**: 1.2.0
 **Last Updated**: 2026-04-27
 **Type**: Analytical Framework
 
@@ -489,6 +489,10 @@ Case studies include quantitative data and data sources:
 Status indicator reference criteria:
 - **`references/scoring-rubric.md`** - Reference criteria for status indicators (🔴🟡🟢) across four dimensions: value clarity, timeline, perception, discovery (English)
 - **`references/scoring-rubric-zh.md`** - 价值清晰度、价值时间线、价值感知、价值发现四个维度的状态指示符（🔴🟡🟢）参考标准（中文）
+
+Methodology research documents:
+- **`references/learning-methodology.md`** - Analysis of operating mechanisms, risks, manifestations in different environments, and integration methods of foundation-first and problem-driven learning approaches (English)
+- **`references/learning-methodology-zh.md`** - 基础优先型和问题驱动型学习方式的运作机制、风险、环境表现及结合方式分析（中文）
 
 ## Remember
 

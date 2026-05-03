@@ -7,7 +7,7 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 # 价值实现哲学
 
 **状态**: 生产就绪 ✅
-**版本**: 1.1.9
+**版本**: 1.2.0
 **最后更新**: 2026-04-27
 **类型**: 分析框架
 
@@ -489,6 +489,10 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 状态指示符参考标准：
 - **`references/scoring-rubric-zh.md`** - 价值清晰度、价值时间线、价值感知、价值发现四个维度的状态指示符（🔴🟡🟢）参考标准（中文）
 - **`references/scoring-rubric.md`** - Reference criteria for status indicators (🔴🟡🟢) across four dimensions: value clarity, timeline, perception, discovery (English)
+
+方法论研究文档：
+- **`references/learning-methodology-zh.md`** - 基础优先型和问题驱动型学习方式的运作机制、风险、环境表现及结合方式分析（中文）
+- **`references/learning-methodology.md`** - Analysis of operating mechanisms, risks, environmental performance, and integration methods of foundation-first and problem-driven learning approaches (English)
 
 ## 记住
 
