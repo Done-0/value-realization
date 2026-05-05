@@ -1,20 +1,30 @@
 # Product Case Studies: Value Realization Analysis
 
-Technical reference documenting real product cases with quantitative data and value realization patterns.
+Records quantitative data, value analysis, and analysis boundaries for real product cases.
 
 ## Overview
 
-This reference provides structured analysis of product successes and failures through the value realization framework. Each case includes:
+Each case is organized around:
 - Quantitative metrics and timeline data
-- End user value proposition analysis
+- End-user value proposition analysis
 - Value discovery mechanisms
-- Outcome assessment
+- Analysis boundaries and evidence status
+- Product outcomes and adoption data
 
 **Terminology**:
-- **End users**: People who use the product
-- **Value proposition**: What end users achieve through the product
-- **Value discovery**: How end users come to understand the value
-- **Adoption metrics**: Quantitative measures of end user behavior
+- **End users**: People who use the product, not necessarily buyers, managers, or product creators
+- **Value**: A describable outcome end users obtain through the product; the specific outcome is evaluated within a value scenario
+- **Feature**: A technical or interaction capability provided by the product
+- **Mechanism**: A mode of action that connects features to end-user outcomes, lowers friction, maintains participation, or strengthens perception; a mechanism is not value itself
+- **Value proposition**: An outcome promise end users can understand and express
+- **Value scenario**: A concrete context in which end users use the product with a task or goal and obtain an understandable, verifiable, and perceivable outcome
+- **Value discovery**: How end users understand the value they obtain from features, usage feedback, or outcomes
+- **Adoption metrics**: Quantitative measures of end-user behavior
+- **Analysis boundary**: The scope where a case conclusion holds, the scope where it fails, and the evidence status
+
+**Evidence Status Labels**:
+- **Public data**: Publicly verifiable material; specific sources are listed in each case
+- **Analytical inference**: A mechanism explanation derived from the value realization framework; it is not equivalent to verified fact
 
 ## Success Cases
 
@@ -22,54 +32,52 @@ This reference provides structured analysis of product successes and failures th
 
 **Product Background**:
 - **Product type**: B2C file synchronization service
-- **Market context**: Competitive market (multiple cloud storage competitors in 2008)
-- **User behavior**: Daily use (multi-device work scenarios)
+- **Market context**: Competitive market with multiple cloud storage competitors in 2008
+- **User behavior**: Daily use in multi-device work scenarios
 - **Launch date**: 2008
-- **Applicable scenarios**: Utility products requiring immediate utility, multi-device usage scenarios
 
 **Quantitative Data**:
-- 2008 Sep: 100,000 users at public launch
-- 2010 Early: 4,000,000 users (approximately 18 months)
-- Referral program impact: 60% increase in signups
-- Referral incentive: 500MB per referral (maximum 16GB)
+- September 2008: Approximately 100,000 registered users, reported in Drew Houston's 2010 public talk
+- January 2010: 4,000,000 registered users
+- Referral program: Drew Houston's 2010 public talk stated that direct referrals accounted for approximately 35% of daily signups and permanently increased signups by 60%
+- Referral incentive: Adjusted in 2012 to 500MB per referral, up to 16GB for free accounts
 
 **Short-term Value Analysis**:
-- **Short-term value**: Cross-device file access (< 5 minutes)
-- **Value type**: Core short-term value (primary value is immediate)
-- **End users gained**: "I accessed my files from another device", "My files are now on all my devices"
-- **Perceivability**: Highly tangible - file visibly appears on other device
+- **Short-term value**: Cross-device file access in less than 5 minutes
+- **Value nature**: Core short-term value, verifiable in the first synchronization flow
+- **End users obtain**: Cross-device file access; files appearing on synced devices
+- **Perceivability**: Directly perceivable - the file appears on another device
 
 **Long-term Value Analysis**:
-- **Long-term value**: File version history (ability to restore previous versions)
-- **End users gained**: "I restored a deleted file", "I viewed the file's modification history"
-- **Timeline**: Weeks to months of continued use to accumulate version history
+- **Long-term value**: File version history and recovery ability
+- **End users obtain**: Recovery of deleted files; access to file modification history
+- **Timeline**: Version history accumulates through continued use
 
 **Relationship Between Short-term and Long-term**:
-- **Relationship type**: Immediate utility and accumulated assets
-- **Observation**: Each file sync provides independent immediate value (cross-device access), while simultaneously accumulating file version history (long-term asset)
-- **Characteristics**: Short-term value is independently complete; long-term value is the accumulation of version history
+- **Relationship type**: Immediate utility and accumulated asset
+- **Observation**: Each file sync provides independent immediate value through cross-device access, while file version history accumulates as a long-term asset
+- **Characteristic**: Short-term value can be verified independently; long-term value is the accumulation of version history
 
 **Value Communication**:
-- **Technical description**: "Cloud storage and distributed file synchronization"
-- **Value description**: "Access files from any device"
-- **Observation**: Dropbox uses user-facing value descriptions rather than technical terminology
+- **Technical description**: Cloud storage and distributed file synchronization
+- **Value description**: Access files from any device
+- **Observation**: Dropbox used user-facing value language rather than technical terminology
 
 **Adoption Mechanism**:
-- Referral program provided immediate perceivable benefit (500MB storage)
-- Social proof validation through friend invitations
-- End users experienced value on first use (no waiting required)
+- Referral program provided an immediately perceivable benefit, 500MB storage
+- Friend invitations provided social proof
+- End users could experience value after completing the first synchronization flow
 
-**This case applies to**:
-- ✅ Utility products requiring immediate utility
-- ✅ Multi-device usage scenarios
-- ✅ Products where value can be immediately perceived and verified
-- ❌ Products requiring long-term behavior change
-- ❌ Products where value needs to accumulate before becoming apparent
+**Analysis Boundary**:
+- **Key preconditions**: End users have an explicit need for cross-device file access; product value can be verified during first use; trial cost and switching cost are low
+- **Conclusion scope**: Utility products, multi-device use cases, products whose value can be verified during first use
+- **Failure scope**: Long-term behavior change products, products whose core value depends on long-term accumulation, organization-mandated adoption contexts
+- **Evidence status**: User growth and referral program data are public data; the mechanism conclusion is analytical inference: immediately verifiable value supports adoption
 
 **Data Sources**:
-- Company blog posts (2010-2011)
-- TechCrunch coverage
-- Drew Houston interviews
+- Drew Houston, "Dropbox: Building Business Through Lean Startup Principles" (Startup Lessons Learned, 2010)
+- TechCrunch, "Dropbox Announces 4 Million Users" (2010)
+- Dropbox Blog, "Dropbox referrals are now twice as nice!" (2012)
 
 ---
 
@@ -77,62 +85,61 @@ This reference provides structured analysis of product successes and failures th
 
 **Product Background**:
 - **Product type**: B2C photo sharing social application
-- **Market context**: Competitive market (multiple photo apps in 2010)
-- **User behavior**: Daily use (social sharing scenarios)
+- **Market context**: Competitive market with multiple photo apps in 2010
+- **User behavior**: Daily use in social sharing scenarios
 - **Launch date**: October 2010
-- **Applicable scenarios**: Social products, identity expression products, products requiring value discovery
 
 **Quantitative Data**:
-- 2010 Oct: Launch with photo filters
-- 2010 Dec: 1,000,000 users (2 months)
-- 2011 Jun: 5,000,000 users (8 months)
-- 2012 Apr: 30,000,000 users (18 months)
-- 2012 Apr: Acquired by Facebook for $1 billion
+- October 2010: Launched with photo filters
+- December 2010: 1,000,000 users after 2 months
+- June 2011: 5,000,000 users after 8 months
+- April 2012: 30,000,000 users after 18 months
+- April 2012: Acquired by Facebook for $1 billion
 
 **Short-term Value Analysis**:
-- **Short-term value**: Photo filters make ordinary photos instantly beautiful, gained likes and comments
-- **Value type**: Core short-term value (immediate beautification effect and social feedback)
-- **End users gained**: "My photos now look professional", "I immediately gained likes from friends"
-- **Perceivability**: Highly tangible - beautified photos, like counts, comments
+- **Short-term value**: Photo filters create immediate visual modification, followed by in-platform social feedback after posting
+- **Value nature**: Core short-term value, immediate visual modification and social feedback
+- **End users obtain**: Filter effect on a photo; in-platform social feedback
+- **Perceivability**: Directly perceivable - visually modified photo, like count, comments
 
 **Long-term Value Analysis**:
-- **Long-term value**: Photographer identity establishment, follower growth, personal brand
-- **End users gained**: "I became a photographer", "I have my own audience"
-- **Timeline**: Months of continued posting and interaction
+- **Long-term value**: Photography expression identity, follower growth, personal brand
+- **End users obtain**: Continued visual expression identity; accumulated followers or audience
+- **Timeline**: Accumulates through continued posting and interaction
 
 **Relationship Between Short-term and Long-term**:
-- **Relationship type**: Immediate utility and accumulated assets + value discovery
-- **Observation**: Each post provides immediate beautification effect and social feedback, while simultaneously accumulating followers and identity recognition
-- **Characteristics**: End users initially come for short-term value (photo beautification), discover long-term value through use (identity transformation)
+- **Relationship type**: Immediate utility and accumulated asset plus value discovery
+- **Observation**: Each post provides immediate visual modification and social feedback, while followers and identity expression records accumulate
+- **Characteristic**: Initial use is supported by short-term value, photo visual modification; long-term value appears through continued use, identity expression and social recognition
 
 **Value Discovery Process**:
-- **End users thought they wanted**: "Share photos" (functional need)
-- **End users discovered they valued**: "Become a photographer" (identity need)
-- **Discovery mechanism**: Filters + likes + follower growth → identity reinforcement
+- **Initial task demand**: Share photos
+- **Long-term value revealed through use**: Form a photography expression identity; obtain social recognition
+- **Discovery mechanism**: Filters + likes + follower growth -> identity expression and social recognition become more perceivable
 
 **Value Communication**:
-- **Initial positioning**: Photo sharing and beautification
-- **Actual value**: Identity transformation and social status
-- **Observation**: Instagram lets end users discover identity value through use, rather than directly promoting it
+- **Initial positioning**: Photo sharing and filter editing
+- **Long-term value**: Identity expression and social recognition
+- **Observation**: Instagram lets end users discover identity expression and social recognition value through use rather than direct promotion
 
 **Adoption Mechanism**:
-- Immediate gratification: Filters make ordinary photos look professional
+- Immediate feedback: Filters provide visible visual modification
 - Social validation: Likes and comments provide immediate feedback
-- Identity formation: Discover photographer identity through continued use
-- Network effects: Follower growth reinforces identity value
+- Identity formation: Continued use forms photography expression identity
+- Network effect: Follower growth reinforces identity expression and social recognition value
 
-**This case applies to**:
-- ✅ Social products with network effects
-- ✅ Identity expression products
-- ✅ Products where end users need to discover value
-- ✅ Products with both strong short-term and long-term value
-- ❌ Pure utility products
-- ❌ Products with entirely immediate value
+**Analysis Boundary**:
+- **Key preconditions**: End users have public expression and social feedback needs; photo visual modification is immediately perceivable; following, likes, and comments create continued feedback
+- **Conclusion scope**: Social products, identity expression products, content products with social feedback and network effects
+- **Failure scope**: Utility products without social feedback or identity expression, private-use products, products whose value comes from single-task completion
+- **Evidence status**: User growth and acquisition information are public data; the mechanism conclusion is analytical inference: identity expression and social recognition value are discovered through use
 
 **Data Sources**:
-- Company announcements
-- TechCrunch coverage
-- Facebook acquisition filings
+- TechCrunch, "Instagram Captures A Million Users" (2010)
+- TechCrunch, "At 5 Million Users..." (2011)
+- TechCrunch, "Facebook Buys Instagram For $1 Billion" (2012)
+- CNNMoney, "Facebook acquires Instagram for $1 billion" (2012)
+- Facebook / Mark Zuckerberg public statement on acquiring Instagram (2012)
 
 ---
 
@@ -140,59 +147,54 @@ This reference provides structured analysis of product successes and failures th
 
 **Product Background**:
 - **Product type**: B2C language learning application
-- **Market context**: Competitive market (competitors include Babbel, Rosetta Stone, etc.)
-- **User behavior**: Daily use (goal is daily practice)
+- **Market context**: Competitive market, representative competitors: Babbel and Rosetta Stone
+- **User behavior**: Daily use, with the goal of daily practice
 - **Launch date**: 2012
-- **Applicable scenarios**: Products requiring long-term behavior change, habit formation products, educational products
 
 **Quantitative Data**:
-- 2012: Launch
-- 2023: 500,000,000+ users
-- Efficacy: 34 hours on Duolingo = 1 semester university Spanish (2012 study)
-- Engagement: 10+ minutes average session duration (daily active users)
-- Retention impact: Streak feature increased 7-day retention by 3x
+- 2012: Launched
+- 2021: More than 500,000,000 app downloads and approximately 40,000,000 monthly active users
+- Q4 2023: 88,400,000 monthly active users and 26,900,000 daily active users
+- 2012 study estimate: For beginner Spanish learners whose native language was English, an average of 34 hours on Duolingo corresponded to learning gains around first-semester university Spanish course material
 
-**Short-term Value Analysis**:
-- **Short-term value**: XP points, streak counter, lesson completion feedback, immediate answer feedback
-- **Value type**: Instrumental short-term value (immediate feedback as means to achieve long-term goal)
-- **End users gained**: "I completed today's practice", "My streak increased", "I gained XP"
-- **Perceivability**: Highly tangible - XP numbers, streak counter, progress bars
+**Short-term Perceivable Results and Mechanisms**:
+- **Short-term perceivable results**: Lesson completion feedback, immediate answer feedback, XP points, streak count
+- **Mechanism type**: Value perception and participation maintenance mechanism
+- **End users obtain**: Completion of daily practice; streak count increase; XP
+- **Perceivability**: Directly perceivable - XP number, streak counter, progress bar
+- **Observation**: XP and streaks make practice progress visible and help maintain daily practice; they are not the core value for adopting Duolingo
 
 **Long-term Value Analysis**:
-- **Long-term value**: Language fluency, ability to communicate in target language
-- **End users gained**: "I spoke Spanish", "I understood a French article"
-- **Timeline**: 6-12 months of continued practice
+- **Long-term value**: Language capability improvement and ability to complete communication tasks in the target language
+- **End users obtain**: Basic communication in the target language; understanding target-language content
+- **Timeline**: Emerges gradually through continued practice
 
 **Relationship Between Short-term and Long-term**:
-- **Relationship type**: Instrumental tracking drives behavior change
-- **Observation**: Short-term XP and streaks are psychological mechanisms designed to drive long-term language learning
-- **Characteristics**: Short-term value itself is small, main function is to maintain end user engagement to achieve long-term goal
-- **Dual nature**: XP and streaks are both short-term value (immediate feedback) and means to achieve long-term value
+- **Relationship type**: Long-term capability value plus short-term feedback mechanism
+- **Observation**: Short-term feedback turns abstract language learning progress into visible results and reduces interruption risk in continued practice
+- **Characteristic**: The core value is language capability improvement; the role of short-term mechanisms is to make the long-term goal perceivable in daily use
 
 **Value Communication**:
-- **Core value**: Language learning (long-term)
-- **Immediate mechanisms**: Gamified feedback (short-term)
-- **Observation**: Duolingo clearly communicates long-term goal (language fluency) while using short-term feedback to maintain engagement
+- **Core value**: Learning a language, long-term
+- **Immediate mechanism**: Gamified feedback, short-term
+- **Observation**: Duolingo communicates the long-term goal, language capability improvement, while using short-term feedback to maintain participation
 
 **Adoption Mechanism**:
-- Gamification mechanisms provide immediate gratification (XP, streaks)
-- Immediate feedback maintains daily habits
-- Long-term goal (language fluency) is the reason end users adopt
-- Short-term mechanisms are means to achieve long-term goal
+- Gamified mechanisms provide immediate feedback, XP and streaks
+- Immediate feedback maintains a daily habit
+- The long-term goal, language capability improvement, is the primary value proposition behind adoption
+- Short-term mechanisms are means toward the long-term goal
 
-**This case applies to**:
-- ✅ Products requiring long-term behavior change
-- ✅ Daily habit formation products
-- ✅ Education and skill learning products
-- ✅ Products where long-term value requires sustained effort
-- ❌ Immediate utility tools
-- ❌ Entertainment consumption products
-- ❌ Occasionally used products
+**Analysis Boundary**:
+- **Key preconditions**: End users already accept language learning as a long-term goal; learning behavior requires repetition; practice progress can be perceived through feedback and counting
+- **Conclusion scope**: Long-term capability improvement products, daily practice products, learning products where progress can be fed back and quantified
+- **Failure scope**: Immediate utility tools, passive entertainment products, low-frequency products, products unable to convert progress into perceivable results
+- **Evidence status**: Downloads, monthly active users, daily active users, and the 2012 learning outcome study are public data; the mechanism conclusion is analytical inference: short-term feedback maintains long-term learning
 
 **Data Sources**:
-- Company announcements
-- 2012 City University of New York research
-- Duolingo 2021 S-1 IPO filing
+- Duolingo Investor Relations, 2021 results announcement
+- Duolingo Investor Relations, Q4 2023 shareholder letter
+- Vesselinov & Grego, "Duolingo Effectiveness Study" (2012)
 
 ---
 
@@ -200,62 +202,343 @@ This reference provides structured analysis of product successes and failures th
 
 **Product Background**:
 - **Product type**: B2C messaging and services platform
-- **Market context**: Competitive market (multiple instant messaging apps in 2011)
-- **User behavior**: Daily high-frequency use (communication and life services)
+- **Market context**: Competitive market with multiple instant messaging apps in 2011
+- **User behavior**: Daily high-frequency use in communication and life services
 - **Launch date**: 2011
-- **Applicable scenarios**: High-frequency platform products, multi-function integrated products
 
 **Quantitative Data**:
-- 2011: Launch
-- 2013: 300,000,000 users
-- 2018: 1,000,000,000 users
-- 2023: 1,300,000,000 monthly active users
-- Mini Programs: 450,000,000+ daily active users (2020)
+- 2011: Launched
+- 2013: 300,000,000 registered users
+- 2018: Combined monthly active accounts of Weixin and WeChat exceeded 1,000,000,000
+- 2023: Combined monthly active accounts of Weixin and WeChat were approximately 1,343,000,000
+- Mini Programs: Average daily active users were approximately 450,000,000 in 2021
 
 **Short-term Value Analysis**:
-- **Short-term value**: Communicate with friends/family, problem-solving (payment completion, service access)
-- **Value type**: Core short-term value (primary value of each feature is immediate)
-- **End users gained**: "I contacted my friend", "I completed payment", "I ordered a ride", "My problem was solved"
-- **Perceivability**: Highly tangible - message sent successfully, payment completed, service accessed successfully
+- **Short-term value**: Communicating with friends or family, problem resolution through payment completion and service access
+- **Value nature**: Core short-term value; the core value of the listed tasks is immediate
+- **End users obtain**: Contact with friends; completed payments; accessed services; resolved problems
+- **Perceivability**: Directly perceivable - message sent, payment completed, service accessed
 
 **Long-term Value Analysis**:
-- **Long-term value**: Social relationship maintenance, life services ecosystem dependency
-- **End users gained**: "My social relationships are all on WeChat", "My life services all go through WeChat"
-- **Timeline**: Months to years of continued use and feature discovery
+- **Long-term value**: Social relationship maintenance and centralized entry point for life services
+- **End users obtain**: Contacting others and completing life services through one entry point
+- **Timeline**: Accumulates through continued use and feature discovery
 
 **Relationship Between Short-term and Long-term**:
-- **Relationship type**: Immediate utility and accumulated assets + ecosystem lock-in (Pattern 1)
-- **Observation**: Each feature provides independent immediate value (communication, payment, services), continued use builds platform dependency and social network lock-in
-- **Characteristics**: Short-term value is complete and diverse; long-term value is the accumulation of ecosystem dependency and social network
+- **Relationship type**: Immediate utility and entry-point centralization
+- **Observation**: Listed core functions provide independent immediate value, communication, payment, and services; continued use gradually centralizes social relationships and life-service entry points
+- **Characteristic**: Listed short-term value can be completed in a single task; long-term value comes from the accumulation of relationship networks and service entry points
 
 **Design Philosophy**:
-- **Core principle**: "用完即走" (Use and Go) - respect end user time
-- **Implementation**: Non-addictive design, clear functional utility
-- **Observation**: Build trust through respecting end user time, rather than increasing usage time through addictive mechanisms
+- **Product principle**: Use and Go - reducing post-task stay
+- **Implementation**: Task-completion orientation and explicit functional utility
+- **Observation**: Product expression focuses on task completion efficiency rather than simply increasing time spent
 
 **Value Communication**:
-- **Each feature**: Clear immediate utility (messaging, payment, services)
+- **Core functions**: Explicit immediate utility, messaging, payments, services
 - **Overall positioning**: Lifestyle platform
-- **Observation**: WeChat doesn't emphasize "making you addicted", but rather "efficiently solving problems"
+- **Observation**: WeChat's value expression is closer to a daily task entry point than to a single messaging tool
 
 **Adoption Mechanism**:
-- Each feature provides clear immediate utility
-- Non-addictive design builds long-term trust
-- Progressive feature discovery (messaging → payment → mini programs)
-- Network effects (social relationship lock-in)
+- Listed core functions provide explicit immediate utility
+- Task-completion orientation lowers usage burden
+- Progressive feature discovery, messaging -> payments -> Mini Programs
+- Network effect through concentrated contacts
 
-**This case applies to**:
-- ✅ High-frequency platform products
-- ✅ Multi-function integrated products
-- ✅ Products requiring long-term trust building
-- ✅ Products with network effects
-- ❌ Single-function tools
-- ❌ Low-frequency products
-- ❌ Products requiring addictive mechanisms
+**Analysis Boundary**:
+- **Key preconditions**: The product has a high-frequency communication entry point; social relationships create network effects; added functions are complementary to daily tasks
+- **Conclusion scope**: High-frequency platforms, social relationship or life-service entry points, products whose multiple functions have complementary relationships
+- **Failure scope**: Single-function tools, low-frequency products, multi-function products without a core high-frequency entry point
+- **Evidence status**: User scale and Mini Program daily active users are public data; the mechanism conclusion is analytical inference: immediate utility accumulates into platform entry-point value
 
 **Data Sources**:
-- Tencent quarterly reports
-- Zhang Xiaolong annual speeches (2012-2023)
+- Tencent annual and quarterly results announcements
+- Tencent, "Weixin's Open Ecosystem Reports User and Engagement Growth" (2022)
+- China Daily coverage of WeChat's 300,000,000 users (2013)
+
+---
+
+### GitHub
+
+**Product Background**:
+- **Product type**: B2B/B2C code hosting and collaboration platform
+- **Market context**: Competitive market, representative platforms in 2008: SourceForge and Google Code
+- **User behavior**: Daily use in developer workflows
+- **Launch date**: 2008
+
+**Quantitative Data**:
+- 2008: Launched
+- September 2011: 1,000,000 users
+- January 2013: 3,000,000 users and almost 5,000,000 repositories
+- 2018: Acquired by Microsoft for $7.5 billion
+- 2023: More than 100,000,000 developer users
+
+**Short-term Value Analysis**:
+- **Short-term value**: Code hosting and backup, team collaboration, access to open source code
+- **Value nature**: Core short-term value
+- **End users obtain**: Code saved; team collaboration in development; access to open source projects for learning
+- **Perceivability**: Directly perceivable - code is saved, team members can see code, open source repositories can be browsed
+- **Mechanism note**: Free repository quota lowers adoption friction; it is not the core value for adopting GitHub
+
+**Long-term Value Analysis**:
+- **Long-term value**: Code history, professional portfolio, open source community reputation
+- **End users obtain**: Contribution history access; work shown through contribution graph; open source community reputation
+- **Timeline**: Accumulates through continued commits and collaboration
+- **Mechanism note**: The contribution graph is a value perception mechanism that makes abstract reputation visible and shareable
+
+**Relationship Between Short-term and Long-term**:
+- **Relationship type**: Immediate utility and accumulated asset
+- **Observation**: Each code operation provides independent immediate value, backup and collaboration, while long-term assets automatically accumulate, history, portfolio, reputation
+- **Characteristic**: Short-term value can be verified independently; long-term value emerges from accumulated short-term use
+
+**Value Communication**:
+- **Core value**: Code hosting, backup, and collaboration, immediate utility
+- **Additional value**: Portfolio and reputation, long-term accumulation
+- **Observation**: GitHub's value communication centers on immediate utility; long-term value comes from asset accumulation after continued use
+
+**Adoption Mechanism**:
+- Immediate code hosting, backup, and collaboration functions
+- Free public repositories lower adoption friction
+- Social functions: Star, Fork, Follow
+- Contribution graph visualizes long-term value as a value perception mechanism
+
+**Analysis Boundary**:
+- **Key preconditions**: Developer workflows require version control and collaboration; code history can continuously accumulate; contribution records have external legibility for career presentation or community reputation
+- **Conclusion scope**: Developer tools, code hosting and collaboration platforms, products where short-term workflow utility continuously accumulates into long-term assets
+- **Failure scope**: One-time tools, tools without continuous asset accumulation, private contexts where contributions cannot be externally understood or displayed
+- **Evidence status**: User count, repository count, and acquisition information are public data; the mechanism conclusion is analytical inference: immediate workflow utility accumulates into professional assets
+
+**Data Sources**:
+- GitHub Blog, "Three Million Users" (2013)
+- GitHub Blog, "100 million developers and counting" (2023)
+- Microsoft acquisition announcement for GitHub (2018)
+
+---
+
+### Notion
+
+**Product Background**:
+- **Product type**: B2C/B2B note-taking and knowledge management tool
+- **Market context**: Competitive market, representative competitors: Evernote, OneNote, Confluence
+- **User behavior**: Daily use for notes, documents, and project management
+- **Launch date**: 2016
+
+**Quantitative Data**:
+- 2016: Launched
+- April 2020: 4,000,000 users
+- 2021: More than 20,000,000 users
+- 2021: $10 billion valuation
+- August 2024: More than 100,000,000 global users
+
+**Short-term Value Analysis**:
+- **Short-term value**: Ideas recorded, information organized, documents created
+- **Value nature**: Core short-term value; each use has immediate utility
+- **End users obtain**: Ideas saved; information organized; documents created
+- **Perceivability**: Directly perceivable - notes, pages, databases
+
+**Long-term Value Analysis**:
+- **Long-term value**: Knowledge base accumulation, interconnected information system, team wiki, personal knowledge system
+- **End users obtain**: A maintainable knowledge system; connections between notes
+- **Timeline**: Emerges after continued use and content accumulation
+
+**Relationship Between Short-term and Long-term**:
+- **Relationship type**: Immediate utility and compound accumulation
+- **Observation**: Each note provides immediate recording value; connections between notes make the system's value grow nonlinearly
+- **Characteristic**: Short-term value can be verified independently; long-term value emerges from the compound effect of the note network
+
+**Value Discovery Process**:
+- **Initial task demand**: Take notes
+- **Long-term value revealed through use**: Improved information organization ability; knowledge system construction
+- **Discovery mechanism**: Flexible databases + templates + page links -> organizational and system value discovery
+
+**Value Communication**:
+- **Initial positioning**: All-in-one workspace
+- **Long-term value**: Knowledge management and organization ability improvement
+- **Observation**: Notion lets end users discover their own organization method through use
+
+**Adoption Mechanism**:
+- Immediate note and document functions
+- Flexible database and template system
+- Free personal version lowers adoption friction
+- Community-shared templates accelerate value discovery
+
+**Analysis Boundary**:
+- **Key preconditions**: End users have ongoing tasks to record and organize information; content accumulates through use; flexible structure functions as organization ability rather than extra burden
+- **Conclusion scope**: Knowledge management, content organization, personal or team information systems where content accumulates through continued use
+- **Failure scope**: One-time tools, products without content accumulation, contexts where fixed workflows make flexibility an added operation cost
+- **Evidence status**: User scale and financing information are public data; the mechanism conclusion is analytical inference: content accumulation creates compound value
+
+**Data Sources**:
+- Forbes, "Notion Reaches $10 Billion Valuation" (2021)
+- Notion Blog, "100 Million of You" (2024)
+
+---
+
+### MyFitnessPal
+
+**Product Background**:
+- **Product type**: B2C nutrition tracking and weight loss application
+- **Market context**: Competitive market with multiple health tracking applications
+- **User behavior**: Daily use, meal-by-meal logging
+- **Launch date**: 2005
+
+**Quantitative Data**:
+- 2005: Launched
+- 2015: Acquired by Under Armour for $475 million
+- 2020: Under Armour announced the sale of MyFitnessPal for $345 million
+- 2020: MyFitnessPal supported more than 200,000,000 users
+- Food database: Maintained by the platform and users
+
+**Short-term Perceivable Results and Mechanisms**:
+- **Short-term perceivable results**: Calorie data, nutrition information, daily food log, goal progress
+- **Mechanism type**: Behavior awareness and execution support mechanism
+- **End users obtain**: Awareness of daily calorie intake; awareness of food nutrition data
+- **Perceivability**: Directly perceivable - calorie numbers, nutrition charts, daily progress bars
+- **Observation**: Tracking makes food intake visible and provides a basis for behavior adjustment; tracking itself is not the core value for adopting the product
+
+**Long-term Value Analysis**:
+- **Long-term value**: Weight loss, improved nutrition habits, improved health condition
+- **End users obtain**: Weight moving toward the target direction; improved eating habits
+- **Timeline**: Emerges after continued tracking and behavior adjustment
+
+**Relationship Between Short-term and Long-term**:
+- **Relationship type**: Long-term health outcome plus behavior tracking mechanism
+- **Observation**: Daily tracking provides awareness and data; these results serve long-term weight loss and health management goals
+- **Characteristic**: The core value is weight and health outcomes; the role of the tracking mechanism is to make behavior inputs and goal progress perceivable
+
+**Value Communication**:
+- **Core value**: Weight loss and health management, long-term goal
+- **Implementation means**: Calorie tracking, short-term tool
+- **Observation**: MyFitnessPal communicates the long-term goal; tracking is the method for reaching that goal
+
+**Adoption Mechanism**:
+- Food database lowers tracking cost
+- Barcode scanning simplifies input
+- Daily calorie goals and progress visualization
+- Community support and motivation
+
+**Analysis Boundary**:
+- **Key preconditions**: End users already have weight loss or health management goals; food intake can be logged and quantified; tracking data can affect later behavior adjustment
+- **Conclusion scope**: Health management, habit formation, products where long-term goals require daily logging and behavior adjustment
+- **Failure scope**: Immediate utility tools, entertainment consumption products, products that do not require behavior change or cannot quantify key behavior
+- **Evidence status**: Acquisition amount, sale amount, and user scale are public data; food database maintenance method comes from product support documentation; the mechanism conclusion is analytical inference: tracking improves awareness and supports behavior change
+
+**Data Sources**:
+- Under Armour acquisition announcement for MyFitnessPal (2015)
+- Under Armour sale announcement for MyFitnessPal (2020)
+- MyFitnessPal Help, "Where does MyFitnessPal get its food data?"
+
+---
+
+### Netflix
+
+**Product Background**:
+- **Product type**: B2C video streaming service
+- **Market context**: Competitive market in the mature stage, representative alternatives: Hulu, Disney+, Amazon Prime Video
+- **User behavior**: Daily or weekend use for entertainment consumption
+- **Launch date**: 1997 for DVD rental, 2007 for streaming
+
+**Quantitative Data**:
+- 2007: Streaming service launched
+- End of 2013: More than 44,000,000 global paid subscribers
+- End of 2023: 260,280,000 global streaming paid memberships
+- Content library: Continuously updated catalog of films and series
+- 2023: Approximately 183,000,000,000 viewing hours for the year
+
+**Short-term Value Analysis**:
+- **Short-term value**: Entertainment enjoyment and video content consumption
+- **Value nature**: Core short-term value; entertainment is the core value in this analysis
+- **End users obtain**: Entertainment experience; completed content viewing; leisure time
+- **Perceivability**: Directly perceivable - video content, playback progress, completed viewing
+
+**Long-term Value Analysis**:
+- **Long-term value**: Continued content access, personalized content discovery, continuity from viewing history
+- **End users obtain**: Continued access to the content library; easier discovery of content they want to watch
+- **Timeline**: Gradually improves through continued viewing
+- **Observation**: Long-term value in this case is an enhancement, mainly from viewing history and personalized content discovery mechanisms
+
+**Relationship Between Short-term and Long-term**:
+- **Relationship type**: Immediate entertainment and moderate personalization
+- **Observation**: Each viewing session provides the core entertainment value; long-term value mainly appears in personalized content discovery
+- **Characteristic**: Short-term value is the core value in this analysis; personalized content discovery is a mechanism that enhances content access, not the core value itself
+
+**Value Communication**:
+- **Core value**: Immediate entertainment and content access
+- **Additional value**: Personalized content discovery
+- **Observation**: Netflix's value communication centers on content library and immediate viewing; personalized content discovery is a mechanism that enhances content access
+
+**Adoption Mechanism**:
+- Content library
+- Ad-free viewing experience
+- Multi-device support
+- Original content exclusivity
+- Personalized content discovery
+
+**Analysis Boundary**:
+- **Key preconditions**: End users have ongoing entertainment consumption demand; the content library supports repeated access; each viewing session can deliver the main entertainment outcome
+- **Conclusion scope**: Entertainment consumption, content platforms, subscription services where each use can deliver the core consumption value
+- **Failure scope**: Skill learning products, behavior change products, products whose core value depends on long-term accumulation rather than single-session consumption
+- **Evidence status**: Subscriber scale and viewing hours are public data; the mechanism conclusion is analytical inference: immediate entertainment is the core value in this analysis
+
+**Data Sources**:
+- Netflix Q4 2013 shareholder letter
+- Netflix Q4 2023 shareholder letter
+- Netflix, "What We Watched: A Netflix Engagement Report" (2023)
+
+---
+
+### Slack
+
+**Product Background**:
+- **Product type**: B2B team communication platform
+- **Market context**: Competitive team communication market; mature-stage representative alternatives are Microsoft Teams and Discord
+- **User behavior**: Daily high-frequency use for work communication
+- **Launch date**: 2013 preview, February 2014 public launch
+
+**Quantitative Data**:
+- 2013: Preview launched
+- February 2015: 500,000 daily active users
+- 2019: 12,000,000 daily active users
+- 2021: Acquired by Salesforce for $27.7 billion
+
+**Short-term Value Analysis**:
+- **Short-term value**: Communicating with coworkers, receiving answers, sharing files
+- **Value nature**: Core short-term value; real-time communication is the core value in this analysis
+- **End users obtain**: Contact with coworkers; answers received; problems resolved
+- **Perceivability**: Directly perceivable - message sent, reply received, file sharing completed
+
+**Long-term Value Analysis**:
+- **Long-term value**: Team knowledge accumulation, searchable historical decisions, cross-tool workflow continuity
+- **End users obtain**: Historical conversations found through search; past decision context retrieved; related work information connected
+- **Timeline**: Accumulates through continued team communication
+
+**Relationship Between Short-term and Long-term**:
+- **Relationship type**: Real-time communication and archive value
+- **Observation**: Each communication event provides immediate value through real-time exchange; historical messages accumulate into a searchable knowledge base
+- **Characteristic**: Short-term value is the core use value in this analysis; long-term value comes from accumulated historical messages
+
+**Value Communication**:
+- **Core value**: Where work happens
+- **Additional value**: Searchable history and integrations
+- **Observation**: Slack's value communication centers on real-time communication; historical search and integrations strengthen information continuity after long-term use
+
+**Adoption Mechanism**:
+- Immediate messages and notifications
+- Channel organization by project or topic
+- Third-party integration ecosystem
+- Free version lowers adoption friction
+- Network effect through team use
+
+**Analysis Boundary**:
+- **Key preconditions**: Team members need frequent communication; value depends on multi-person use; historical messages can be continuously searched and used in later work
+- **Conclusion scope**: Team communication, real-time collaboration, B2B products where internal organizational information needs to remain searchable
+- **Failure scope**: Personal tools, low-frequency communication contexts, contexts centered mainly on asynchronous document collaboration
+- **Evidence status**: Daily active users and acquisition information are public data; the mechanism conclusion is analytical inference: real-time communication accumulates into searchable team memory
+
+**Data Sources**:
+- Slack Blog, "Not all daily active users are created equal" (2019)
+- VentureBeat coverage of Slack's 500,000 daily active users (2015)
+- Salesforce acquisition announcement for Slack (2020, 2021)
 
 ---
 
@@ -265,73 +548,59 @@ This reference provides structured analysis of product successes and failures th
 
 **Product Background**:
 - **Product type**: B2B/B2C unified communication platform
-- **Market context**: Competitive market (Email, IM, collaboration tools existed)
-- **Target user behavior**: Team collaboration and communication
-- **Launch date**: May 2009 (announced), September 2009 (beta)
-- **Shutdown date**: August 2010 (announced), April 2012 (complete shutdown)
+- **Market context**: Competitive market with Email, IM, and collaboration tools
+- **Product-assumed user behavior**: Team collaboration and communication
+- **Launch date**: May 2009 announcement, September 2009 beta
+- **Shutdown date**: August 2010 announcement, April 2012 complete shutdown
 - **Lifespan**: 14 months from beta to shutdown announcement
 
 **Quantitative Data**:
-- 2009 May: Announced at Google I/O
-- 2009 Sep: Invite-only beta (100,000 invites)
-- 2010 Aug: Shutdown announced (14 months after beta)
-- 2010 Dec: New user signups stopped
-- 2012 Apr: Service completely shut down
+- May 2009: Announced at Google I/O
+- September 2009: Invite-restricted beta with 100,000 invites
+- August 2010: Shutdown announced, 14 months after beta
+- December 2010: New user signups stopped
+- April 2012: Service fully shut down
 
-**Short-term Value Analysis**:
-- **Short-term value**: Real-time collaborative editing, mixed messaging and documents
-- **Value type**: Core short-term value (attempted to provide immediate collaboration)
-- **End user confusion**: Unclear "what I gained now"
-- **Perceivability**: Low - complex features, unclear value
+**Expected Short-term Result and Actual Perception Issue**:
+- **Expected short-term result**: Real-time collaborative editing and mixed messaging/document interaction
+- **Nature**: The product attempted to provide immediate collaboration outcomes
+- **Actual perception issue**: The result obtained in current use was not explicit
+- **Perceivability**: Low - end users had difficulty mapping the feature combination to a specific outcome
 
-**Long-term Value Analysis**:
-- **Long-term value**: Unified communication and collaboration approach
-- **End user confusion**: Unclear "what I will eventually gain"
-- **Timeline**: Unclear
+**Expected Long-term Result and Actual Perception Issue**:
+- **Expected long-term result**: Unified communication and collaboration approach
+- **Actual perception issue**: The long-term outcome was not explicit
+- **Timeline**: Not explicit
 
 **Value Communication Failure**:
-- **Technical description**: "Unified communication", "real-time collaboration"
-- **End user understanding**: Unclear how this differs from Email/IM
-- **Observation**: Google Wave used technical concepts to describe, end users couldn't understand what specific value they would gain
+- **Technical description**: Unified communication, real-time collaboration
+- **Outcome difference statement**: The additional outcome relative to Email/IM was not explicit
+- **Observation**: Google Wave used technical concepts, and the mapping from those concepts to concrete end-user outcomes was not explicit
 
-**Failure Analysis**:
-- **Value unclear**: End users couldn't articulate "what I can gain using Wave"
-- **High learning cost**: New interaction model, end users needed to learn
-- **Sufficient alternatives**: Email and IM already met needs
-- **Missing network effects**: Required team usage, but unclear value made it hard to convince others
-- **Feature innovation ≠ value clarity**: Even with innovative features, if end users don't know what they'll gain, they won't adopt
-- **Technical concepts ≠ user value**: Technical concepts ("unified communication") are not values end users can understand
-- **Network effect product value threshold**: Products requiring network effects need sufficiently clear value to convince others to join
+**Failure Factor Analysis**:
+- **Value not explicit**: The specific result obtained from using Wave was difficult to express
+- **Learning cost**: The new interaction model required learning
+- **Alternatives**: Email and IM already met basic communication tasks
+- **Network effect startup friction**: The product required team use; non-explicit value increased the friction of inviting others
+- **Feature innovation does not equal value clarity**: Innovative features do not remove adoption friction when the end-user outcome is not explicit
+- **Technical concepts are not user value**: Technical concepts like unified communication are not end-user value
+- **Network-effect product value threshold**: Products requiring network effects depend on value clarity for inviting others to join
 
-**This case applies to**:
-- ✅ Analyzing value communication failure cases
-- ✅ Understanding technical innovation vs user value distinction
-- ✅ Products requiring network effects but with unclear value
-- ❌ Not suitable as successful product reference
+**Feedback Themes in Public Post-mortem Materials**:
+- Invitations were received but product purpose was not understood
+- Feature novelty was noted while the use purpose was not explicit
+- Individual use value was insufficient when friends or team members did not use it
 
-**Value Proposition Analysis**:
-- Claimed: "Unified communication" (abstract)
-- End user understanding: Unclear
-- Problem: Combined email, chat, wiki but no clear use case
-- Result: End users couldn't explain why to use it
-
-**Adoption Barriers**:
-- Complex interface required learning investment
-- Network effect dependency (needed others to use it)
-- End users had no clear "aha moment"
-- Abstract value proposition
-
-**End User Feedback** (from post-mortems):
-- "Got invite, opened it, didn't understand, never returned"
-- "Cool features, but unclear purpose"
-- "Friends don't use it, so can't use it"
-
-**Analysis**: Product assumed end users would discover value through exploration. End users need to know value before investing time to learn.
+**Analysis Boundary**:
+- **Key preconditions**: End users adopt voluntarily; alternatives like Email and IM already meet basic tasks; product value depends on multi-person use; the new interaction model creates learning cost
+- **Conclusion scope**: Collaboration products with voluntary adoption, existing alternatives, multi-person use requirements, and value propositions where end-user outcomes are not explicit
+- **Failure scope**: Organization-mandated products, products without alternatives, products whose value is determined by compliance or infrastructure constraints
+- **Evidence status**: Launch, invite scale, and shutdown timing are public data; feedback themes come from public post-mortem materials; the mechanism conclusion is analytical inference: non-explicit value increases network-effect startup friction
 
 **Data Sources**:
-- Google announcements
-- TechCrunch post-mortems
-- User surveys
+- Google Wave Help documentation
+- Google announcement ending standalone Wave product development
+- TechCrunch coverage of Google Wave development ending
 
 ---
 
@@ -339,461 +608,57 @@ This reference provides structured analysis of product successes and failures th
 
 **Product Background**:
 - **Product type**: B2C short-form mobile video streaming
-- **Market context**: Highly competitive (YouTube, TikTok, Netflix, etc.)
-- **Target user behavior**: Watch during commute (assumed scenario)
+- **Market context**: Competitive market, representative alternatives: YouTube, TikTok, Netflix
+- **Product-assumed user behavior**: Watching during commutes
 - **Launch date**: April 2020
 - **Shutdown date**: December 2020
 - **Lifespan**: 6 months
-- **Funding**: $1.75 billion
+- **Funding**: $1.75 billion raised before launch
 
 **Quantitative Data**:
-- 2020 Apr: Launch with $1.75B funding
-- 2020 Apr: 1,700,000 downloads (first week)
-- 2020 May: 72,000 paid subscriptions after free trial
-- Conversion rate: ~4% (industry standard: 25%+)
-- 2020 Oct: Shutdown announced (6 months)
-- 2020 Dec: Service shut down
+- April 2020: $1.75 billion raised before launch
+- April 2020: CEO Meg Whitman stated 1,700,000 downloads in the first week
+- July 2020: Sensor Tower estimated that approximately 72,000 users from the first 90-day free-trial cohort converted to paid subscriptions; Quibi stated that the estimate was inaccurate and did not disclose official paid subscriber count
+- October 2020: Shutdown announced after 6 months
+- December 2020: Service shut down
 
-**Short-term Value Analysis**:
-- **Short-term value**: 10-minute professionally produced video content
-- **Value type**: Core short-term value (entertainment content)
-- **End user confusion**: Unclear how this differs from YouTube/TikTok
-- **Perceivability**: Tangible (video content) but no differentiation
+**Expected Short-term Result and Actual Perception Issue**:
+- **Expected short-term result**: Entertainment consumption during fragmented time
+- **Content format**: Professionally produced 10-minute video content
+- **Actual perception issue**: The additional outcome relative to YouTube/TikTok was not explicit
+- **Perceivability**: Video content was visible; the additional outcome relative to alternatives was not explicit
 
-**Long-term Value Analysis**:
-- **Long-term value**: Continued entertainment content access
-- **End user confusion**: YouTube/TikTok already provide similar value for free
-- **Timeline**: Not applicable (product failed to establish long-term use)
+**Expected Long-term Result and Actual Perception Issue**:
+- **Expected long-term result**: Continued entertainment content access
+- **Actual perception issue**: YouTube/TikTok already provided similar value for free
+- **Timeline**: Not applicable; the product did not establish long-term use
 
-**Value Communication Failure**:
-- **Product positioning**: "10-minute videos on mobile", "commute entertainment"
-- **End user perception**: "How is this different from YouTube?", "Why pay for it?"
-- **Observation**: Quibi defined a use scenario (commute) that end users didn't recognize
+**Value Communication and Scenario Mismatch**:
+- **Product positioning**: 10-minute mobile video and commute entertainment
+- **Actual perception issue**: The additional outcome relative to YouTube, TikTok, and other alternatives was not explicit
+- **Observation**: Quibi's positioning depended on commute and fragmented-time scenarios; after launch in 2020, that scenario was affected by COVID-19 lockdowns
 
-**Failure Analysis**:
-- **No differentiated value**: End users already had YouTube (free) and TikTok (free)
-- **Payment barrier**: $4.99-7.99/month vs free alternatives
-- **No social features**: Couldn't share content, lacked social value
-- **Wrong timing**: COVID-19 lockdown eliminated commute scenario
-- **Value unclear**: End users didn't understand why "10-minute videos" was a value
-- **Scenario assumption error**: Use scenario defined by product creators (commute) ≠ value recognized by end users
-- **Funding can't replace value**: $1.75B funding and professional content couldn't replace clear value proposition
-- **Alternative threshold**: When end users have free alternatives meeting needs, paid products must have clear additional value
-- **Content distribution in social era**: Non-shareable content lacks distribution value in social media age
+**Failure Factor Analysis**:
+- **Differentiated outcome not explicit**: The market already had YouTube and TikTok as free alternatives
+- **Payment threshold**: $4.99 to $7.99 per month versus free alternatives
+- **Sharing limitation**: Inability to share content reduced content distribution and social discussion opportunities
+- **Timing and scenario mismatch**: COVID-19 lockdowns reduced commute scenarios
+- **Value not explicit**: The additional outcome created by the 10-minute video format was not explicit
+- **Funding and content investment did not resolve the value proposition issue**: $1.75 billion in funding and professional content did not make the additional outcome relative to alternatives explicit
+- **Alternative comparison threshold**: When the market already has free alternatives that meet similar needs, paid products require explicit additional value
 
-**End User Feedback**:
-- "TikTok is free, why pay?"
-- "Can't share clips with friends"
-- "Content is okay, don't need another app"
+**Feedback Themes in Public Coverage**:
+- Free alternatives reduced willingness to subscribe
+- Sharing limits reduced content spread and social discussion opportunities
+- The additional reason to use a separate app was not explicit
 
-**This case applies to**:
-- ✅ Analyzing value differentiation failure cases
-- ✅ Understanding challenges when end users have existing alternatives
-- ✅ Value threshold for paid products vs free alternatives
-- ❌ Not suitable as successful product reference
+**Analysis Boundary**:
+- **Key preconditions**: End users already have free entertainment alternatives; the product uses subscription payment; the product proposition depends on commute and fragmented-time scenarios; content sharing is limited
+- **Conclusion scope**: Entertainment content products, paid products facing free alternatives, markets where product-defined usage scenarios do not match observed adoption conditions
+- **Failure scope**: Markets with exclusive content that differentiates the product, need-driven content, professional content, or insufficient alternatives
+- **Evidence status**: Funding, first-week downloads, and shutdown timing are public data; paid conversion is a Sensor Tower estimate that Quibi publicly disputed; the mechanism conclusion is analytical inference: insufficient differentiation in the additional outcome increases paid conversion friction
 
 **Data Sources**:
-- SEC filings
-- App store analytics (Sensor Tower)
-- Media coverage
-
----
-
-## Additional Success Cases
-
-### GitHub
-
-**Product Background**:
-- **Product type**: B2B/B2C code hosting and collaboration platform
-- **Market context**: Competitive market (SourceForge, Google Code existed in 2008)
-- **User behavior**: Daily use (developer workflow)
-- **Launch date**: 2008
-- **Applicable scenarios**: Developer tools, projects requiring version control, open source collaboration
-
-**Quantitative Data**:
-- 2008: Launch
-- 2011: 1,000,000 repositories
-- 2013: 3,000,000 users
-- 2018: Acquired by Microsoft for $7.5 billion
-- 2023: 100,000,000+ developers
-
-**Short-term Value Analysis**:
-- **Short-term value**: Code backup and security, team collaboration, access to open source code
-- **Value type**: Core short-term value (primary reason developers use GitHub)
-- **End users gained**: "My code was saved", "I developed with my team", "I accessed open source projects to learn"
-- **Perceivability**: Highly tangible - code is saved, team members can see code, can browse open source repositories
-- **Note**: Free repository quota is marketing short-term value (for acquisition), not core value
-
-**Long-term Value Analysis**:
-- **Long-term value**: Code history and reputation, professional portfolio, contribution graph (green squares)
-- **End users gained**: "I have a complete contribution history", "My contribution graph shows my work", "I have reputation in the open source community"
-- **Timeline**: Months to years of continued contributions
-- **Note**: Contribution graph is a value perception mechanism, making abstract "reputation" visible and shareable
-
-**Relationship Between Short-term and Long-term**:
-- **Relationship type**: Immediate utility and accumulated assets (Pattern 1, 44% of products)
-- **Observation**: Each code operation provides independent immediate value (backup, collaboration), while automatically accumulating long-term assets (history, portfolio, reputation)
-- **Characteristics**: Short-term value is independently complete; long-term value emerges from accumulation of short-term usage
-
-**Value Communication**:
-- **Core value**: Code backup and collaboration (immediate utility)
-- **Additional value**: Portfolio and reputation (long-term accumulation)
-- **Observation**: GitHub emphasizes immediate utility, long-term value is a natural byproduct
-
-**Adoption Mechanism**:
-- Immediate code backup and collaboration features
-- Free public repositories (marketing value, lowers adoption barrier)
-- Social features (Star, Fork, Follow)
-- Contribution graph visualizes long-term value (value perception mechanism)
-
-**This case applies to**:
-- ✅ Developer tools and platforms
-- ✅ Products requiring version control and collaboration
-- ✅ Products with clear short-term utility and naturally accumulating long-term value
-- ✅ Platforms with network effects
-- ❌ One-time tools not requiring continued use
-- ❌ Pure consumption products
-
-**Data Sources**:
-- GitHub official blog
-- Microsoft acquisition announcement (2018)
-- GitHub Octoverse annual reports
-
----
-
-### Notion
-
-**Product Background**:
-- **Product type**: B2C/B2B note-taking and knowledge management tool
-- **Market context**: Competitive market (Evernote, OneNote, Confluence existed)
-- **User behavior**: Daily use (notes, documents, project management)
-- **Launch date**: 2016
-- **Applicable scenarios**: Knowledge management, team collaboration, personal productivity
-
-**Quantitative Data**:
-- 2016: Launch
-- 2020: 4,000,000 users
-- 2021: 20,000,000 users
-- 2021: $10 billion valuation
-- 2023: 30,000,000+ users
-
-**Short-term Value Analysis**:
-- **Short-term value**: Ideas recorded, information organized, documents created
-- **Value type**: Core short-term value (immediate utility with each use)
-- **End users gained**: "My ideas were saved", "My information was organized", "My document was completed"
-- **Perceivability**: Highly tangible - notes, pages, databases
-
-**Long-term Value Analysis**:
-- **Long-term value**: Knowledge base accumulation, interconnected information system, team wiki, personal "second brain"
-- **End users gained**: "I have a complete knowledge system", "My notes are interconnected and more organized"
-- **Timeline**: Months to years of continued use and content accumulation
-
-**Relationship Between Short-term and Long-term**:
-- **Relationship type**: Immediate utility and compound accumulation
-- **Observation**: Each note provides immediate recording value, connections between notes make the entire system's value grow non-linearly
-- **Characteristics**: Short-term value is independently complete; long-term value emerges from compound effects of note network
-
-**Value Discovery Process**:
-- **End users thought they wanted**: "Take notes" (functional need)
-- **End users discovered they valued**: "Become organized", "Build knowledge system" (identity and capability need)
-- **Discovery mechanism**: Flexible databases + templates + page links → discover organizational and systematization value
-
-**Value Communication**:
-- **Initial positioning**: All-in-one workspace (multi-function workspace)
-- **Actual value**: Knowledge management and organizational capability improvement
-- **Observation**: Notion lets end users discover their own organizational approach through use
-
-**Adoption Mechanism**:
-- Immediate note-taking and document features
-- Flexible database and template system
-- Free personal version (lowers adoption barrier)
-- Community-shared templates (accelerates value discovery)
-
-**This case applies to**:
-- ✅ Knowledge management and productivity tools
-- ✅ Products requiring content accumulation
-- ✅ Products where value compounds with usage time
-- ✅ Products suitable for both individuals and teams
-- ❌ One-time use tools
-- ❌ Products not requiring content accumulation
-
-**Data Sources**:
-- Notion official blog
-- Funding announcements
-- User growth reports
-
----
-
-### MyFitnessPal
-
-**Product Background**:
-- **Product type**: B2C nutrition tracking and weight loss application
-- **Market context**: Competitive market (multiple health tracking apps)
-- **User behavior**: Daily use (logging each meal)
-- **Launch date**: 2005
-- **Applicable scenarios**: Weight loss, health management, nutrition awareness improvement
-
-**Quantitative Data**:
-- 2005: Launch
-- 2015: Acquired by Under Armour for $475 million
-- 2018: 200,000,000+ registered users
-- 2020: Food database contains 11,000,000+ items
-- 2023: Continued active use
-
-**Short-term Value Analysis**:
-- **Short-term value**: Calorie tracking, nutrition information lookup, daily food logging
-- **Value type**: Instrumental short-term value (tracking is means to achieve weight loss goal)
-- **End users gained**: "I know my calorie intake today", "I know this food's nutritional content"
-- **Perceivability**: Highly tangible - calorie numbers, nutrition charts, daily progress bars
-
-**Long-term Value Analysis**:
-- **Long-term value**: Weight loss, improved nutrition habits, better health
-- **End users gained**: "I successfully lost weight", "I developed healthy eating habits"
-- **Timeline**: Weeks to months of continued tracking
-
-**Relationship Between Short-term and Long-term**:
-- **Relationship type**: Instrumental tracking drives behavior change
-- **Observation**: Daily tracking (short-term) provides awareness and data, which are means to achieve weight loss (long-term)
-- **Characteristics**: Short-term tracking itself has limited value; main value is in changing behavior through awareness to achieve long-term goal
-
-**Value Communication**:
-- **Core value**: Weight loss and health management (long-term goal)
-- **Implementation means**: Calorie tracking (short-term tool)
-- **Observation**: MyFitnessPal clearly communicates long-term goal, tracking is the method to achieve it
-
-**Adoption Mechanism**:
-- Massive food database (reduces tracking cost)
-- Barcode scanning (simplifies input)
-- Daily calorie goal and progress visualization
-- Community support and motivation
-
-**This case applies to**:
-- ✅ Products requiring long-term behavior change
-- ✅ Health and habit formation applications
-- ✅ Tracking and monitoring tools
-- ✅ Products where long-term goals require daily actions
-- ❌ Immediate utility tools
-- ❌ Entertainment consumption products
-- ❌ Products not requiring behavior change
-
-**Data Sources**:
-- Under Armour acquisition announcement (2015)
-- MyFitnessPal official blog
-- User growth reports
-
----
-
-### Netflix
-
-**Product Background**:
-- **Product type**: B2C video streaming service
-- **Market context**: Competitive market (competitors include Hulu, Disney+, Amazon Prime Video, etc.)
-- **User behavior**: Daily or weekend use (entertainment consumption)
-- **Launch date**: 1997 (DVD rental), 2007 (streaming)
-- **Applicable scenarios**: Entertainment consumption, video watching
-
-**Quantitative Data**:
-- 2007: Streaming service launch
-- 2013: 44,000,000 subscribers
-- 2023: 230,000,000+ subscribers
-- Content library: Thousands of movies and series
-- Average viewing time: 2+ hours per day per subscriber
-
-**Short-term Value Analysis**:
-- **Short-term value**: Entertainment enjoyment, video content consumption
-- **Value type**: Core short-term value (entertainment is the primary and complete value)
-- **End users gained**: "I enjoyed entertainment", "I finished watching this series", "I spent leisure time"
-- **Perceivability**: Highly tangible - video content, viewing experience, entertainment satisfaction
-
-**Long-term Value Analysis**:
-- **Long-term value**: Improved recommendation algorithm, continued content access, viewing history
-- **End users gained**: "Recommendations are increasingly accurate", "I continued accessing the content library"
-- **Timeline**: Months of continued use
-- **Observation**: Long-term value is relatively small, primarily recommendation improvement
-
-**Relationship Between Short-term and Long-term**:
-- **Relationship type**: Immediate entertainment and moderate personalization
-- **Observation**: Each viewing provides complete entertainment value (short-term), long-term value is limited to recommendation algorithm improvement
-- **Characteristics**: Short-term value dominates; long-term value is algorithm optimization, does not change core experience
-
-**Value Communication**:
-- **Core value**: Immediate entertainment and content access
-- **Additional value**: Personalized recommendations
-- **Observation**: Netflix emphasizes content library and immediate viewing, recommendations are enhancement features
-
-**Adoption Mechanism**:
-- Large content library
-- Ad-free viewing experience
-- Multi-device support
-- Original content exclusivity
-- Personalized recommendations
-
-**This case applies to**:
-- ✅ Entertainment consumption products
-- ✅ Content platforms
-- ✅ Products where short-term value dominates
-- ✅ Subscription-based services
-- ❌ Products requiring long-term skill accumulation
-- ❌ Products requiring behavior change
-- ❌ Products where value needs to accumulate
-
-**Data Sources**:
-- Netflix quarterly reports
-- Company announcements
-- User growth reports
-
----
-
-### Slack
-
-**Product Background**:
-- **Product type**: B2B team communication platform
-- **Market context**: Competitive market (competitors include Microsoft Teams, Discord, etc.)
-- **User behavior**: Daily high-frequency use (work communication)
-- **Launch date**: 2013
-- **Applicable scenarios**: Team collaboration, enterprise communication, remote work
-
-**Quantitative Data**:
-- 2013: Launch
-- 2014: 500,000 daily active users
-- 2019: 12,000,000 daily active users
-- 2021: Acquired by Salesforce for $27.7 billion
-- 2023: Continued growth
-
-**Short-term Value Analysis**:
-- **Short-term value**: Communicate with colleagues, gained answers to questions, files are shared
-- **Value type**: Core short-term value (real-time communication is the primary value)
-- **End users gained**: "I contacted my colleague", "I gained an answer", "My problem was solved"
-- **Perceivability**: Highly tangible - message sent successfully, gained reply, file sharing completed
-
-**Long-term Value Analysis**:
-- **Long-term value**: Searchable conversation history, team knowledge base, communication culture, workflow integrations
-- **End users gained**: "I searched historical conversations", "Team knowledge is all here"
-- **Timeline**: Months to years of continued use
-
-**Relationship Between Short-term and Long-term**:
-- **Relationship type**: Real-time communication and archival value
-- **Observation**: Each communication provides immediate value (real-time exchange), historical messages accumulate into searchable knowledge base (long-term)
-- **Characteristics**: Short-term value is the primary reason for use; long-term value is a byproduct of archival
-
-**Value Communication**:
-- **Core value**: "Where work happens" - emphasizes immediate communication
-- **Additional value**: Searchable history and integrations
-- **Observation**: Slack emphasizes real-time communication, historical search is important but secondary feature
-
-**Adoption Mechanism**:
-- Immediate messaging and notifications
-- Channel organization (by project/topic)
-- Rich integration ecosystem
-- Free version (lowers adoption barrier)
-- Network effects (team uses together)
-
-**This case applies to**:
-- ✅ Team communication and collaboration tools
-- ✅ Real-time interaction products
-- ✅ B2B SaaS products
-- ✅ Platforms with network effects
-- ❌ Products primarily for asynchronous collaboration
-- ❌ Individual use tools
-- ❌ Products not requiring historical records
-
-**Data Sources**:
-- Slack official blog
-- Salesforce acquisition announcement (2021)
-- User growth reports
-
----
-
-## Pattern Analysis
-
-### Success Pattern Characteristics
-
-**Value Clarity**:
-- Concrete outcomes: "Access files from any device" (Dropbox)
-- Identity transformation: "Become a photographer" (Instagram)
-- Problem resolution: "Efficient problem-solving" (WeChat)
-
-**Value Timeline**:
-- Short-term: Immediate utility is complete offering (Dropbox, WeChat)
-- Long-term: Committed end users with optional touchpoints (Duolingo)
-- Hybrid: Immediate + progressive discovery (Instagram)
-
-**Value Perception**:
-- Tangible outcomes: File appears, photo with likes, problem solved
-- Visible progress: Streak counter, level progression, contribution graph
-- Shareable achievements: Can show others what accomplished
-
-**Value Discovery**:
-- Immediate: End users understand value on first use (Dropbox)
-- Progressive: End users discover deeper value through usage (Instagram, WeChat)
-- Guided: Product helps end users discover value (Duolingo gamification)
-
-### Failure Pattern Characteristics
-
-**Value Clarity Issues**:
-- Abstract propositions: "Unified communication" (Google Wave)
-- Feature-focused: "10-minute videos" without clear benefit (Quibi)
-- Technical jargon: End users don't understand value
-
-**Value Timeline Issues**:
-- Unclear when value materializes (Google Wave)
-- Context mismatch: Value proposition doesn't match end user situation (Quibi commute focus during lockdown)
-
-**Value Perception Issues**:
-- Abstract outcomes: Can't point to tangible achievement
-- Invisible progress: No visible manifestation of value
-- Not shareable: Can't demonstrate to others
-
-**Value Discovery Issues**:
-- Requires exploration: End users must invest time before understanding (Google Wave)
-- No differentiation: End users don't see unique value vs alternatives (Quibi)
-- Network dependency: Value requires others to adopt first (Google Wave)
-
----
-
-## Comparative Analysis
-
-### Short-term vs Long-term Value
-
-**Short-term value products**:
-- Characteristics: Immediate, tangible results
-- Examples: Dropbox (< 5 min), Zoom (< 30 sec), Stripe (< 1 min)
-- Observed characteristics: Fast adoption, clear "aha moment"
-- Valid for: Products where immediate utility is core value
-
-**Long-term value products**:
-- Characteristics: Value accumulates over time
-- Examples: Duolingo (6-12 months), fitness apps (3-6 months)
-- Observed characteristics: Deep commitment once adopted
-- Valid for: Products where accumulated results are core value
-
-**Important**: Both approaches are valid. Choice depends on product nature and end user context. Neither is superior.
-
-### Optional Bridging Mechanisms
-
-Some long-term products add short-term touchpoints:
-- Immediate feedback (seconds): Confirm action worked
-- Short-term milestones (days/weeks): Show progress
-- Social validation (ongoing): Community support
-- Identity formation (weeks/months): "You're a runner" from day one
-
-**Note**: These are optional design choices, not requirements. Some long-term products succeed without any short-term mechanisms when end users are already committed to long-term goals.
-
----
-
-## Data Quality Notes
-
-**Quantitative Data**:
-- All numbers from public sources
-- Company announcements, financial filings, media coverage
-- Some metrics directional based on industry reports where exact figures not disclosed
-
-**Qualitative Data**:
-- End user feedback from post-mortems, surveys, media interviews
-- Design philosophy from founder statements, company documentation
-
-**Analysis Framework**:
-- Value clarity: Can end users articulate what they'll achieve?
-- Value timeline: When do end users see results?
-- Value perception: Can end users see/feel progress?
-- Value discovery: How do end users come to understand value?
+- Quibi public shutdown letter (2020)
+- CNBC coverage of Quibi shutdown (2020)
+- TechCrunch coverage of Sensor Tower paid conversion estimate and Quibi response (2020)
