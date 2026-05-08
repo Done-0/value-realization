@@ -7,7 +7,7 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.2.1
+**Version**: 1.2.2
 **Last Updated**: 2026-05-05
 **Type**: Analytical Framework
 
@@ -26,7 +26,7 @@ This skill provides a philosophical framework and analytical methods for evaluat
 **Key terminology**:
 - **User**: The person using this skill (product creator, PM, designer, entrepreneur, etc.)
 - **End user**: The person who will use the product being discussed
-- **Value**: The outcomes end users achieve through the product (such as identity, financial gain, capability enhancement, time savings, etc.)
+- **Value**: A beneficial relational property between subject and object, expressed as the outcomes end users achieve through the product (such as identity, financial gain, capability enhancement, time savings, etc.)
 - **Features**: The product's technical capabilities
 - **Value Scenario**: A concrete context in which end users use the product with a specific task or goal and obtain an outcome that can be understood, verified, and perceived
 - **Usage Scenario**: A concrete context in which the product may be used
@@ -430,7 +430,7 @@ If you still need to borrow a cross-domain example, first restore the preconditi
 
 **Features vs Value**:
 - Features: What the product does (technical capabilities)
-- Value: What end users achieve through the product (outcomes, benefits)
+- Value: What end users achieve through the product in a concrete context (outcomes, benefits)
 - End users adopt products based on value, not features
 
 **Value perception timing**:

@@ -13,7 +13,7 @@ Each case is organized around:
 
 **Terminology**:
 - **End users**: People who use the product, not necessarily buyers, managers, or product creators
-- **Value**: A describable outcome end users obtain through the product; the specific outcome is evaluated within a value scenario
+- **Value**: A beneficial relational property between subject and object, expressed as a describable outcome end users obtain through the product; the specific outcome is evaluated within a value scenario
 - **Feature**: A technical or interaction capability provided by the product
 - **Mechanism**: A mode of action that connects features to end-user outcomes, lowers friction, maintains participation, or strengthens perception; a mechanism is not value itself
 - **Value proposition**: An outcome promise end users can understand and express
@@ -69,9 +69,9 @@ Each case is organized around:
 - End users could experience value after completing the first synchronization flow
 
 **Analysis Boundary**:
-- **Key preconditions**: End users have an explicit need for cross-device file access; product value can be verified during first use; trial cost and switching cost are low
-- **Conclusion scope**: Utility products, multi-device use cases, products whose value can be verified during first use
-- **Failure scope**: Long-term behavior change products, products whose core value depends on long-term accumulation, organization-mandated adoption contexts
+- **Key preconditions**: End users have an explicit need for cross-device file access; the value end users obtain can be verified during first use; trial cost and switching cost are low
+- **Conclusion scope**: Utility products, multi-device use cases, products where the value end users obtain can be verified during first use
+- **Failure scope**: Long-term behavior change products, products where end-user value depends on long-term accumulation, organization-mandated adoption contexts
 - **Evidence status**: User growth and referral program data are public data; the mechanism conclusion is analytical inference: immediately verifiable value supports adoption
 
 **Data Sources**:
@@ -131,7 +131,7 @@ Each case is organized around:
 **Analysis Boundary**:
 - **Key preconditions**: End users have public expression and social feedback needs; photo visual modification is immediately perceivable; following, likes, and comments create continued feedback
 - **Conclusion scope**: Social products, identity expression products, content products with social feedback and network effects
-- **Failure scope**: Utility products without social feedback or identity expression, private-use products, products whose value comes from single-task completion
+- **Failure scope**: Utility products without social feedback or identity expression, private-use products, products where end-user value comes from single-task completion
 - **Evidence status**: User growth and acquisition information are public data; the mechanism conclusion is analytical inference: identity expression and social recognition value are discovered through use
 
 **Data Sources**:
@@ -477,7 +477,7 @@ Each case is organized around:
 **Analysis Boundary**:
 - **Key preconditions**: End users have ongoing entertainment consumption demand; the content library supports repeated access; each viewing session can deliver the main entertainment outcome
 - **Conclusion scope**: Entertainment consumption, content platforms, subscription services where each use can deliver the core consumption value
-- **Failure scope**: Skill learning products, behavior change products, products whose core value depends on long-term accumulation rather than single-session consumption
+- **Failure scope**: Skill learning products, behavior change products, products where core end-user value depends on long-term accumulation rather than single-session consumption
 - **Evidence status**: Subscriber scale and viewing hours are public data; the mechanism conclusion is analytical inference: immediate entertainment is the core value in this analysis
 
 **Data Sources**:
@@ -530,7 +530,7 @@ Each case is organized around:
 - Network effect through team use
 
 **Analysis Boundary**:
-- **Key preconditions**: Team members need frequent communication; value depends on multi-person use; historical messages can be continuously searched and used in later work
+- **Key preconditions**: Team members need frequent communication; the value end users obtain depends on multi-person use; historical messages can be continuously searched and used in later work
 - **Conclusion scope**: Team communication, real-time collaboration, B2B products where internal organizational information needs to remain searchable
 - **Failure scope**: Personal tools, low-frequency communication contexts, contexts centered mainly on asynchronous document collaboration
 - **Evidence status**: Daily active users and acquisition information are public data; the mechanism conclusion is analytical inference: real-time communication accumulates into searchable team memory
@@ -584,7 +584,7 @@ Each case is organized around:
 - **Network effect startup friction**: The product required team use; non-explicit value increased the friction of inviting others
 - **Feature innovation does not equal value clarity**: Innovative features do not remove adoption friction when the end-user outcome is not explicit
 - **Technical concepts are not user value**: Technical concepts like unified communication are not end-user value
-- **Network-effect product value threshold**: Products requiring network effects depend on value clarity for inviting others to join
+- **Network-effect value threshold**: Products requiring network effects depend on value clarity for inviting others to join
 
 **Feedback Themes in Public Post-mortem Materials**:
 - Invitations were received but product purpose was not understood
@@ -592,9 +592,9 @@ Each case is organized around:
 - Individual use value was insufficient when friends or team members did not use it
 
 **Analysis Boundary**:
-- **Key preconditions**: End users adopt voluntarily; alternatives like Email and IM already meet basic tasks; product value depends on multi-person use; the new interaction model creates learning cost
+- **Key preconditions**: End users adopt voluntarily; alternatives like Email and IM already meet basic tasks; the value end users obtain depends on multi-person use; the new interaction model creates learning cost
 - **Conclusion scope**: Collaboration products with voluntary adoption, existing alternatives, multi-person use requirements, and value propositions where end-user outcomes are not explicit
-- **Failure scope**: Organization-mandated products, products without alternatives, products whose value is determined by compliance or infrastructure constraints
+- **Failure scope**: Organization-mandated products, products without alternatives, products where value realization is determined by compliance or infrastructure constraints
 - **Evidence status**: Launch, invite scale, and shutdown timing are public data; feedback themes come from public post-mortem materials; the mechanism conclusion is analytical inference: non-explicit value increases network-effect startup friction
 
 **Data Sources**:
