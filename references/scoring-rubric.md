@@ -1,115 +1,102 @@
-# Status Indicator Reference
+# Scoring Criteria: Direction and Solidity
 
-This document provides reference criteria for status indicators (🔴🟡🟢) used in value realization analysis. Status indicators describe end users' cognitive state in the current value scenario across value clarity, value timeline, value perception, and value discovery. They support analytical judgment and do not replace concrete reasoning. Each judgment depends on product type, market conditions, end-user characteristics, and the current value scenario.
+Every dimension is judged from two independent angles: **direction** (does value hold on this dimension) and **solidity** (how much of that judgment rests on evidence). The two must be given separately and cannot substitute for each other — a green light might mean "confirmed to hold" or merely "assumed to hold," and the difference is large.
 
----
-
-## Value Clarity
-
-**What this examines**: In the current value scenario, whether end users can articulate the outcome they will achieve through the product and how that outcome relates to the current task.
-
-**🟢 End users can articulate specific outcomes**
-
-- End users can describe the outcome they will achieve
-- End users' answers focus on outcomes, not features or technical capabilities
-- End users can explain the relationship between the product and the current task
-
-**🟡 End users understand the category or use, but outcomes are unclear**
-
-- End users can describe the product category or general use
-- End users can explain what the product does, but not what outcome they will achieve
-- End users' answers mix feature descriptions with outcome descriptions
-
-**🔴 End users cannot articulate what outcome they will achieve**
-
-- End users describe features, technical capabilities, or product attributes without connecting them to their own outcome
-- End users cannot state the expected outcome
-- End users' answers focus on what the product can do, not what they will achieve
+This file is an anchor for judgment, not a formula to apply mechanically. The same signal can map to different grades across different products, markets, users, and scenarios. When you give a grade, attach one line of "why this grade" stating the basis. When a grade conflicts with the detailed analysis, the full analysis wins.
 
 ---
 
-## Value Timeline
+## Direction axis (🔴🟡🟢)
 
-**What this examines**: In the current value scenario, when value is realized, whether end users know when value is realized, and whether that timeline matches the product's nature, task context, and end-user expectations.
+Direction answers: in the current value scenario, does this dimension hold. It describes the **conclusion** of the judgment, not how much evidence there is.
 
-**🟢 Value timing matches product nature, task context, and end-user expectations**
+- **🟢 Holds**: on this dimension, the value relationship stands up in the current scenario; the key conditions are present.
+- **🟡 Partially holds**: the direction is right, but there's an obvious gap — some conditions aren't met, or it only holds in a narrower range.
+- **🔴 Doesn't hold**: on this dimension the value relationship doesn't stand up, or a decisive key condition is missing.
 
-- Short-term value products: End users can see results during the current task
-- Long-term value products: End users understand that results require continued effort and accept that timeline
-- Hybrid approach: Short-term results support the long-term goal rather than replace long-term value
-- Value realization timing matches end users' expectations for the current scenario
-
-**🟡 Gap exists between value realization timing and end-user expectations**
-
-- End users' expected timing for value realization differs from the actual timing
-- Long-term value products: End users have a risk of stopping use before results appear
-- Short-term value products: Results appear after the current task, and that delay differs from end-user expectations
-- The waiting period lacks perceptible progress that maintains continued effort
-
-**🔴 Value timing conflicts with end-user expectations or product nature**
-
-- Value realization timing is severely mismatched with end-user expectations or product nature
-- End users do not know when value will be realized
-- End users do not know how to continue investing effort before value is realized
+Note that 🔴 isn't always bad news. A clear "confirmed not to hold" conclusion is more useful than a vague "looks like it holds but lacks basis" judgment — it tells you to switch targets.
 
 ---
 
-## Value Perception
+## Solidity axis (🟩🟨🟧🟥)
 
-**What this examines**: In the current value scenario, whether end users can see, feel, or demonstrate the outcome they achieved.
+Solidity answers: how much of this judgment rests on evidence versus still hanging on assumption. The denominator is the set of premises this dimension depends on; solidity is roughly the share of those already backed by evidence. It's a **proportion**, not a good/bad verdict, so it's shown with a green-to-red color scale of squares — the greener the color, the more evidence; the redder, the more it hangs on assumption.
 
-**🟢 End users can point to specific evidence of value realization**
+- **🟩 Solid**: the judgment is basically evidence-backed — on-target user interviews, behavioral data, real usage records, comparable cases — the key preconditions are all verified and the boundaries are drawn.
+- **🟨 Half**: evidence and assumption in equal measure. Part verified, part still inferred. The most common state in real projects.
+- **🟧 Thin**: a direction can be given, but most of the basis still hangs on assumption, unsupported by on-target evidence.
+- **🟥 Empty**: not yet explored, a blind spot, with no basis to speak of.
 
-- End users can identify concrete evidence of value realization
-- End users can perceive progress or outcomes
-- End users can show or explain the achieved outcome to others
+The color of the square draws the proportion itself: 🟩 solid, 🟨 half, 🟧 thin, 🟥 empty. It uses squares while the direction axis uses round lights (🔴🟡🟢) — two different visual families. Shape plus color together let you tell at a glance which is "does it hold" and which is "how much rests on evidence," without confusing the two sets of symbols.
 
-**🟡 Value realization is partially visible to end users**
+Don't report fake precision like "63%." Solidity is itself an estimate; four grades plus one line of basis is enough. Its job is to make "where it's fuzzy, and how fuzzy" visible, not to look precise.
 
-- Some aspects of value realization are visible to end users, while others remain abstract
-- End users can perceive the outcome, but need explanation, comparison, or inference
-- End users can see partial evidence but cannot fully perceive value realization
-
-**🔴 Value realization is invisible to end users**
-
-- End users cannot identify concrete evidence of value realization
-- End users cannot perceive progress or outcomes
-- End users cannot show or explain what they achieved
+**The "thin" and "empty" grades of solidity are exactly the checklist of what to go talk about and verify next.**
 
 ---
 
-## Value Discovery
+## How direction and solidity combine
 
-**What this examines**: In the current value scenario, how end users recognize what value they can achieve through the product.
+Direction and solidity are orthogonal; any combination can occur, and that's what fits reality:
 
-**🟢 End users recognize value through an existing goal or natural use**
-
-- End users already know they want to achieve this type of value before entering the scenario
-- Or, end users can reach the first value-confirmation point during initial use
-- The value discovery path can be recognized by end users without additional explanation
-
-**🟡 End users need supporting explanation to recognize value**
-
-- End users need external explanation, tutorials, demonstrations, or usage feedback to recognize the value they can achieve
-- The value discovery path is not directly visible to end users
-- Some end users cannot recognize value without supporting explanation
-
-**🔴 End users lack a clear value discovery path**
-
-- End users need an additional learning process outside the current value scenario before recognizing the value they can achieve
-- End users cannot identify the relationship between features, feedback, and outcomes
-- End users have a risk of stopping use before recognizing value
+- **🟢 🟩**: holds, with evidence. You can act on it.
+- **🟢 🟧**: looks like it holds, but mostly on assumption — the most dangerous "pretty fog." The first thing to go verify.
+- **🟡 🟨**: partially holds, evidence and assumption mixed — most common in real projects. Mark the gaps and the to-be-verified items.
+- **🔴 🟩**: confirmed not to hold, with evidence. A valuable conclusion — switch targets or change direction.
+- **🔴 🟧**: looks like it doesn't hold, but the basis is thin; don't rush to reject it, it may just be unexplored.
+- **Any direction 🟥**: this dimension hasn't really been analyzed yet; fill in the basis first, don't rush to give a direction.
 
 ---
 
-## Usage Notes
+## How to present
 
-**These are reference criteria**: Indicators describe end users' cognitive state in the current value scenario. They support judgment but are not a decision formula.
+- **Give a four-dimension overview up front.** As the analysis opens, use one small table to list all four dimensions' direction and solidity at once, so the reader sees the whole picture at a glance — which dimension is solid, which is empty, where the "pretty fog" is. This is navigation for the reader: transmit the whole low-loss first, then expand each dimension in detail.
 
-**Context determines judgment**: The same behavior can correspond to different states across product types, market conditions, end-user groups, and value scenarios.
+  | Dimension | Direction | Solidity |
+  |------|:----:|:------:|
+  | Value Scenario | 🟢 | 🟩 |
+  | Value Conditions | 🔴 | 🟥 |
+  | Value Timeline | 🟡 | 🟨 |
+  | Value Delivery | 🟢 | 🟧 |
 
-**Analysis takes precedence over indicators**: When status indicators and detailed analysis differ, complete analysis takes precedence. Indicators do not replace the reasoning chain.
+- **The overview doesn't replace reasoning.** The overview is only navigation, not the conclusion itself. Each dimension still has to expand into full reasoning below, then land back on direction and solidity — you can't treat the symbols up front as "already analyzed." Within each dimension the order is always reasoning first, symbols after.
+- **Symbols go straight into the dimension heading, direction first, solidity right after.** Each dimension's direction light and solidity square follow the heading, the two next to each other, e.g. `### 3. Value Timeline 🟡 🟨` or `### 2. Value Conditions 🔴 🟧`. Written adjacent, a `🟢 🟧` "pretty fog" jumps out at a glance; split apart, you'd miss it.
+- **Reasoning goes into the body, not a standalone label line.** "Why this grade" shouldn't be a separate line after the heading; work it into the dimension's reasoning — with phrases like "the current state is…" "the tension here is…" that state the judgment fully. Symbols only make the state scannable; the basis for the judgment always lives in the reasoning text.
 
-**Mixed characteristics are allowed**: A product can show characteristics of multiple states within a single dimension. The final state is judged from complete analysis.
+---
 
-**Reference, not requirement**: These criteria provide judgment anchors. Concrete analysis needs to state the scenario, preconditions, evidence, and reasoning process.
+## Per-dimension reference
+
+Below is what the three direction grades typically look like for each dimension. The solidity axis is common across all four (how much of the basis rests on on-target evidence), so it isn't repeated per dimension.
+
+### Value Scenario
+
+Looks at: whether you can lock in a precise-enough value-relationship configuration — who, in what state, in what situation and conditions, getting what result; and whether the value-relationship position is stated clearly.
+
+- **🟢**: the configuration is precise — the segment, state, and the problem they're stuck on are all pinned down, and the value-relationship position is clear (whether an external object is confirmed valuable, the user achieves their own result, or the user is confirmed valuable through feedback).
+- **🟡**: there's a rough scenario, but not precise enough — only a broad segment is circled, or the relationship position is vague, treating "can be used" as "produces value."
+- **🔴**: you can't say which configuration value is produced in, or pushing on it reveals there's no target at all. Here the direction itself is an important conclusion; the next step is to set a target or go talk.
+
+### Value Conditions
+
+Looks at: on what basis value holds, whether the preconditions supporting it are still present or will fail as time and the market shift; whether borrowed experience has been abstracted to a transferable second-layer condition.
+
+- **🟢**: the key preconditions are all present and still hold after the test of time; borrowed experience has had its conditions restored and second layer extracted, confirmed satisfied now.
+- **🟡**: some conditions present, some changed or in doubt; or a case was borrowed but only half its conditions match.
+- **🔴**: a decisive condition no longer holds, or has drifted out of validity over time, yet the judgment still runs on the old conditions.
+
+### Value Timeline
+
+Looks at: whether value is immediate or delayed, whether both sides know it's coming, what sustains investment during the wait, and whether the timeline matches the product's nature and user expectations.
+
+- **🟢**: the timeline matches the product's nature, the scenario, and user expectations; if delayed, the user knows value is coming and there's perceptible progress during the wait.
+- **🟡**: the timeline is broadly reasonable but shows signs of mismatch — e.g. delayed value with no perceptible progress during the wait, or short-term touchpoints starting to override the long-term goal.
+- **🔴**: the timeline conflicts with the product's nature or user expectations — immediate value forced into a long-term mechanism, or long-term value that loses users before they see a result.
+
+### Value Delivery
+
+Looks at: whether the value already produced can be perceived, understood, and verified low-loss by the target side, or is buried in the backend and can't get out.
+
+- **🟢**: the user can point at something concrete and say "I got this"; value has a low-loss, perceptible, showable carrier.
+- **🟡**: value is partly perceptible but still with obvious loss — the user has to infer it themselves, or only part of it is seen.
+- **🔴**: value is buried in backend logic; the user can't perceive it at all. Invisible value feels like no value.

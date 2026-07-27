@@ -1,534 +1,272 @@
 ---
 name: value-realization
-description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, providing product improvement directions, planning marketing strategies, analyzing adoption or retention problems, assessing whether copy communicates value, mapping features to usage scenarios or use cases, or when the user is uncertain about product direction, positioning, or whether end-user demand exists (e.g., 'is this a good idea?', 'what do you think of this product?', 'will users want this?', 'what is this feature useful for?', 'how should I explain this feature's value?', 'what do you think of this copy?', 'help me write a few usage scenarios', 'why aren't users retaining?', 'how should we position this?')."
+description: "Judge whether something actually produces value in a concrete scenario. Value is a beneficial relational property between subject and object, conditioned on the states of both sides, that only holds in a specific scenario. Use it for: evaluating a product idea or feature, judging whether a value proposition holds, writing or diagnosing copy and selling points, mapping features to concrete use scenarios, analyzing adoption and retention problems, deciding whether to borrow a case or practice, or whenever the user is unsure about product direction, positioning, or whether a need holds (e.g. \"is this idea any good?\", \"what do you think of this product?\", \"will users want this?\", \"what is this feature good for?\", \"how do I pitch the value of this feature?\", \"how's this copy?\", \"help me write some use scenarios\", \"why can't we retain users?\", \"how should we position ourselves?\", \"someone else did this and succeeded — can we copy it?\")."
 allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 ---
 
-# Value Realization Philosophy
+# Value Realization
 
-**Status**: Production Ready ✅
-**Version**: 1.2.5
-**Last Updated**: 2026-05-12
-**Type**: Analytical Framework
+**Type**: Analytical framework
 
 ## Overview
 
-This skill provides a philosophical framework and analytical methods for evaluating whether end users can "know" what value they can achieve through a product. It guides analysis from a value discovery perspective, rather than providing checklists.
-
-**What this skill provides**:
-- Framework to evaluate product ideas when certainty is lacking
-- Analysis methods for assessing end user value discovery
-- Patterns from real product successes and failures
-- Analysis methods for product design, positioning, and value communication
-
-**Core question**: Can end users clearly understand what value they'll achieve through the product - even if that value takes time to achieve?
-
-**Key terminology**:
-- **User**: The person using this skill (product creator, PM, designer, entrepreneur, etc.)
-- **End user**: The person who will use the product being discussed
-- **Value**: A beneficial relational property between subject and object. In product analysis, judgments about whether value holds must be specified in terms of outcomes that end users can understand, verify, and perceive in a concrete value scenario (such as identity, financial gain, capability enhancement, time savings, etc.)
-- **Value Relation Position**: An analytical element within a value scenario that indicates where value confirmation or outcome realization occurs in the value relation. Analysis must distinguish between: end users confirming that an external object, content, feature, or product is valuable to them; end users achieving their own outcome through the product; and end users themselves, their actions, or their outputs being confirmed as valuable through feedback from other people, groups, organizations, or systems. The three can coexist, but they cannot substitute for one another
-- **Features**: The product's technical capabilities
-- **Value Scenario**: A concrete context in which end users use the product with a specific task or goal and obtain an outcome that can be understood, verified, and perceived. A value scenario should specify the end-user task, product role, value relation position, and outcome end users achieve
-- **Usage Scenario**: A concrete context in which the product may be used
-- **Use Case**: A specific task or workflow end users complete with the product in a given context
-
-**Core distinction**:
-- Features are not value
-- Features are what the product can do, value is the outcomes end users gain
-- Analysis must translate features into specific end user outcomes
-- Value analysis should place value in a concrete scenario
-- Value scenario analysis should specify the value relation position to avoid conflating external objects being considered valuable, end users achieving their own outcomes, and end users themselves, their actions, or their outputs being confirmed as valuable
-- Usage scenarios explain where the product may be used, use cases explain how end users use it to complete tasks, and value scenarios explain what outcome end users get in that context
-
-## Core Insight
-
-End users adopt products when they **know** what value they'll get. This "knowing" is critical:
-
-- If end users know they'll achieve something valuable (even long-term), they'll use it
-- If end users don't know what they'll achieve, they won't use it - no matter how good the product is
-
-**What "knowing" means**:
-- End users can explain to themselves or others why they're using the product
-- End users can describe what they'll achieve (not just what features exist)
-- End users understand the outcome, even if it takes time to achieve
-
-**Observed patterns**:
-- When end users can articulate clear value → higher adoption rates
-- When end users cannot articulate value → adoption challenges, even with innovative features
-- Some end users adopt without full clarity, then discover value through use (progressive discovery)
-
-**Value types end users seek** (but aren't limited to):
-- Identity and belonging
-- Financial gain
-- Short-term benefits
-- Long-term benefits
-- Status and recognition
-- Capability enhancement
-- Time savings
-- Problem resolution
-
-**Role of value scenarios**:
-Product attributes themselves are not end-user value. Analysis should use scenarios to connect product attributes to end-user outcomes, define the context where value occurs, and provide a basis for judging whether the value holds.
-
-Attributes still matter. Attributes provide evidence; scenarios help establish the relationship between attributes and end-user outcomes.
-
-Value scenarios should also specify the value relation position: what external object end users confirm as valuable to them, what outcome they achieve for themselves through the product, and whether they themselves, their actions, or their outputs are confirmed as valuable through feedback.
-
-## The Challenge
-
-Most product creators face a hidden problem: **end users often don't know what they actually want, and how they articulate it may be wrong**.
-
-The job isn't just to build what end users ask for - it's to help end users discover what value they're actually seeking.
-
-## How to Engage with This Skill
-
-This skill operates through conversational analysis. When the user presents a product idea, feature, copy, usage scenario, or use case:
-
-1. **Identify the end users** - Determine who will use the product
-2. **Identify the value scenario** - Determine the concrete context where value occurs and specify the value relation position
-3. **Evaluate through four dimensions** - Value clarity, timeline, perception, discovery
-4. **Adjust output to the request** - Full analysis, copy, usage scenarios, use cases, or diagnostic assessment
-5. **Consider context** - Each product, market, and end user group differs
-
-**This framework guides thinking. It does not prescribe solutions.**
-
-**Analysis approach:**
-- Evaluate through four dimensions around the current value scenario
-- Adjust output format to the current request:
-  - When evaluating a product idea, fully analyze all four dimensions
-  - When writing copy, usage scenarios, or use cases, first judge whether value is clear, when value occurs, whether the outcome is perceivable, and whether end users need to discover value through use
-  - When diagnosing existing copy or a value proposition, use the four dimensions to assess effectiveness
-  - When the user asks to optimize a product or provide improvement directions, first use the value scenario and four dimensions to explain how the current object of analysis affects how end users obtain, understand, verify, or perceive outcomes in a concrete value scenario, then propose adjustments related to value realization or value communication; adjustments should be derived from the value scenario and analysis conclusions, and should distinguish judgments supported by current evidence from hypotheses requiring verification
-- Before outputting status indicators in the four-dimension analysis, read `references/scoring-rubric.md`
-- Analysis process for each dimension:
-  1. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
-  2. Systematically apply the dimension's analytical methods to the current product idea, feature, copy, usage scenario, or use case, stating the preconditions and applicability boundaries the judgment depends on (cannot skip the analysis and jump directly to questions)
-  3. After completing the dimension analysis, provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not vague generalizations). Check the status against `references/scoring-rubric.md`
-  4. When citing product cases, base on verifiable information and explain relevance to current product (case applicability assessment in "Research Methodology" section)
-  5. Pose sharp questions that directly challenge product necessity or require comparison with existing solutions
-- After completing all four dimensions, provide summary
-- Avoid logical gaps, show complete reasoning chain
-- Guide users to make decisions based on analysis
-
-## Analysis Framework
-
-Analyze these four dimensions around the current value scenario to evaluate whether end users will discover value:
-
-### 1. Value Clarity
-
-**Examine**:
-- Can end users articulate what they'll achieve?
-- Is the value proposition clear or vague to end users?
-- Do end users understand the outcome, not just the features?
-- Can end users explain the relationship between the product and their task in a concrete scenario?
-
-**Why this matters**:
-End users won't adopt a product if they can't explain to themselves (or others) why they're using it.
-
-**Real example - Dropbox** (see `references/real-cases.md` for detailed data):
-- Clear value to end users: "I can access my files from any device"
-- End users immediately understood what they'd achieve
-- Not about "cloud storage" (technical) but about "access anywhere" (value)
-- Insight: Translate technical features into user-facing value
-
-**Real example - Google Wave** (see `references/real-cases.md` for detailed analysis):
-- Vague value to end users: "Unified communication"
-- End users couldn't explain what they'd achieve
-- Shut down 14 months after launch despite innovative features
-- Lesson: Features without clear value = no adoption
-
-**Analysis method**:
-Ask: What would an end user say when asked "Why are you using this?" If the answer is unclear or feature-focused ("because it has X"), dig deeper into the actual value proposition. Then check whether the answer maps to a concrete scenario: under what conditions, to complete what task, and to obtain what result.
-
-### 2. Value Timeline
-
-**Examine**:
-- Is the value immediate or delayed for end users?
-- If delayed, do end users know it's coming?
-- What keeps end users engaged during the journey?
-- In the value scenario, does value occur immediately, later, or through sustained accumulation?
-
-**Why this matters**:
-Both short-term and long-term value are valid approaches. The choice depends on the product's nature, specific scenarios, and end user context. Neither is inherently superior.
-
-**Short-term value products** (end users see results in minutes/hours):
-- Dropbox: Upload → see file on other device (< 5 minutes)
-- Zoom: Click link → join meeting (< 30 seconds)
-- Stripe: Run test payment → see it work (< 1 minute)
-- Key consideration: Immediate value is the complete product
+This framework judges whether something — a product, feature, piece of copy, use scenario, or any value proposition — actually produces value in a concrete situation. It is not a checklist, nor an evaluation form you run once and hand in a report; it is a set of mutually independent analytical dimensions plus a method for sustained conversation, helping you turn a vague "is this good" judgment into "in which scenario, on what basis, when, and can it be perceptibly produced as value, and how much of these conclusions is reliable" — and then keep talking, round after round, until you've forced out a value or business opportunity that genuinely stands up.
 
-**Long-term value products** (end users see results in weeks/months):
-- Duolingo: Language fluency (6-12 months)
-- Fitness apps: Body transformation (3-6 months)
-- Investment apps: Wealth building (years)
-- Key consideration: End users commit to the journey
-
-**Design approaches available**:
-- Pure short-term: Deliver immediate value, that's the complete product
-- Pure long-term: End users are committed to the journey, no short-term touchpoints needed
-- Hybrid: Long-term goal with optional short-term touchpoints (XP, streaks, milestones)
-- All three approaches are valid - choose based on product nature and end user context
-
-**Analysis method**:
-Identify the primary value timeline. Assess whether the approach matches the product's nature, the current value scenario, and target end users' expectations. Don't force short-term mechanisms if end users are already committed to long-term goals.
+It rests on one premise: value is not a fixed message waiting to be transmitted and explained, but a relationship co-produced by the states of both sides in a concrete scenario. So judging value is not about explaining it clearly, but about finding the specific scenario configuration that makes this beneficial relationship actually hold. Discovering value comes from sharp falsification and relentless probing, not from agreement and paraphrase — and this runs through the entire framework, whether you're talking to real users or in repeated conversation with an AI.
 
-### 3. Value Perception
-
-**Examine**:
-- Can end users see/feel what they achieved?
-- Is progress tangible or abstract to end users?
-- Can end users show others what they've achieved?
-- In the value scenario, what concrete result can end users point to and say "I achieved this"?
+## Key terms
 
-**Why this matters**:
-Invisible value feels like no value to end users. Progress must be perceivable.
+- **User**: the person using this skill (product creator, product manager, designer, founder, etc.).
+- **End user**: the person who will use the product under discussion.
+- **Experience**: a past event that, under specific conditions within a dynamically shifting historical period, solved a specific problem and yielded a method that correctly solves it (the method carries its own preconditions and usage). Experience depends on a specific scenario, triggers selectively, and before use you must judge whether conditions have changed.
+- **Value**: a beneficial relational property between subject and object — a weighted, subjective property conditioned on the states of both sides. When both subject and object are people, it depends on the weighted balance of both sides' cognition.
+- **Value scenario**: the concrete configuration that makes the beneficial relationship hold — who, in what state, in what situation and conditions, gets what result from using this thing.
+- **Value-relationship configuration**: the specific combination of "subject — object — state — conditions" in the value scenario. Discovering value is, in essence, locking in this configuration.
+- **Value-relationship position**: where in the relationship the value confirmation or result realization happens. At least three kinds: the end user confirms some external object, content, or feature is valuable to them; the end user achieves their own result through the product; the end user themselves, their behavior, or their output is confirmed valuable through feedback from others, a group, or a system. The three can coexist but cannot substitute for one another.
+- **Second-layer condition**: a more abstract, cross-scenario-reusable constraint extracted from concrete experience, above the surface practice. When micro conditions keep shifting, you need to extract and record it.
+- **Use scenario**: the concrete situation in which the product might be used.
+- **Use case**: the specific task or flow an end user completes with the product in some situation.
+- **Feature**: the product's technical capability.
 
-**Note**: "Perceivable" takes different forms across product types:
-- Consumer products: Immediate visual feedback in UI (file appears, photo enhanced)
-- Enterprise software: Reports, dashboards, metrics, analytics
-- Developer tools: Build outputs, test results, performance metrics
-- The key is that end users can point to something concrete that shows value was delivered
+A few distinctions you must keep straight:
 
-**Visible outcomes for end users**:
-- Dropbox: File appears on other device (tangible)
-- Instagram: Beautiful photo with likes (tangible)
-- GitHub: Contribution graph (tangible)
-- Duolingo: Streak counter (tangible)
-- Observation: These products make achievements visible and shareable
+- A feature is not value. A feature is what the product can do; value is what the end user gets as a result in a concrete scenario.
+- A use scenario says where the product might be used, a use case says how a user uses it to complete a task, a value scenario says where the relationship is and on what basis it produces a beneficial property — being usable is not the same as producing value.
+- Talking about value requires putting it in a concrete scenario. Value detached from scenario can't be judged true or false.
+- Every conclusion has two independent axes: direction (does it hold) and solidity (how much rests on evidence). The two can't substitute for each other.
 
-**Invisible outcomes** (problematic for end users):
-- "Your data is synced" (abstract, can't see it)
-- "Security improved" (no visible change)
-- "Algorithm optimized" (nothing looks different)
-- Observation: Technical improvements are difficult for end users to perceive without visible manifestations
+## Three foundational definitions
 
-**Analysis method**:
-Identify what end users can point to and say "I achieved this". If the value is invisible, explore ways to make it tangible through UI, notifications, progress indicators, result comparisons, or scenario feedback.
+The whole framework rests on three definitions; return to them repeatedly while analyzing.
 
-### 4. Value Discovery
+### Experience
 
-**Examine**:
-- Do end users already know they want this?
-- Or will end users discover the value after using it?
-- How to help end users discover value they don't yet recognize?
-- Do end users know the value before entering the scenario, or do they need to experience the scenario before recognizing it?
+Experience is an event that happened in the past, solved a specific problem under specific conditions, and yielded a method that correctly solves the problem (the method includes its own preconditions and usage). Three points: it happened in the past, and does not include predictions about the future; it is bound to specific conditions and a specific problem; it holds within a dynamically shifting historical period, not for all time.
 
-**Why this matters**:
-Sometimes end users don't know what they want until they experience it. The product must help them discover it quickly.
+Because micro conditions keep shifting within that historical period, you need to extract from concrete experience a more abstract, more change-resistant second-layer condition and record it. That is: experience depends on a specific scenario, triggers selectively under subjective judgment, and before use you must first judge whether conditions have changed.
 
-**Discovery pattern - Instagram** (see `references/real-cases.md` for growth data):
-- End users thought they wanted: "Share photos"
-- End users discovered they valued: "Become a photographer" (identity)
-- Instagram helped discovery through filters, likes, and social validation
-- Insight: Instagram's success came from enabling identity transformation, not just photo sharing utility
+### Value
 
-**Discovery pattern - Notion**:
-- End users thought they wanted: "Take notes"
-- End users discovered they valued: "Become organized" (identity)
-- Notion helped discovery through flexible databases and templates
+Value is a beneficial relational property between subject and object — that is, a weighted, subjective property conditioned on the states of both sides. When both subject and object are people, it depends on the weighted balance of both sides' cognition.
 
-**Analysis method**:
-Determine whether end users already know what they want, or need to discover it. If discovery is needed, identify the fastest path to the "aha" moment through onboarding, tutorials, example scenarios, or progressive feature revelation.
+Value is based on both sides' states and on a specific scenario, not a fixed property the product owns unilaterally and that holds detached from the user. Experience, too, only produces value in a specific scenario — when conditions change, experience can fail; reusing past experience in a real scenario usually requires re-analyzing the situation at the time and adjusting how the method is used.
 
-## Patterns from Real Products
+Different end users in different scenarios may seek different types of value — identity and belonging, economic gain, status and recognition, capability improvement, time saved, problem solved, and so on. Such a list is only a prompt for exploration, not a template to apply.
 
-These aren't rules to follow - they're observed patterns to consider when analyzing specific situations.
+### Information loss
 
-For detailed case studies with real data, see `references/real-cases.md` (English) or `references/real-cases-zh.md` (中文).
+Experience is born with an insider as its subject, and a person cannot be both insider and outsider at once, so experience is inherently limited and lossy.
 
-### Pattern: Value Communication
+- A written summary depends on the recorder's writing skill and incurs loss (and the event can't be reconstructed 100%); with exceptional expressive skill there can also be gain.
+- Person-to-person communication depends heavily on both sides' cognition, expression, and perception: speaker1 wants to express 100 points and may only voice 80; in speaker2's cognition and perception it folds to 60, a loss of 40 in between (the reverse — gain — is also possible).
 
-**Products using concrete outcome descriptions**:
-- Dropbox: "Access files from any device"
-- Instagram: "Become a photographer" (identity transformation)
-- Observation: These products use concrete, achievable outcome descriptions
+## Core insights
 
-**Products using technical or feature descriptions**:
-- Google Wave: "Unified communication" (technical concept)
-- Some products: "Cloud storage with 2GB free" (feature list)
-- Some products: "Distributed file synchronization" (technical jargon)
-- Observation: These descriptions make it harder for end users to understand what they'll achieve
+Value is a relationship co-produced by both sides' states in a specific scenario, not something the product owns unilaterally and waits to hand to the user. This yields several judgments that run through the whole text:
 
-## Real Examples
+- **Discovering value is locking in the value-relationship configuration.** The question "does this thing have value" is itself malformed; the right question is "in which configuration — who, what state, what conditions — does it produce a beneficial property." Find that configuration and you've found value; fail to, and everything you say is empty.
+- **One person can't compute complete value.** Value depends on the weighted balance of both sides' cognition; analyzing alone, you only grasp your own half. The other half — the end user's state, cognition, and the conditions of the scenario they're in — must be obtained from real, matching end users.
+- **Value has degree; it's not a switch.** It's a weighted balance, inherently continuous, so a judgment can't be a binary hold/doesn't-hold verdict — it must also express how deep you've probed and how much rests on evidence.
+- **Conditions carry time.** Both experience and value only hold under specific conditions, and conditions shift dynamically: a judgment that held two years ago may run on conditions that have changed today — looking the same, but actually different.
 
-For complete case studies with metrics and data sources, see `references/real-cases.md`.
+## Two meta-principles
 
-## When This Framework Applies
+Two disciplines take priority over the specific dimensions: each analysis first calibrates its stance with them, then enters the dimensions. They address two common analytical biases.
 
-**Most applicable for**:
-- Consumer products (B2C)
-- Competitive markets (end users have alternatives)
-- Products requiring adoption and retention
-- New product categories (end users don't know what to expect)
-- Situations where value propositions, usage scenarios, or feature-to-value explanations need to be expressed clearly
+### One: start from the concrete, don't habitually see through to the "essence"
 
-**Less applicable for**:
-- Enterprise software (decision makers ≠ end users, switching costs high)
-- Monopoly products (end users have no choice)
-- Products where value is inherently delayed (investing, insurance)
+Once something has already manifested concretely and can be clearly perceived, the value or problem has already taken shape and landed — and you should directly use that concrete thing to build, rather than habitually abstracting it into an "essence."
 
-## Common Pitfalls
+The deeper you drill toward essence, the more you strip away the concrete conditions that make value hold — from the information-loss angle, abstraction is stripping conditions, which is loss, while the phenomenon is the state with the most complete conditions and the lowest loss. Seeing through and perceiving it but not acting yields a pretty judgment that can't land and can't be verified.
 
-### Pitfall 1: Assuming End Users Know What They Want
+The only necessary abstraction is extracting the cross-scenario-reusable second-layer condition. So abstract only up to the second layer and stop; don't drill all the way to essence and lose the concrete, usable thing already in your hand.
 
-**The trap**: Building exactly what end users ask for
-**The reality**: End users often don't know what they actually need
-**The approach**: Help end users discover the real value through conversation and exploration
+When analyzing: when the user can already point at a concrete phenomenon — a real piece of feedback, a real usage action, a real dataset — and speak, start from that concrete thing, rather than first abstracting it into a grand truth and discussing that.
 
-### Pitfall 2: Focusing on Features Instead of Value
+### Two: set the target before firing the arrow
 
-**The trap**: "Our product has X, Y, Z features"
-**The reality**: End users don't care about features, they care about what they'll achieve
-**The approach**: Always translate features into value: "Feature X helps end users achieve Y"
+Value is only produced in a specific scenario, so no target means no scenario, which means value has nowhere to happen.
 
-### Pitfall 3: Mechanically Copying Patterns
+Investing continuously without a clear expectation — continuing if there's an effect, stopping if there isn't — is like firing arrows endlessly with no target; once conditions change, what looked useful before fails instantly. Usually you should set the target first — lock in the concrete scenario configuration where value happens — then fire. There's also the exploratory case of finding the target: in a dynamically shifting environment, the target itself must be discovered. The framework holds both modes, but you must explicitly distinguish which one you're in, rather than pretending you have a target.
 
-**The trap**: "Duolingo uses streaks, so we should too"
-**The reality**: Treating other products' features or patterns as value itself, but not understanding under what conditions and through what mechanisms these features generate value for their end users
-**The approach**: Understand why these features or patterns generate value for their end users: in what scenarios, solving what problems, achieving what outcomes, then judge whether they apply to current end users
+When analyzing: at the open, confirm whether there's a target (whether the value scenario is clear). If not, first work with the user to set the target, or explicitly declare that you're now in exploratory target-finding mode — don't pretend to make a value judgment with no target.
 
-### Pitfall 4: Invisible Value
+## Analytical framework: four orthogonal dimensions
 
-**The trap**: "Our algorithm is 10x better"
-**The reality**: If end users can't see/feel the improvement, it doesn't matter
-**The approach**: Make value tangible and visible to end users
+Around the current value scenario, evaluate from four mutually independent dimensions. Orthogonal means: each dimension answers a question that doesn't presuppose the others' answers, and one dimension's conclusion can't substitute for or derive another's.
 
-### Pitfall 5: Cross-Context Misuse
+| Dimension | Question it alone answers | Independent axis |
+|------|---------------|--------|
+| Value Scenario | In which relationship configuration is value produced? Who, in what state, in what situation, does this relationship produce a beneficial property? | Location (is it there) |
+| Value Conditions | On what basis does this value hold? Are the preconditions supporting it still present, and will they fail over time? | Foundation (is it stable) |
+| Value Timeline | When is value produced? Immediate, delayed, or requiring sustained accumulation? Do both sides know it's coming? | Time (when) |
+| Value Delivery | Can value be perceived, understood, and verified low-loss by the target side from the producing side? Or is it buried in the backend, unable to get out? | Delivery (can it arrive) |
 
-**The trap**: "Dropbox succeeded with clear value, so the same conclusion can be applied directly"
-**The reality**: Conclusions only hold under specific preconditions; when original and current contexts differ, the original conclusion may fail
-**The approach**: Restore the preconditions behind the conclusion and verify whether the current situation satisfies them
+These four dimensions correspond to four decoupled links in value's path from production to arrival at the user: where it's produced, on what basis it holds, when it's produced, how it arrives. Changing any one link doesn't presuppose the state of the others, so they are mutually independent.
 
-### Pitfall 6: Cross-Level Misuse
+The four are not equal in weight; Value Scenario is the center of gravity. Discovering real value is, in essence, locking in the scenario configuration that makes the beneficial relationship hold; the latter three dimensions verify whether that scenario is real, stable, when it pays off, and whether it can arrive.
 
-**The trap**: "A judgment holds at the feature level, so the whole product is already validated"
-**The reality**: Local, tactical, short-term conclusions do not equal whole-product, strategic, long-term conclusions
-**The approach**: Determine which level the conclusion belongs to, then judge whether it can be generalized upward
+Each dimension follows the same flow:
 
-### Pitfall 7: Discussing Value Without Scenarios
+1. **Why this dimension is critical**: explain why this dimension is critical for the current object, giving reasoning rather than boilerplate.
+2. **State assessment**: systematically apply this dimension's method to the current product, feature, copy, or scenario, stating clearly the preconditions the judgment depends on and its boundaries of applicability — don't skip the analysis and jump straight to questions. Where the analysis should call out a contradiction, call it out directly — use one line, "the tension here is…," to put on the table where the current conception is fighting itself, rather than burying it in euphemistic narration.
+3. **Named real-product comparison** (mandatory on every dimension, not optional): take one or a few **real, named** products as a mirror to hold up to the current object. Don't say "some tools" in the vague; name names — is it Grammarly or Google Analytics, Duolingo or Mixpanel — restore the preconditions under which it holds on this dimension, then compare against the current object. A real product's value proposition is the sharpest reference: Grammarly sells "it fixes them" (result) not "it shows me errors" (data); Duolingo users commit to language fluency, with XP only an optional touchpoint. Use this concrete comparison to force out whether the current object stands up on this dimension. If a dimension genuinely has no comparable named product, say so — "this dimension has no directly comparable product" — rather than fudging it with a vague "similar tools."
+4. **Symbols in the heading, reasoning in the body**: this dimension's direction light (🔴🟡🟢 round lights) and solidity (🟩🟨🟧🟥 squares) follow the dimension heading directly, e.g. `### 3. Value Timeline 🟡 🟧` — the symbols speak for themselves, scannable at a glance. Direction uses round lights, solidity uses squares; different shapes, so they won't get confused. As for "why this grade," don't put it on a standalone label line — work it into this dimension's reasoning body, with phrases like "the current state is…" "the tension here is…" that state the judgment fully. Before judging these two grades, read `references/scoring-rubric.md`.
+5. **Sharp questions** (list one group at the end of each dimension, numbered 1./2./3.): don't dilute sharp questions by working them into paragraphs — take this dimension's 2–3 most cutting questions and **pull them out, numbered, as a group**, fired in rapid succession. Each must strike a soft spot in the current judgment and force the other side to answer head-on, not something they can wave off vaguely. For the intended force: "Is your XP system helping users become better marketers, or is it engagement theater?" "If users already have Google Analytics, why would they need another analytics tool?" Discovering value comes from falsification and hard probing, not from agreement — this group of sharp questions is exactly the handle that lobs the ball back to the other side and lets the conversation move to the next round.
 
-**The trap**: "This feature improves efficiency, reduces cost, and improves experience"
-**The reality**: If the scenario where value occurs is not specified, end users will have difficulty judging whether the value applies to them
-**The approach**: Map abstract value to a concrete scenario: who completes what task under what conditions, and what result they get through the product
+Within each dimension, keep the blocks short, direct, and unsparing — like a diagnosis, not a report. Reasoning first, then comparison, then the symbols into the heading, then a group of sharp questions last; the order is fixed. Complete all four dimensions before summarizing, avoid logical leaps, and show the full chain of reasoning.
 
-### Pitfall 8: Confusing Different Value Relation Positions
+### 1. Value Scenario (center of gravity)
 
-**The trap**: Because end users find content interesting, information useful, the product easy to use, or experience short-term enjoyment, the product is judged to already support the claimed end-user outcome
-**The reality**: These phenomena may correspond to external-object value confirmation or a short-term end-user outcome, but they do not mean that other outcomes such as capability, identity, relationships, contribution, task completion, or being needed have occurred
-**The approach**: Specify the value relation position and judge whether the position that has occurred is sufficient to support the product claim; do not extrapolate evidence from one position into a result in another position
+First ask which relationship configuration value is produced in: can you state clearly who, in what state, in what situation and conditions, gets what result from using this thing. Here you must distinguish value scenario from use scenario — being usable is not the same as producing value. Also look at the configuration's precision: circling only a broad segment merely grazes the scenario; pinning down the segment, their state, and exactly what problem they're stuck on is a precise-enough configuration.
 
-### Pitfall 9: Treating Contextual Certainty as Universal Certainty
+Also state the value-relationship position clearly: is this value the user confirming some external object is useful to them, the user achieving their own result through the product, or the user themselves or their output being confirmed valuable by others and systems. The three are often muddled together, but they support entirely different product claims.
 
-**The trap**: "This judgment holds in another context, so it can be applied directly in the current context"
-**The reality**: Judgments often depend on specific conditions. When the current context does not satisfy those conditions, whether the original judgment holds remains a hypothesis requiring verification
-**The approach**: Restore the key conditions the original judgment depends on and check whether the current context satisfies them; if key conditions do not hold or have changed, downgrade the original judgment to a hypothesis requiring verification and identify what evidence is needed
+Value only holds in a specific configuration; with the configuration unlocked, the latter three dimensions have nothing to attach to — you don't know who you're giving it to, or under what conditions you're verifying what. This is the target that meta-principle two speaks of.
 
-## Research Methodology
+Method: force the abstract value down to a concrete configuration — who, what state, what situation, what conditions, what result. If you can't force it out, there's no target yet, and that itself is an important conclusion (direction 🔴 or solidity "empty"); the next step is to set a target or go talk, not to keep analyzing downward.
 
-### Verify Information Accuracy
+### 2. Value Conditions
 
-When citing real product cases, base on verifiable information and explain relevance to current product.
+First ask on what basis this value holds, what preconditions support it, whether they're still present, and whether they'll fail as time and the market, technology, and user habits shift; if you've borrowed someone's experience or case, whether you've extracted the transferable second-layer condition or just copied the surface practice. Both experience and value only hold under specific conditions, and conditions shift dynamically; this dimension exists specifically to guard against "conditions changed, but the judgment stayed the same."
 
-**Tool Availability**:
-- WebFetch and WebSearch available for verifying information
-- When research fails, proceed with analysis based on framework and clearly indicate which information needs verification
+The key on this dimension is that conditions carry time. A product judgment that held two years ago and one that "looks like the same conditions" today often actually run on different conditions: competitor density, platform maturity, user habits, tech availability, traffic cost are all moving — the earlier one succeeded, this one might not. Before citing any past experience, case, or your own past success, ask first: are the conditions it depended on to hold still present? This is exactly what "a dynamically shifting historical period" in the definition of experience means.
 
-### Verify Value Scenarios
+Method: list the key preconditions the value's holding depends on, judge each one as present, changed, or unknown, and flag especially the time-bound ones. If borrowing a case, first restore the conditions under which it held, extract the second-layer condition, then check whether they're currently met. When a key condition has changed or is unknown, downgrade the related judgment to a to-be-verified hypothesis and lower solidity accordingly.
 
-Value scenarios can be proposed as analytical hypotheses, but they cannot be treated directly as facts.
+### 3. Value Timeline
 
-**Distinguish between**:
-- **Hypothetical value scenarios**: Possible use contexts, value relation positions, and outcomes inferred from the product, end users, and features
-- **Validated value scenarios**: Use contexts, value relation positions, and outcomes supported by user interviews, behavior data, real cases, market materials, or product usage evidence
+First ask whether value is immediate or delayed; if delayed, whether both sides — especially the end user — know it's coming, and what sustains investment during the wait; and whether this timeline matches the product's nature, the scenario, and user expectations. Short-term value and long-term value are both valid, with no inherent superiority; the choice depends on the product's nature, the scenario, and the user's situation. The real problem is mismatch — an immediate-value product forcing in a long-term mechanism, or a long-term-value product giving no perceptible progress during the wait.
 
-When a value scenario is unvalidated, state clearly that it is an analytical hypothesis and identify what evidence would be needed to verify its context, value relation position, and outcome.
+There are three timelines: pure short-term, where the immediate value is the complete product; pure long-term, where the user commits to a journey and the result needs long accumulation; hybrid, where a long-term goal is paired with optional short-term touchpoints, and here the short-term touchpoints must serve the long-term goal rather than replace it.
 
-### Condition Archaeology
+Method: identify the primary value timeline, assess whether it matches the product's nature, the current scenario, and user expectations; if delayed, check whether the end user knows value is coming and whether there's perceptible progress during the wait.
 
-**Why it matters**:
-Theories and cases are distilled from concrete experience by stripping away contextual factors for easier transmission. What gets stripped away is often not noise, but necessary constraints for the conclusion to hold.
+### 4. Value Delivery
 
-When you see "Dropbox succeeded with clear value," you receive the conclusion itself, but not the preconditions that made it work: competitive market, voluntary choice, individual users, immediate value delivery.
+First ask whether the value already produced can be perceived, understood, and verified low-loss by the target side; or whether value is buried in backend logic where the user can't perceive it at all; whether value has a concrete image or concrete-scenario carrier that presses information loss to a minimum. This is a direct application of information-loss theory: however strong the backend logic, that's only 100 points on the producing side — without a low-loss form of expression, the target side may only receive 20 points in their own cognition. Invisible value feels like no value.
 
-**Common problem**:
-Users believe they've grasped the "law" and apply it directly to new contexts, but the new context may lack the necessary constraints. When it fails, they blame execution or luck rather than checking whether conditions match.
+Perceptibility takes different forms across products — sometimes immediate feedback in the interface, sometimes a report, dashboard, or metric, sometimes runtime output or data — but the key is the same: the end user can point at something concrete and say "I got this." Giving value a carrier of a concrete image plus a concrete scenario is the most effective way to press down loss — giving a class of people a concrete persona, giving a backend judgment a visible state, is doing value delivery. This framework's own direction and solidity are a self-demonstration of this principle.
 
-**How to apply**:
-Before citing any theory, pattern, or case conclusion:
-1. Restore the necessary constraints the original conclusion depends on
-2. Verify whether those conditions hold in the current context
-3. Determine the range and boundaries where the conclusion applies
+Method: identify what the end user can point at and say "I got this"; if value is invisible, explore making it tangible, perceptible, and showable through the interface, notifications, progress indicators, result comparison, concrete personas, etc.; and check which link on the path from producing side to target side loses the most.
 
-**Key considerations**:
-- Conditions change. Judgments that hold at one stage may fail after conditions change
-- Don't seek to exhaust all conditions, but identify decisive conditions, main failure conditions, and mismatch risks
-- Theory holds under specific conditions and may fail beyond those conditions
+## Direction and solidity
 
-**Check during analysis**:
-- Which preconditions and constraints the original case or conclusion depended on
-- Whether those conditions hold in the current situation
-- The range within which the conclusion holds, and beyond which it stops holding
-- Whether the current discussion concerns a local judgment, a whole-product judgment, a short-term judgment, or a long-term judgment
-- Whether the conclusion still holds after conditions change
+Value itself is a weighted balance based on both sides' cognition — a continuous degree, not a three-notch switch. So every dimension must give both direction and solidity; missing one leads you to read it wrong. Before giving these two judgments, you must read `references/scoring-rubric.md`.
 
-**Common misuses**:
-- **Cross-context misuse**: Taking a conclusion that holds under one set of preconditions and transferring it directly into a situation with different preconditions
-- **Cross-level misuse**: Treating a local judgment, tactical judgment, or short-term judgment as if it were a whole-product judgment, strategic judgment, or long-term judgment
+**Direction** is the indicator-light axis, answering "does value hold on this dimension": 🟢 holds, 🟡 partially holds, 🔴 doesn't hold or lacks a key condition.
 
-### Condition-Certainty Mismatch
+**Solidity** answers "how much of this judgment rests on evidence versus still hanging on assumption." The denominator is the set of premises this dimension depends on; solidity is roughly the share of those already backed by evidence:
 
-**Definition**:
-Condition-certainty mismatch describes a reasoning bias: when forming a current conclusion, a prior judgment that holds only under specific conditions is treated as if it also holds in the current context, turning a hypothesis that still requires verification into a premise for judgment. Here, certainty does not mean an unconditionally valid proposition; it means a judgment's status as a usable premise under specific conditions.
+- Solid: the judgment is basically evidence-backed — on-target user interviews, behavioral data, real cases — and the boundaries are drawn.
+- Half: evidence and assumption in equal measure, the most common state in real projects.
+- Thin: the direction is there, but most of it still hangs on assumption, to be verified.
+- Empty: not yet explored, a blind spot.
 
-**How to apply**:
-When a prior judgment needs to be used in the current context:
-1. Restore the key conditions the judgment depends on
-2. Check whether those conditions hold or have changed in the current context
-3. Determine whether condition differences affect the judgment's applicability in the current context
-4. Downgrade any part not supported by current conditions to a hypothesis requiring verification
+Don't report fake precision like "63%." The real world is a weighted balance, and the balance is itself an estimate; a grade plus one line of "why this grade" is enough. The grade's job is to make where and how much is fuzzy visible, not to look precise.
 
-**Key considerations**:
-- When key conditions do not hold, have changed, or lack sufficient evidence, the prior judgment should not be used directly as a premise for the current conclusion
-- Condition differences do not mean the prior judgment is invalid; explain how the differences affect the current judgment
-- The result alone cannot establish the cause; attribution should state the reasoning basis and identify what additional evidence is needed
+Direction and solidity are orthogonal and combine freely, which is what fits reality: 🟢 but "thin" looks fine but mostly rests on assumption — the most dangerous "pretty fog"; 🔴 but "solid" is confirmation it doesn't hold here, which is actually a valuable conclusion — time to switch targets; 🟡 "half" is the most common state in real projects. Looking only at the indicator light would show "confirmed to hold" and "assumed to hold" as the same green light, missing exactly what most warrants caution; solidity adds that layer. The "thin" and "empty" grades of solidity are directly the checklist of what to go talk about and verify next.
 
-### Evaluating Case Study Applicability
+Direction and solidity are both aids to judgment, not replacements for the chain of reasoning; when they conflict with the detailed analysis, the full analysis wins.
 
-The cases in `references/real-cases.md` (Dropbox, Instagram, Duolingo, WeChat, Google Wave, Quibi) illustrate patterns, rather than universal rules. Before using them, restore the preconditions behind those cases and then judge whether they transfer.
+## Discovering real value: go talk
 
-**Assess applicability**:
-- **Product type match**: B2C consumer apps vs B2B developer tools vs enterprise software
-- **Market context match**: Competitive markets vs niche markets vs monopoly situations
-- **User behavior match**: Daily use vs episodic use vs one-time transactions
-- **Value delivery match**: Immediate utility vs long-term transformation vs hybrid approaches
+Value is a relational property of both sides' states; analyzing alone, you can only compute your own half. The other half — the end user's state, cognition, and the conditions of the scenario they're in — can only be obtained by talking to them. Not talking means having only half the state, and the value relationship can't be judged.
 
-**When cases don't apply**:
-If the user's product differs significantly from reference cases (e.g., B2B infrastructure tool vs C2C social app), search for comparable products in the same domain. Analyze those domain-specific examples instead of forcing consumer app patterns onto different contexts.
+But the real problem is often not that you didn't talk, but that you talked — to the wrong person, without the right method — and the signal you got back is still fuzzy. The most common version is talking only to friends nearby: they're happy to cheer you on but aren't in the scenario you're anchoring to, so what you get back is a position-skewed, already-lossy signal. Information-loss theory explains why: guessing alone at what users want, you are the already-lossy speaker2; talking to the wrong person, asking the wrong way, is just another way of collecting post-loss guesses.
 
-If you still need to borrow a cross-domain example, first restore the preconditions the original case depends on, then judge which of those conditions are shared and which are different in the current product, and distinguish whether the comparison concerns a local judgment, a whole-product judgment, a short-term judgment, or a long-term judgment.
+So produce a conversation plan for the dimensions with insufficient solidity (thin or empty), and design "who" and "how to ask" themselves using the definitions of value, information loss, and experience:
 
-**Example**:
-- User discusses: Developer infrastructure tool (like Temporal, Kubernetes)
-- Reference cases: Consumer apps (Dropbox, Instagram)
-- Action: Search for similar developer tools, analyze their value propositions, adoption patterns
-- Avoid: Applying Instagram's identity transformation pattern to infrastructure software
+- **Who to talk to**: value is a relational property, so pick people whose state, cognition, and scenario match the target. Match runs low to high: friends, general users, early real users; the lower the match, the larger the skew in the signal you get back — don't take friends' positive feedback as verification. Also weigh the other side's expressive ability: information loss depends on both ends of the communication, so however well the scenario matches, someone who can't articulate their own experience still gives you a lossy signal; the less clearly they can speak, the more you must fill in from the concrete through your questioning, rather than having them summarize for you.
+- **What to talk about**: take the other half you can't compute — their real scenario, their conditions, the value in their cognition.
+- **How to ask**: don't ask about features ("would you use X" is making the user do the already-lossy abstraction for you); ask about concrete events that already happened — "last time you hit this problem, what was the situation, what did you do" — inferring value and conditions back from the concrete, at the lowest loss; digging down into conditions from there is doing condition archaeology and extracting the second-layer condition.
+- **How to verify**: put what you got back into the four dimensions, update direction and solidity, and raise "thin"/"empty" to "half"/"solid."
 
-### Balancing Exploration and Evidence
+## Sustained conversation loop
 
-**Exploratory thinking** (appropriate when):
-- Identifying potential value types end users might seek
-- Brainstorming ways to make value visible or tangible
-- Considering multiple positioning approaches
-- Exploring hypothetical value scenarios for product direction
+This framework is not an evaluation form you run through the four dimensions once and finish with a report — it's a tool for sustained conversation, with real people and also with AI (including the one you're talking to). The goal is not to give a conclusion as fast as possible, but to **round by round talk the target more precise and raise solidity from empty/thin to half/solid, until you've talked out a value or business opportunity that genuinely stands up**.
 
-**Evidence-based analysis** (required when):
-- Claiming specific adoption patterns or metrics
-- Comparing to real products or market examples
-- Stating what "works" or "doesn't work" in practice
-- Conducting analysis based on industry precedents
+Each round of conversation is not an endpoint but the start of the next. A round should close by delivering three things, not a pretty summary:
 
-**Process**:
-1. Explore possibilities through discussion and brainstorming
-2. When specific claims or comparisons arise, verify with research
-3. Conduct analysis based on verified patterns, not assumptions
-4. Acknowledge when evidence is limited or context differs from known cases
+- **Current four-dimension state**: the latest direction and solidity for each dimension, clearly pointing out which dimension is the decisive foundation, which is "pretty fog" (🟢 yet thin), and which is still a blind spot (empty).
+- **The one question to attack first**: not a list of every to-be-verified item, but the single veto-power one for this round — verify it first, and only then does the rest matter. Make it a concrete, executable, falsifiable action, not a vague "needs verification."
+- **The entry to the next round**: following that question, throw out a sharp counter-question or a scheme to compare, lobbing the ball back to the other side so the conversation can keep going. Better to force out an uncomfortable but critical question than to hand over a comfortable but useless affirmation.
 
-### Research Sources
+Keep sharp through every round: actively do value exploration and discovery, call out muddled value-relationship positions, question green lights hanging on assumption, restore the preconditions of borrowed cases. Agreement and paraphrase don't raise solidity; only falsification and hard probing do. When the other side (person or AI) gives new information, put it back into the four dimensions, update the symbols, and throw out the next question — keep this loop going until some value configuration genuinely stands up on evidence, or you clearly judge this path a dead end and time to switch targets.
 
-**Primary sources** (preferred):
-- Official product websites and documentation
-- Company blog posts or announcements
-- Published metrics, user counts, or growth data
-- Academic research or industry reports
+## Common traps
 
-**Secondary sources** (use with caution):
-- Tech news articles or analysis pieces
-- User reviews or community discussions
-- Third-party market research or estimates
+1. **Talking about value detached from scenario.** Saying "boosts efficiency, cuts cost, improves experience" without saying in which scenario, for whom, under what conditions it holds — the end user can't judge whether these values have anything to do with them. Map abstract value to a concrete configuration: who, in what situation, completes what task, gets what result.
+2. **Focusing on features rather than value.** Listing "we have features X, Y, Z," but the end user only cares what result they'll get. Always translate features into value — feature X lets a certain kind of user achieve Y in a certain scenario.
+3. **Mechanically copying the surface practice.** Seeing someone succeed with a mechanism and copying it wholesale, without understanding under what conditions and by what mechanism it produced value for that batch of users. First restore the preconditions under which the case held, extract the transferable second-layer condition, then judge whether it applies now.
+4. **Ignoring the time drift of conditions.** "It worked two years ago, the conditions look the same now, so it'll work" — competitors, platforms, user habits, tech availability, traffic cost are all changing, looking the same but actually different. Before citing any past experience, restore the conditions under which it held and check one by one whether they're still present.
+5. **Invisible value.** Claiming "stronger, faster, better," but an improvement the end user can't see or feel is equivalent to nonexistent. Give value a low-loss, perceptible, showable form.
+6. **Treating direction as solidity.** "This dimension is green, so it's fine" — green might be confirmed to hold or assumed to hold, and the two are worlds apart. Mark both direction and solidity on every dimension; 🟢 plus "thin" is the pretty fog that most warrants caution.
+7. **Taking the wrong person as verification.** "I asked my friends, they all said it's great" — friends are happy to cheer you on but aren't in the target scenario, so the feedback is skewed and post-loss. Find people who match the target, and discount the solidity of friends' feedback by match.
+8. **Habitual abstraction, ignoring the concrete you have.** You already have a concrete phenomenon and real feedback, but first abstract it into a grand truth and discuss that. Abstraction strips conditions and adds loss, while the concrete is the state with the most complete conditions; start from the concrete, already-perceptible thing, and abstract only up to the reusable second-layer condition.
+9. **Firing the arrow with no target.** Investing continuously without a clear expectation, continuing if there's an effect and stopping if there isn't. No value scenario means value has nowhere to happen; once conditions change, what looked useful before fails instantly. First confirm whether there's a target; if not, set one first, or explicitly acknowledge you're in exploratory target-finding.
+10. **Confusing the value-relationship position.** The user finds the content fun and the interface easy to use, and you conclude the product already supports the result it claims. But fun and easy might only mean some external object was confirmed valuable, or a one-time short-term result was delivered — not that heavier results like capability improvement, identity, or being needed by others have already happened. State clearly where in the relationship the value lands, and don't extrapolate evidence from one position into a result at another.
 
-**Avoid**:
-- Relying solely on memory or general knowledge
-- Assuming patterns from one domain apply universally
-- Making claims without verifiable sources
-- Treating reference cases as prescriptive templates
+## Methodology
 
-## Guiding Principles
+### Distinguishing hypothesis from evidence
 
-### Core Distinctions
+A value scenario can be proposed as an analytical hypothesis, but can't be taken directly as fact. A hypothesis is a possible configuration, conditions, and result inferred from the product, users, and features; verified means a configuration, conditions, and result supported by on-target user interviews, behavioral data, real cases, market data, or usage evidence. When unverified, state clearly that it's a hypothesis (reflected in solidity), and point out what evidence is needed to verify it.
 
-**User vs End user**:
-- User: The person using this skill (product creator, PM, designer, entrepreneur, etc.)
-- End user: The person who will use the product being discussed
-- These are distinct roles with different perspectives
+### Condition archaeology
 
-**Features vs Value**:
-- Features: What the product does (technical capabilities)
-- Value: What result end users obtain or achieve through the product in a concrete value scenario
-- End users adopt products based on value, not features
+Before citing any theory, pattern, or case conclusion, first restore the necessary preconditions the original conclusion depended on, test whether those conditions hold in the current situation, then judge the conclusion's scope and boundaries of applicability. Key points: conditions change over time, and a judgment that held at one stage may lose validity after conditions change; don't aim to exhaust all conditions, but identify the decisive condition, the main failure conditions, and mismatch risks; distinguish cross-situation misuse (transferring a conclusion from one set of preconditions to a situation with different preconditions) from cross-level misuse (treating a local, tactical, short-term judgment as a whole, strategic, long-term one).
 
-**Value perception timing**:
-- Immediate perception: End users perceive they gained something during or right after use
-- Delayed perception: End users perceive they gained something after sustained use over time
-- These are not mutually exclusive; products can provide both
-- Neither is inherently superior; each addresses different end user needs
+### Extracting the second-layer condition
 
-### Research Approach
+When micro conditions keep shifting, what's reusable is not the surface practice but the more abstract second-layer condition. When borrowing experience, abstract up to the second layer and stop: abstracting further loses all the concrete conditions that make value hold (meta-principle one), while stopping at the surface practice leads to mechanical copying (trap 3).
 
-**When encountering unfamiliar concepts**:
-- Research mentioned products, technologies, or domain-specific terms
-- Use WebFetch or WebSearch to gather current information
-- Seek official documentation, published metrics, and verified sources
+### Assessing case applicability
 
-**Balancing exploration and evidence**:
-- Exploratory thinking: Appropriate when identifying potential value types or brainstorming approaches
-- Evidence-based analysis: Required when claiming specific patterns, comparing to real products, or stating what works in practice
+A reference case shows a pattern, not a universal rule. Before citing, first restore the preconditions under which it held, then assess the match on several fronts: product type (B2C consumer app, B2B developer tool, enterprise software), market environment (competitive, niche, monopoly), user behavior (daily use, occasional use, one-off transaction), value delivery (immediate utility, long-term transformation, hybrid), and time conditions — the difference between the historical period in which the case held and now. When a case differs significantly from the current object, search for comparable products in the same domain to analyze, rather than forcing a consumer-app pattern onto a different context.
 
-**Evaluating case applicability**:
-- Reference cases illustrate patterns, not universal rules
-- Assess whether product type, market context, user behavior, and value delivery match
-- When cases do not apply, research comparable products in the relevant domain
+When comparing, always use **named real products**, never vague phrasing like "some tools" or "similar products" (this is a hard requirement of step 3 in the four-dimension flow). A real product's value proposition is the sharpest reference — it makes distinctions like "result vs data" and "immediate utility vs long journey" concrete for you: Grammarly sells "it fixes them" not "it shows me errors," Mixpanel needs no gamification because its utility is immediate, Duolingo's XP is only an optional touchpoint rather than the core value. Naming names, restoring the conditions under which it held, then comparing against the current object forces out a truer judgment than abstract discussion.
 
-## How to Use This Skill
+### Balancing exploration and evidence
 
-This skill works best in conversation. When the user discusses a product idea, feature, copy, usage scenario, or use case:
+Exploratory thinking suits identifying possible value configurations, brainstorming ways to make value visible, and exploring positioning directions. Evidence-based analysis is required for: claiming a specific adoption pattern or metric, comparing against real products, and stating what works in practice. The flow is to explore possibilities first, verify through research when a concrete claim or comparison appears, analyze based on verified patterns, and acknowledge where evidence is limited or context differs.
 
-1. **Identify the value scenario**: In what context do end users use the product, what is the value relation position, and what result do they get?
-2. **Explore value clarity**: Can end users articulate what they'll achieve?
-3. **Examine the timeline**: Is value immediate or delayed for end users? What's appropriate for this product?
-4. **Assess perception**: Can end users see/feel their progress?
-5. **Discover hidden value**: What value might end users not yet recognize?
+### Research sources
 
-**This isn't a checklist** - it's a way of thinking. Each product is different. Each market is different. The goal is to think clearly about whether end users will know what value they'll achieve in a concrete scenario.
+Prefer primary sources: official sites and docs, company announcements, published metrics and growth data, academic or industry reports. Use secondary sources with caution: tech news, user reviews, third-party estimates. Avoid making claims from memory alone, assuming a domain's pattern applies universally, making claims without sources, or treating a reference case as a prescriptive template. WebFetch and WebSearch can be used to verify information; when research fails, analyze based on the framework and clearly state which information still needs verification.
 
-**Research during analysis**: When the user mentions specific products, technologies, or concepts, this skill may research them via WebFetch or WebSearch to provide context-appropriate analysis based on current information rather than assumptions.
+## Analytical flow
 
-## Key Principles
+1. Calibrate stance: first run the two meta-principles — are you starting from the concrete, is there a target.
+2. Lock in the value scenario: who, what state, what situation, what conditions, does this relationship produce a beneficial property. This is the center of gravity.
+3. Go through the four orthogonal dimensions one by one: scenario, conditions, timeline, delivery, showing reasoning on each, no skipping.
+4. Give direction and solidity: at the end of each dimension's reasoning, give them in one line with a line of why this grade, against `references/scoring-rubric.md`.
+5. Produce a conversation plan for dimensions with insufficient solidity: who to talk to, what to talk about, how to ask, how to verify.
+6. Summarize: summarize after all four dimensions, pointing out the decisive question and the next step.
+7. Continue the conversation: the summary is not the endpoint. Throw out the sharp counter-question that most needs verifying first and is most likely to overturn the current judgment, lob the ball back to the other side (person or AI), enter the sustained conversation loop, and round by round raise solidity, until you've talked out real value or clearly judged it time to switch targets.
 
-1. **End users must "know" what value they'll achieve** - even if it takes time
-2. **Value types are diverse** - identity, money, benefits, status, capability, and more
-3. **End users often don't know what they want** - help them discover it
-4. **Perception matters to end users** - invisible value feels like no value
-5. **Context is everything** - patterns from one product may not apply to others
-6. **Test with real end users, don't assume** - validate the context, value relation position, and outcome in a concrete value scenario
-7. **Both short-term and long-term are valid** - neither is superior, choose based on product nature
+**Adjust output to the request**: the core doesn't change, but the presentation varies by request. To evaluate an idea, run the full four dimensions and give a judgment; to write copy or use scenarios, run the value scenario and four dimensions through in your head first, then output the content itself rather than laying out the analysis process; to diagnose existing copy or a value proposition, use the four dimensions to find which one it fails on; to propose improvement directions, first state the current object's problems on the four dimensions and the value scenario, then give adjustments derived from the analysis, distinguishing what has evidence from what's a to-be-verified hypothesis.
 
-## Additional Resources
+This is not a checklist, it's a way of thinking. Every product, market, and end user is different. The goal is to judge clearly: in which scenario, on what basis, when, and whether value can be perceptibly produced, and how much of these conclusions is reliable.
 
-### Reference Files
+## Core principles
 
-Case studies include quantitative data and data sources:
-- **`references/real-cases.md`** - Dropbox, Instagram, Duolingo, WeChat, Google Wave, Quibi case studies (English)
-- **`references/real-cases-zh.md`** - Dropbox、Instagram、Duolingo、微信、Google Wave、Quibi 的案例分析（中文）
+1. Discovering value is locking in the value-relationship configuration — don't ask "does it have value," ask "in which configuration does it produce value."
+2. Value is a relationship of both sides' states — one person can't compute complete value; the other half comes from matching users.
+3. Value has degree — use the two judgments of direction and solidity, no binary verdicts.
+4. Conditions carry time — before citing any past experience, check whether the conditions under which it held are still present.
+5. Start from the concrete — prefer the already-concrete, already-perceptible thing; don't habitually see through to essence.
+6. Set the target before firing the arrow — no scenario means no position for value to happen.
+7. Perception is value — invisible value feels like no value.
+8. Short-term and long-term are both valid — no inherent superiority; choose by the product's nature and scenario.
+9. Falsify sharply, don't agree — value discovery comes from overturning assumptions, not from nodding. Every dimension must call out the hidden confusion, throw out the most cutting counter-question, and give a judgment-bearing suggestion, until the "pretty fog" is forced into its true shape. Tepid paraphrase is this framework's failure state.
+10. Use named real products as a mirror — every dimension holds a named real product (Grammarly, Duolingo, Mixpanel, not "similar tools") against the current object, using the preconditions under which it held to force out whether the current object stands up. A real product's value proposition is the sharpest reference.
+11. A diagnosis, not a report — keep each dimension's blocks short, direct, and unsparing, ending with a numbered group of sharp questions fired in rapid succession. Neat structure blunts the edge; better to crudely strike the vital point than to neatly go around it.
 
-Status indicator reference criteria:
-- **`references/scoring-rubric.md`** - Reference criteria for status indicators (🔴🟡🟢) across four dimensions: value clarity, timeline, perception, discovery (English)
-- **`references/scoring-rubric-zh.md`** - 价值清晰度、价值时间线、价值感知、价值发现四个维度的状态指示符（🔴🟡🟢）参考标准（中文）
+## Reference files
 
-Methodology research documents:
-- **`references/learning-methodology.md`** - Analysis of operating mechanisms, risks, manifestations in different environments, and integration methods of foundation-first and problem-driven learning approaches (English)
-- **`references/learning-methodology-zh.md`** - 基础优先型和问题驱动型学习方式的运作机制、风险、环境表现及结合方式分析（中文）
+- `references/scoring-rubric.md`: the criteria for the four dimensions' direction (🔴🟡🟢) and solidity (🟩🟨🟧🟥); required reading before giving these two judgments.
 
 ## Remember
 
-This skill helps think about value, not prescribe solutions. Every product is unique. Every market is different. The goal is to discover whether end users will clearly understand what they'll achieve - because that understanding is what drives adoption.
+This framework helps you think about value, not prescribe a solution. Every product is unique, every market is different, and conditions shift dynamically. The goal is always to find the scenario configuration that makes the beneficial relationship genuinely hold — because value is only produced there.
