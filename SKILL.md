@@ -1,6 +1,6 @@
 ---
 name: value-realization
-description: "Judge whether something actually produces value in a concrete scenario. Value is a beneficial relational property between subject and object, conditioned on the states of both sides, that only holds in a specific scenario. Use it for: evaluating a product idea or feature, judging whether a value proposition holds, writing or diagnosing copy and selling points, mapping features to concrete use scenarios, analyzing adoption and retention problems, deciding whether to borrow a case or practice, or whenever the user is unsure about product direction, positioning, or whether a need holds (e.g. \"is this idea any good?\", \"what do you think of this product?\", \"will users want this?\", \"what is this feature good for?\", \"how do I pitch the value of this feature?\", \"how's this copy?\", \"help me write some use scenarios\", \"why can't we retain users?\", \"how should we position ourselves?\", \"someone else did this and succeeded — can we copy it?\")."
+description: "Judge whether something actually produces value in a concrete scenario. Value is a beneficial relational property between subject and object, conditioned on the states of both sides, that only holds in a specific scenario. Typical uses: judging whether a value proposition genuinely holds, mapping a capability to a concrete use scenario, diagnosing why no one uses it or why they don't stick, clarifying how to position or state the value, assessing whether something is worth investing in, judging whether you can borrow someone else's approach, or whenever you're unsure whether a direction, need, or positioning holds (e.g. \"is this idea sound?\", \"does anyone actually want this?\", \"who does this feature solve what problem for?\", \"is this worth investing in?\", \"how should this value be stated clearly?\", \"why did we roll it out and no one uses it?\", \"why do people try it once and never come back?\", \"why would anyone pick us?\", \"help me write out the use scenarios\", \"someone else did this and succeeded — can we copy it?\"). When the thing being judged has a decision-maker (who pays / signs off) that is not the same as the actual end user (enterprise software, internal platforms, etc.), first state which side you're analyzing for and split the two value relationships to run separately."
 allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 ---
 
@@ -266,6 +266,15 @@ This is not a checklist, it's a way of thinking. Every product, market, and end 
 ## Reference files
 
 - `references/scoring-rubric.md`: the criteria for the four dimensions' direction (🔴🟡🟢) and solidity (🟩🟨🟧🟥); required reading before giving these two judgments.
+- `references/worked-example.md`: a full worked run of the four dimensions on one real object, showing how the symbols land in headings, how the named-product comparison is done, and how each dimension closes with sharp questions.
+
+## Boundaries of applicability
+
+Two real situations change the shape of the analysis, and you have to name them rather than run the four dimensions as if they don't exist.
+
+**Decision-maker ≠ user — split into two value relationships.** In enterprise software and internal company tools, whoever pays or signs off (procurement, a manager) is often not whoever uses it daily (a frontline employee), and the two value relationships differ: the decision-maker's is cost, control, visible results; the user's is smoothness, time saved, less friction. State which side you're analyzing, and run the dimensions separately for each — the frontline loving it doesn't mean the decision-maker buys, and sign-off doesn't mean the frontline adopts. This is the "value-relationship position" concept applied to a structural split the four dimensions otherwise treat as one relationship.
+
+**When adoption isn't driven by "beneficial," the framework misfires.** A monopoly product, or an internal tool the company mandates — the user has no choice, so adoption says nothing about whether the beneficial relationship holds. The framework measures that relationship, so on this object it reads a false signal. Say so, and shift the real question to the cost and friction of the mandate rather than pretending usage is evidence of value.
 
 ## Remember
 
